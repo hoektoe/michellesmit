@@ -79,7 +79,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="../assets/img/lily-2160x3840-white-flower-5k-20032.jpg"
+                src="../assets/img/lily.jpg"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -181,7 +181,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="../assets/img/publication_cover.jpg"
+                src="../assets/img/publication.jpg"
               />
             </div>
           </div>
