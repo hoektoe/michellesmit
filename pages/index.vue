@@ -27,7 +27,7 @@
               <a
                 href="#contact"
                 class="font-bold text-gray-800 mt-8 flex items-center hover:text-green-300"
-                ><img height="18px" width="18px" class="mr-2" src="../assets/icons/mail.svg"/>Contact me</a
+                ><img alt="mail icon to contact michelle smit" height="18px" width="18px" class="mr-2" src="../assets/icons/mail.svg"/>Contact me</a
               >
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -77,7 +77,7 @@
                 <p class="text-white text-base mt-3">Brené Brown</p>
               </div>
               <img
-                alt="..."
+                alt="lilly picture with text from Brené Brown overlaid"
                 class="max-w-full rounded-lg shadow-lg"
                 src="../assets/img/lily.jpg"
               />
@@ -179,7 +179,7 @@
             </div>
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4 relative text-center">
               <img
-                alt="..."
+                alt="South African Psychiatry May Edition Cover Image"
                 class="max-w-full rounded-lg shadow-lg"
                 src="../assets/img/publication.jpg"
               />

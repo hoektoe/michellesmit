@@ -8,8 +8,12 @@ export default {
   */
   head: {
     title: 'Michelle Smit | Psychologist - Addiction Therapy',
+    htmlAttrs: {
+      lang: "en"
+    },
     meta: [
       { charset: 'utf-8' },
+      {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" },
       { hid: 'description', name: 'description', content: 'Michelle Smit | Psychologist - Addiction Therapy' },
       { name: "keywords", hid: "keywords", content: "Michelle Smit, Addiction Therapy, Psychologist, Cape Town" },
@@ -25,6 +29,7 @@ export default {
       { property: "og:image", hid: "og:image", content: "https://www.michellesmit.com/img/logo_block.png" },
       { property: "og:description", hid: "og:description", content: "Michelle Smit | Psychologist - Addiction Therapy" },
       { property: "og:site_name", hid: "og:site_name", content: "Michelle Smit" },
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -52,6 +57,9 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+  performance: {
+    gzip: true
+  },
   /*
   ** Nuxt.js modules
   */
