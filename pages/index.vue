@@ -12,17 +12,17 @@
           <div class="flex flex-wrap items-center">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto pb-6">
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Therapy that gets to the heart of the matter
+                About
               </h3>
-              <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
-              >My therapy is centred on working with the deeper emotions that underlie your behaviour and experience,
-              whether you are a couple, an individual, a child, a teen or a family. It connects with the heart of
-               your experience and resolves the root of your difficulties so that you can move forward in your life
-               with greater compassion and insight.</p>
+              <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for
+                patients that have both substance and process additions. These addictions range from; alcohol, prescription tablets, cocaine, heroin,
+                methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis.
+                Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders.
+              </p>
               <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                For therapy to be successful, you need to feel respected and understood by me, know and understand
-                the path ahead in therapy, agree on your therapy goal and feel that you are making steady progress
-                towards it.
+                I am fluent in both English and Afrikaans. I obtained my Master’s degree with the Pearson Institute and am currently completely my Doctorate
+                degree in Psychology. I am registered with the Health Professions Council of South Africa, as well as with the BHF.
               </p>
               <a
                 href="#contact"
