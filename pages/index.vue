@@ -56,8 +56,7 @@
                     Michelle Smit
                   </h4>
                   <p class="text-md font-light mt-2 text-black">
-                    Psychiatrist specializing in addiction counselling etc etc etc
-                    this is more paragraphs to make the block nice and spacey
+                    HPCSA registered counselling psychologist based in Cape Town and specializing in addiction therapy. Due to the nature of online therapy is available for consultations globally.
                   </p>
                 </blockquote>
               </div>
@@ -84,51 +83,46 @@
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
-                <h3 class="text-3xl font-semibold">Open Dialog</h3>
-                <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                  The extension comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go.
-                </p>
-                <ul class="list-none mt-6">
+                <h3 class="text-3xl font-semibold">Therapy services</h3>
+                <ul class="list-none mt-4 font-light">
                   <li class="py-2">
                     <div class="flex items-center">
+
                       <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-green-200 mr-3"
-                          ><i class="fas fa-fingerprint"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">
-                          Carefully crafted components
+                        <h4 class="font-bold mb-2">
+                          Individual psychotherapy
                         </h4>
+                        <p class="mb-4">
+                          Addiction itself is complex and each patient is unique in their experiences.
+                          As such, my approach is holistic in that I consider various components such as developmental history, environmental contexts, and medical histories.
+                        </p>
+                        <p class="mb-4">
+                          Addiction is often accompanied by a history of trauma, coping difficulties and feelings of grief, guilt, shame, and hopelessness. Patients may experience an impact on the functioning in areas of their life such as work, relationships, and health due to their addiction. The recovery process would entail exploring these spheres and the behavioral patterns of the individual as a means to cope.
+                           Medium to long term therapy is best suited for addiction treatment due to the complexity. If in-patient treatment is required, a referral will be made that is best suited to the patient.
+                        </p>
                       </div>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="flex items-center">
+
                       <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-green-200 mr-3"
-                          ><i class="fab fa-html5"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Amazing page examples</h4>
+                        <h4 class="font-bold mb-2">Couples therapy</h4>
+                        <p class="mb-4">
+                          Addiction does not only affect the individual, but it affects their loved ones as well. Couples therapy provides a platform for the couple to explore their relationship difficulties and to ascertain a path forward.
+                        </p>
                       </div>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="flex items-center">
+
                       <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-green-200 mr-3"
-                          ><i class="far fa-paper-plane"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Dynamic components</h4>
+                        <h4 class="font-bold mb-2">Psychoeducation</h4>
+                        <p class="mb-4">
+                          Addiction is complex and often friends and families may not understand how to support their loved ones and may need guidance. Psychoeducation includes but is not limited to guidance on; appropriate boundaries, recovery process,
+                           the fellowship, substance use disorders, dual-diagnosis, the impact of psychiatric comorbidity and the effect addiction may have on the family system.
+                        </p>
                       </div>
                     </div>
                   </li>
@@ -146,17 +140,14 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <h3 class="text-3xl font-semibold">Publication</h3>
-                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                <p class="mt-4 text-lg font-light">
                   In the May 2020 edition of the South African Psychiatry Magazine - an article on addiction care during COVID-19
                 </p>
                 <ul class="list-none mt-6">
                   <li class="py-2">
                     <div class="flex items-center">
                       <div>
-                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-green-200 mr-3"></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">
+                        <h4 class="font-bold">
                           <a href="https://www.yumpu.com/en/document/read/63387059/south-african-psychiatry-may-2020" target="_blank">Download the article</a>
                         </h4>
                       </div>
@@ -165,10 +156,7 @@
                   <li class="py-2">
                     <div class="flex items-center">
                       <div>
-                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-green-200 mr-3"></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">
+                        <h4 class="font-semibold">
                           <a href="https://www.yumpu.com/en/document/read/63387059/south-african-psychiatry-may-2020" target="_blank">View Magazine</a>
                         </h4>
                       </div>
