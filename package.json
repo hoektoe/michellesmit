@@ -11,7 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.12.2"
+    "nuxt": "^2.12.2",
+    "nuxt-purgecss": "^1.0.0",
+    "vue-meta": "^2.3.3"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.6",
