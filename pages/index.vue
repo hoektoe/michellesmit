@@ -148,7 +148,7 @@
                     <div class="flex items-center">
                       <div>
                         <h4 class="font-bold">
-                          <a href="https://www.yumpu.com/en/document/read/63387059/south-african-psychiatry-may-2020" target="_blank">Download the article</a>
+                          <a href="../assets/pdf/South_African_Psychiatry_Magazine_Article.pdf" target="_blank">Download the article</a>
                         </h4>
                       </div>
                     </div>
