@@ -148,7 +148,7 @@
                     <div class="flex items-center">
                       <div>
                         <h4 class="font-bold">
-                          <a href="../static/South_African_Psychiatry_Magazine_Article.pdf" target="_blank">Download the article</a>
+                          <a href="/South_African_Psychiatry_Magazine_Article.pdf" target="_blank">Download the article</a>
                         </h4>
                       </div>
                     </div>
