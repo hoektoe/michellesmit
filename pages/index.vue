@@ -16,12 +16,12 @@
               </h3>
               <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
                 My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for
-                patients that have both substance and process additions. These addictions range from; alcohol, prescription tablets, cocaine, heroin,
+                patients that have both substance and process addiction. These addictions range from; alcohol, prescription tablets, cocaine, heroin,
                 methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis.
                 Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders.
               </p>
               <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                I am fluent in both English and Afrikaans. I obtained my Master’s degree with the Pearson Institute and am currently completely my Doctorate
+                I am fluent in both English and Afrikaans. I obtained my Master’s degree with the Pearson Institute and am currently completing my Doctorate
                 degree in Psychology. I am registered with the Health Professions Council of South Africa, as well as with the BHF.
               </p>
               <a
