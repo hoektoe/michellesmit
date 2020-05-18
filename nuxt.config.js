@@ -15,7 +15,7 @@ export default {
       { charset: 'utf-8' },
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" },
-      { hid: 'description', name: 'description', content: 'My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for  patients that have both substance and process additions. These addictions range from; alcohol, prescription tablets, cocaine, heroin, methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis. Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders.' },
+      { hid: 'description', name: 'description', content: 'My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for patients that have both substance and process addiction. These addictions range from; alcohol, prescription tablets, cocaine, heroin, methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis. Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders.' },
       { name: "keywords", hid: "keywords", content: "Michelle Smit, Addiction Therapy, Psychologist, Cape Town" },
       { name: "theme-color", content: "#ccffd9" },
       { name: "msapplication-navbutton-color", content: "#ccffd9" },
@@ -27,7 +27,7 @@ export default {
       { property: "og:title",  hid: "og:title", content: "Michelle Smit | Psychologist - Addiction Therapy" },
       { property: "og:url", hid: "og:url", content: homepageURL },
       { property: "og:image", hid: "og:image", content: "https://www.michellesmit.com/img/logo_block.png" },
-      { property: "og:description", hid: "og:description", content: "My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for  patients that have both substance and process additions. These addictions range from; alcohol, prescription tablets, cocaine, heroin, methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis. Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders." },
+      { property: "og:description", hid: "og:description", content: "My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for  patients that have both substance and process addiction. These addictions range from; alcohol, prescription tablets, cocaine, heroin, methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis. Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders." },
       { property: "og:site_name", hid: "og:site_name", content: "Michelle Smit" },
 
     ],
