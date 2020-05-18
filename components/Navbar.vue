@@ -2,20 +2,19 @@
   <nav class="border-b w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <a
-          class="text-base align-center leading-relaxed flex mr-4 whitespace-no-wrap uppercase text-black"
+          class="text-base align-center leading-relaxed flex sm:mr-4 whitespace-no-wrap uppercase text-black"
           href="/"
         >
           <logo></logo>
-          <div class="flex flex-col w-full ml-4 justify-center">
-            <div class="w-full uppercase font-bold mb-2" style="font-size:2rem;line-height:2.2rem;">Michelle Smit</div>
-            <div class="w-full uppercase " style="font-size:1.5rem;line-height: 1.5rem;">psychologist - addiction therapy</div>
+          <div class="flex flex-col w-full ml-2 sm:ml-4 justify-center">
+            <div class="w-full uppercase font-bold mb-2 text-sm sm:text-xl lg:text-4xl leading-none">Michelle Smit</div>
+            <div class="w-full uppercase text-xs sm:text-lg xl:text-xl leading-none">psychologist<span class="hidden sm:inline-block"> - addiction therapy</span></div>
           </div>
         </a>
         <button
-          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          class="cursor-pointer text-xl leading-none border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button"
-          v-on:click="toggleNavbar()"
-        >
+          v-on:click="toggleNavbar()">
           <img src="../assets/icons/menu.svg"/>
         </button>
 

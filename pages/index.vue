@@ -81,7 +81,7 @@
                 src="../assets/img/lily.jpg"
               />
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4 mt-16 sm:mt-0">
               <div class="md:pr-12">
                 <h3 class="text-3xl font-semibold">Therapy services</h3>
                 <ul class="list-none mt-4 font-light">
@@ -148,7 +148,7 @@
                     <div class="flex items-center">
                       <div>
                         <h4 class="font-bold">
-                          <a href="../assets/pdf/South_African_Psychiatry_Magazine_Article.pdf" target="_blank">Download the article</a>
+                          <a href="../static/South_African_Psychiatry_Magazine_Article.pdf" target="_blank">Download the article</a>
                         </h4>
                       </div>
                     </div>
