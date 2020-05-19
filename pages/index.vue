@@ -7,6 +7,7 @@
     </div>
     <navbar-component></navbar-component>
     <main>
+
       <section id="about" class="pb-10 pt-10" >
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap items-center">
@@ -31,14 +32,8 @@
               >
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-200"
-              >
-                <img
-                  alt="Michelle Smit | Psychologist - Addiction Therapy"
-                  src="../assets/img/michellesmit.jpg"
-                  class="w-full align-middle rounded-t-lg"
-                />
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-200">
+                <PiioElement tag="img" path="../assets/img/michellesmit.jpg" alt="Michelle Smit | Psychologist - Addiction Therapy" class="w-full align-middle rounded-t-lg"></PiioElement>
                 <blockquote class="relative p-8 mb-4">
                   <svg
                     preserveAspectRatio="none"
@@ -75,11 +70,7 @@
                 <p class="text-white">"The energy that exists between people when they feel seen, heard and valued. When they can give and receive without judgement; and when they derive sustenance and strength from the relationship."</p>
                 <p class="text-white text-base mt-3">Brené Brown</p>
               </div>
-              <img
-                alt="lilly picture with text from Brené Brown overlaid"
-                class="max-w-full rounded-lg shadow-lg"
-                src="../assets/img/lily.jpg"
-              />
+              <PiioElement tag="img" path="../assets/img/lily.jpg" alt="lilly picture with text from Brené Brown overlaid" class="max-w-full rounded-lg shadow-lg"></PiioElement>
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4 mt-16 sm:mt-0">
               <div class="md:pr-12">
@@ -157,7 +148,7 @@
                     <div class="flex items-center">
                       <div>
                         <h4 class="font-semibold">
-                          <a href="https://www.yumpu.com/en/document/read/63387059/south-african-psychiatry-may-2020" target="_blank">View Magazine</a>
+                          <a rel="noopener" href="https://www.yumpu.com/en/document/read/63387059/south-african-psychiatry-may-2020" target="_blank">View Magazine</a>
                         </h4>
                       </div>
                     </div>
@@ -166,11 +157,7 @@
               </div>
             </div>
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4 relative text-center">
-              <img
-                alt="South African Psychiatry May Edition Cover Image"
-                class="max-w-full rounded-lg shadow-lg"
-                src="../assets/img/publication.jpg"
-              />
+              <PiioElement tag="img" path="../assets/img/publication.jpg" alt="South African Psychiatry May Edition Cover Image" class="max-w-full rounded-lg shadow-lg"></PiioElement>
             </div>
           </div>
         </div>
@@ -237,8 +224,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
 import NavbarComponent from "../components/Navbar.vue";
 import FooterComponent from "../components/Footer.vue";
+
 export default Vue.extend({
   components: {
     NavbarComponent,
