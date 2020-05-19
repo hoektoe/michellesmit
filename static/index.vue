@@ -27,9 +27,9 @@
               </p>
               <a
                 href="#contact"
-                class="font-bold text-gray-800 mt-8 flex items-center hover:text-green-300"
-                ><img alt="mail icon to contact michelle smit" height="18px" width="18px" class="mr-2" src="~/assets/icons/mail.svg"/>Contact me</a
-              >
+                class="font-bold text-gray-800 mt-8 flex items-center hover:text-green-300">
+                  <img alt="mail icon to contact michelle smit" height="18px" width="18px" class="mr-2" src="~/assets/icons/mail.svg"/>Contact me
+              </a>
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-200">
