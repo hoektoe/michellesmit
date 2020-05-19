@@ -26,11 +26,10 @@ export default {
       { property: "og:type", hid: "og:type", content: "product" },
       { property: "og:title",  hid: "og:title", content: "Michelle Smit | Psychologist - Addiction Therapy" },
       { property: "og:url", hid: "og:url", content: homepageURL },
-      { property: "og:image", hid: "og:image", content: "https://www.michellesmit.com/img/logo_block.png" },
+      { property: "og:image", hid: "og:image", content: "https://www.michellesmit.com/michellesmit.jpg" },
       { property: "og:description", hid: "og:description", content: "My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for  patients that have both substance and process addiction. These addictions range from; alcohol, prescription tablets, cocaine, heroin, methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis. Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders." },
       { property: "og:site_name", hid: "og:site_name", content: "Michelle Smit" },
-      { name: "google-site-verification", content: "AzlQXUEUdzWUExirM6sDAXRkOT2Rnqnxz42cbjdXHc8"},
-      { name: "msvalidate.01", content: "DA0F709CBC5FB5636428444AD84831AA"}
+      { name: "google-site-verification", content: "AzlQXUEUdzWUExirM6sDAXRkOT2Rnqnxz42cbjdXHc8"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
