@@ -34,6 +34,8 @@
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-200">
                 <PiioElement tag="img" path="~/assets/img/michellesmit.jpg" alt="Michelle Smit | Psychologist - Addiction Therapy" class="w-full align-middle rounded-t-lg"></PiioElement>
+                <img src="~/assets/img/michellesmit.jpg" alt="Michelle Smit | Psychologist - Addiction Therapy" class="w-full align-middle rounded-t-lg"/>
+
                 <blockquote class="relative p-8 mb-4">
                   <svg
                     preserveAspectRatio="none"
