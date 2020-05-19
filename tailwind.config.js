@@ -7,6 +7,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  // purge: {
+  //   enabled: true,
+  //   content: ['./src/**/*.html', './src/**/*.vue'],
+  // },
   theme: {
     extend: {
       fontFamily: {

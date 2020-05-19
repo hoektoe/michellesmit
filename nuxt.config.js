@@ -74,6 +74,8 @@ export default {
   ],
   purgeCSS: {
     // your settings here
+    mode: 'postcss',
+    enabled: (process.env.NODE_ENV === 'production')
   },
   webfontloader: {
     google: {
