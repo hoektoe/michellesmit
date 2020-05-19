@@ -28,12 +28,12 @@
               <a
                 href="#contact"
                 class="font-bold text-gray-800 mt-8 flex items-center hover:text-green-300"
-                ><img alt="mail icon to contact michelle smit" height="18px" width="18px" class="mr-2" src="../assets/icons/mail.svg"/>Contact me</a
+                ><img alt="mail icon to contact michelle smit" height="18px" width="18px" class="mr-2" src="~/assets/icons/mail.svg"/>Contact me</a
               >
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-200">
-                <PiioElement tag="img" path="../assets/img/michellesmit.jpg" alt="Michelle Smit | Psychologist - Addiction Therapy" class="w-full align-middle rounded-t-lg"></PiioElement>
+                <PiioElement tag="img" path="~/assets/img/michellesmit.jpg" alt="Michelle Smit | Psychologist - Addiction Therapy" class="w-full align-middle rounded-t-lg"></PiioElement>
                 <blockquote class="relative p-8 mb-4">
                   <svg
                     preserveAspectRatio="none"
@@ -70,7 +70,7 @@
                 <p class="text-white">"The energy that exists between people when they feel seen, heard and valued. When they can give and receive without judgement; and when they derive sustenance and strength from the relationship."</p>
                 <p class="text-white text-base mt-3">Brené Brown</p>
               </div>
-              <PiioElement tag="img" path="../assets/img/lily.jpg" alt="lilly picture with text from Brené Brown overlaid" class="max-w-full rounded-lg shadow-lg"></PiioElement>
+              <PiioElement tag="img" path="~/assets/img/lily.jpg" alt="lilly picture with text from Brené Brown overlaid" class="max-w-full rounded-lg shadow-lg"></PiioElement>
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4 mt-16 sm:mt-0">
               <div class="md:pr-12">
@@ -157,7 +157,7 @@
               </div>
             </div>
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4 relative text-center">
-              <PiioElement tag="img" path="../assets/img/publication.jpg" alt="South African Psychiatry May Edition Cover Image" class="max-w-full rounded-lg shadow-lg"></PiioElement>
+              <PiioElement tag="img" path="~/assets/img/publication.jpg" alt="South African Psychiatry May Edition Cover Image" class="max-w-full rounded-lg shadow-lg"></PiioElement>
             </div>
           </div>
         </div>
