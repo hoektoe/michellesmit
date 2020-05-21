@@ -2,7 +2,7 @@
   <div>
     <div class="w-full flex flex-wrap items-center justify-between py-2 bg-gray-900 text-white text-center">
       <div class="container px-4 mx-auto text-sm">
-        Online therapy during the lockdown. Stay safe
+        Online therapy. After hours and weekend sessions.
       </div>
     </div>
     <navbar-component></navbar-component>
