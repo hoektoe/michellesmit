@@ -53,7 +53,7 @@
                     Michelle Smit
                   </h4>
                   <p class="text-md font-light mt-2 text-black">
-                    HPCSA registered counselling psychologist based in Cape Town and specializing in addiction therapy. Due to the nature of online therapy is available for consultations globally.
+                    HPCSA registered counselling psychologist based in Cape Town and specializing in addiction therapy.
                   </p>
                 </blockquote>
               </div>

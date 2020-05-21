@@ -10,7 +10,7 @@
           <h5 class="text-lg text-white mt-0 mb-6">
             Psychologist - Addiction Therapy
           </h5>
-          <p class="text-gray-200">HPCSA registered counselling psychologist based in Cape Town and specializing in addiction therapy. Due to the nature of online therapy is available for consultations globally.</p>
+          <p class="text-gray-200">HPCSA registered counselling psychologist based in Cape Town and specializing in addiction therapy.</p>
           <div class="mt-2">
             <ul class="list-unstyled text-sm text-gray-700">
                 <li><a class="text-green-200" href="mailto:therapy@michellesmit.com">therapy@michellesmit.com</a></li>

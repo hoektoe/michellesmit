@@ -23,7 +23,7 @@ export default {
       { name: "mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
-      { property: "og:type", hid: "og:type", content: "product" },
+      { property: "og:type", hid: "og:type", content: "website" },
       { property: "og:title",  hid: "og:title", content: "Michelle Smit | Psychologist - Addiction Therapy" },
       { property: "og:url", hid: "og:url", content: homepageURL },
       { property: "og:image", hid: "og:image", content: "https://www.michellesmit.com/michellesmit.jpg" },

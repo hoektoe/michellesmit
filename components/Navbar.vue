@@ -15,7 +15,7 @@
           class="cursor-pointer text-xl leading-none border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button"
           v-on:click="toggleNavbar()">
-          <img src="../assets/icons/menu.svg"/>
+          <img alt="Michelle Smit Logo" src="../assets/icons/menu.svg"/>
         </button>
 
       <div
