@@ -2,7 +2,7 @@
   <div>
     <div class="w-full flex flex-wrap items-center justify-between py-2 bg-gray-900 text-white text-center">
       <div class="container px-4 mx-auto text-sm">
-        Online therapy. After hours and weekend sessions.
+        Online based therapy. Available after hours and weekends
       </div>
     </div>
     <navbar-component></navbar-component>
@@ -23,7 +23,7 @@
               </p>
               <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
                 I am fluent in both English and Afrikaans. I obtained my Master’s degree with the Pearson Institute and am currently completing my Doctorate
-                degree in Psychology. I am registered with the Health Professions Council of South Africa, as well as with the BHF.
+                degree in Psychology. I am registered with the Health Professions Council of South Africa, as well as with the BHF. Online based therapy. Available after hours and weekends.
               </p>
               <a
                 href="#contact"
