@@ -16,7 +16,7 @@ export default {
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=5" },
       { hid: 'description', name: 'description', content: 'My passion is within the field of addiction care. I have worked within multidisciplinary teams at in-patient facilities caring for patients that have both substance and process addiction. These addictions range from; alcohol, prescription tablets, cocaine, heroin, methamphetamines to shopping, gaming, and gambling to name a few. In addition, many of the patients I have treated over the years have a dual diagnosis. Often, addiction is comorbid with a psychiatric diagnosis such as depression, anxiety, PTSD, personality disorders or mood disorders.' },
-      { name: "keywords", hid: "keywords", content: "Michelle Smit, Addiction Therapy, Psychologist, Cape Town" },
+      { name: "keywords", hid: "keywords", content: "michelle smit, addiction therapy, psychologist, cape town, online therapy, afterhours, weekends , process addiction, alcohol addiction, prescription tablets addiction, cocain addiction, heroin addiction, meth addiction" },
       { name: "theme-color", content: "#ccffd9" },
       { name: "msapplication-navbutton-color", content: "#ccffd9" },
       { name: "msapplication-starturl", content: "/" },
@@ -39,6 +39,8 @@ export default {
       { rel: "preconnect", href:"https://googleads.g.doubleclick.net" },
       { rel: "preconnect", href:"https://www.googleadservices.com" },
       { rel: "preconnect", href:"https://www.googletagmanager.com" },
+      { rel: "preconnect", href:"//pcdn.piiojs.com" },
+      { rel: "preload", href:"//pcdn.piiojs.com/nbljy1/image.min.js" },
       { rel: "canonical", href:"https://www.michellesmit.com" },
     ]
   },

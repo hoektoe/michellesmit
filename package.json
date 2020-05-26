@@ -14,7 +14,6 @@
   "dependencies": {
     "nuxt": "^2.12.2",
     "nuxt-purgecss": "^1.0.0",
-    "piio-images-vue": "^1.0.5",
     "vue-meta": "^2.3.3"
   },
   "devDependencies": {

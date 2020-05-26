@@ -4702,11 +4702,6 @@ pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
 
-piio-images-vue@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/piio-images-vue/-/piio-images-vue-1.0.5.tgz#e65123e1768cebd615e5a6d329c7310de7ca23ec"
-  integrity sha512-c8HiRribQ1LPMXfkvt21JHbK2/sjjOk52QMzlw3D4kTw0sk5K3qIsY15llqCGwewo91tTrCuD4NhzBxIk47oHg==
-
 pkg-dir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
