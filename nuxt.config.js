@@ -66,10 +66,12 @@ export default {
     '@nuxt/typescript-build',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/gtm',
   ],
-  googleAnalytics: {
-    id: 'UA-167115052-1'
+
+  gtm: {
+    id: 'GTM-PFK9LKH',
+    enabled: true
   },
   performance: {
     gzip: true
@@ -79,7 +81,7 @@ export default {
   */
   modules: [
     'nuxt-webfontloader',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
   ],
   purgeCSS: {
     // your settings here
