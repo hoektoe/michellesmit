@@ -3,6 +3,7 @@ const homepageURL = `https://www.michellesmit.com${baseURL}`
 
 export default {
   mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
