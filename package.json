@@ -13,14 +13,14 @@
     "analyze": "nuxt build --analyze"
   },
   "dependencies": {
-    "@nuxtjs/gtm": "^2.3.0",
-    "nuxt": "^2.13.0",
+    "@nuxtjs/gtm": "^2.3.2",
+    "nuxt": "^2.14.0",
     "nuxt-purgecss": "^1.0.0",
     "vue-meta": "^2.4.0"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^1.0.2",
-    "@nuxtjs/tailwindcss": "^2.0.0",
+    "@nuxt/typescript-build": "^2.0.2",
+    "@nuxtjs/tailwindcss": "^2.1.1",
     "nuxt-webfontloader": "^1.1.0"
   }
 }
