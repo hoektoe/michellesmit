@@ -5,7 +5,7 @@
           class="text-base align-center leading-relaxed flex sm:mr-4 whitespace-no-wrap uppercase text-black"
           href="/"
         >
-          <logo></logo>
+          <img alt="Michelle Smit Logo Artum Lilly" class="object cover footer-logo" src="../assets/img/logo_block.svg"/>
           <div class="flex flex-col w-full ml-2 sm:ml-4 justify-center">
             <div class="w-full uppercase font-bold mb-2 text-sm sm:text-xl lg:text-4xl leading-none">Michelle Smit</div>
             <div class="w-full uppercase text-xs sm:text-lg xl:text-xl leading-none">psychologist<span class="hidden sm:inline-block"> - addiction therapy</span></div>
@@ -52,7 +52,6 @@
   </nav>
 </template>
 <script>
-import Logo from "~/components/Logo.vue";
 
 export default {
 
@@ -62,7 +61,6 @@ export default {
     };
   },
   components: {
-    Logo
   },
   methods: {
     toggleNavbar: function() {
