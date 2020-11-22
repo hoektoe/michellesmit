@@ -7,11 +7,11 @@ export default function Alert({ preview }) {
     <div
       className={cn('border-b', {
         'bg-accent-7 border-accent-7 text-white': preview,
-        'bg-accent-1 border-accent-2': !preview,
+        'bg-gray-100 text-gray-700': !preview,
       })}
     >
       <Container>
-        <div className="py-2 text-center text-sm">
+        <div className="py-2 text-center  text-sm">
           {preview ? (
             <>
               This page is a preview.{' '}
@@ -25,14 +25,7 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
-              <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-success duration-200 transition-colors"
-              >
-                available on GitHub
-              </a>
-              .
+              Online based therapy. Available after hours and weekends.
             </>
           )}
         </div>

@@ -1,4 +1,7 @@
 module.exports = {
+  plugins: [
+    require('@tailwindcss/ui'),
+  ],
   theme: {
     extend: {
       colors: {
@@ -7,6 +10,18 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        'mint': {
+          50: '#FCFFFD',
+          100: '#FAFFFB',
+          200: '#F2FFF6',
+          300: '#EBFFF0',
+          400: '#DBFFE4',
+          500: '#CCFFD9',
+          600: '#B8E6C3',
+          700: '#7A9982',
+          800: '#5C7362',
+          900: '#3D4D41',
+          },
       },
       spacing: {
         28: '7rem',
