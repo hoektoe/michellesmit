@@ -23,7 +23,7 @@ export default function Header() {
           </div>
 
           <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-            <Image className="relative mx-auto rounded-lg" src="/images/michellesmit.webp" height={600}  width={490} />
+            <Image className="relative mx-auto rounded-lg" src="/images/michellesmit.jpg" height={300}  width={400} />
           </div>
         </div>
       </div>
