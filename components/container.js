@@ -1,3 +1,5 @@
 export default function Container({ children }) {
-  return <div className="container mx-auto px-5">{children}</div>
+    return (
+        <div className="relative z-10 max-w-screen-lg xl:max-w-screen-xl mx-auto">{children}</div>
+    );
 }

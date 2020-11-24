@@ -1,8 +1,5 @@
-import { SITE_TITLE, CMS_URL } from '../lib/constants'
+import { CMS_URL, SITE_TITLE } from '../lib/constants';
 
 export default function Intro() {
-  return (
-    <>
-    </>
-  )
+    return <></>;
 }
