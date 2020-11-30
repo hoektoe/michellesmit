@@ -15,6 +15,7 @@ Available after hours and weekends.</p>
           <div class="mt-2">
             <ul class="list-unstyled text-sm text-gray-700">
                 <li><a class="text-green-200" href="mailto:therapy@michellesmit.com">therapy@michellesmit.com</a></li>
+                <li><a class="text-green-200" href="mailto:practicemanager@michellesmit.com">practicemanager@michellesmit.com</a></li>
             </ul>
           </div>
         </div>
