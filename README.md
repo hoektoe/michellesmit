@@ -14,19 +14,19 @@ Once you have access to [the environment variables you'll need](#step-4-set-up-e
 
 ### Related examples
 
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Blog Starter](/examples/blog-starter)
+-   [WordPress](/examples/cms-wordpress)
+-   [DatoCMS](/examples/cms-datocms)
+-   [TakeShape](/examples/cms-takeshape)
+-   [Prismic](/examples/cms-prismic)
+-   [Contentful](/examples/cms-contentful)
+-   [Strapi](/examples/cms-strapi)
+-   [Agility CMS](/examples/cms-agilitycms)
+-   [Cosmic](/examples/cms-cosmic)
+-   [ButterCMS](/examples/cms-buttercms)
+-   [Storyblok](/examples/cms-storyblok)
+-   [GraphCMS](/examples/cms-graphcms)
+-   [Kontent](/examples/cms-kontent)
+-   [Blog Starter](/examples/blog-starter)
 
 ## How to use
 
@@ -68,9 +68,9 @@ cp .env.local.example .env.local
 
 Then set each variable on `.env.local`:
 
-- `NEXT_PUBLIC_SANITY_PROJECT_ID` should be the `projectId` value from the `sanity.json` file created in step 2.
-- `SANITY_API_TOKEN` should be the API token generated in the previous step.
-- `SANITY_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
+-   `NEXT_PUBLIC_SANITY_PROJECT_ID` should be the `projectId` value from the `sanity.json` file created in step 2.
+-   `SANITY_API_TOKEN` should be the API token generated in the previous step.
+-   `SANITY_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
 
 Your `.env.local` file should look like this:
 
@@ -87,11 +87,11 @@ Go to https://www.sanity.io/docs/preview-content-on-site and follow the three st
 When you get to the second step about creating a file called `resolveProductionUrl.js`, copy the following instead:
 
 ```js
-const previewSecret = 'MY_SECRET' // Copy the string you used for SANITY_PREVIEW_SECRET
-const projectUrl = 'http://localhost:3000'
+const previewSecret = 'MY_SECRET'; // Copy the string you used for SANITY_PREVIEW_SECRET
+const projectUrl = 'http://localhost:3000';
 
 export default function resolveProductionUrl(document) {
-  return `${projectUrl}/api/preview?secret=${previewSecret}&slug=${document.slug.current}`
+    return `${projectUrl}/api/preview?secret=${previewSecret}&slug=${document.slug.current}`;
 }
 ```
 
@@ -107,17 +107,17 @@ To add some content go to your Sanity studio project directory and run `sanity s
 
 After the project has started and you have navigated to the URL given in the terminal, select **Author** and create a new record.
 
-- You just need **1 Author record**.
-- Use dummy data for the text.
-- For the image, you can download one from [Unsplash](https://unsplash.com/).
+-   You just need **1 Author record**.
+-   Use dummy data for the text.
+-   For the image, you can download one from [Unsplash](https://unsplash.com/).
 
 Next, select **Post** and create a new record.
 
-- We recommend creating at least **2 Post records**.
-- Use dummy data for the text.
-- You can write markdown for the **Content** field.
-- For the images, you can download ones from [Unsplash](https://unsplash.com/).
-- Pick the **Author** you created earlier.
+-   We recommend creating at least **2 Post records**.
+-   Use dummy data for the text.
+-   You can write markdown for the **Content** field.
+-   For the images, you can download ones from [Unsplash](https://unsplash.com/).
+-   Pick the **Author** you created earlier.
 
 **Important:** For each post record, you need to click **Publish** after saving. If not, the post will be in the draft state.
 
@@ -139,8 +139,8 @@ Your blog should be up and running on [http://localhost:3000](http://localhost:3
 
 On Sanity, go to one of the posts you've created and:
 
-- **Update the title**. For example, you can add `[Draft]` in front of the title.
-- As you edit the document it will be saved as a draft, but **DO NOT** click **Publish**. By doing this, the post will be in the draft state.
+-   **Update the title**. For example, you can add `[Draft]` in front of the title.
+-   As you edit the document it will be saved as a draft, but **DO NOT** click **Publish**. By doing this, the post will be in the draft state.
 
 Now, if you go to the post page on localhost, you won't see the updated title. However, if you use the **Preview Mode**, you'll be able to see the change ([Documentation](https://nextjs.org/docs/advanced-features/preview-mode)).
 

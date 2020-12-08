@@ -1,44 +1,40 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     plugins: [require('@tailwindcss/ui')],
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+                serif: ['Montserrat', ...defaultTheme.fontFamily.sans],
+            },
             colors: {
-                'accent-1': '#FAFAFA',
-                'accent-2': '#EAEAEA',
-                'accent-7': '#333',
-                success: '#0070f3',
-                cyan: '#79FFE1',
-                mint: {
-                    50: '#FCFFFD',
-                    100: '#FAFFFB',
-                    200: '#F2FFF6',
-                    300: '#EBFFF0',
-                    400: '#DBFFE4',
-                    500: '#CCFFD9',
-                    600: '#B8E6C3',
-                    700: '#7A9982',
-                    800: '#5C7362',
-                    900: '#3D4D41'
-                }
-            },
-            spacing: {
-                28: '7rem'
-            },
-            letterSpacing: {
-                tighter: '-.04em'
-            },
-            lineHeight: {
-                tight: 1.2
-            },
-            fontSize: {
-                '5xl': '2.5rem',
-                '6xl': '2.75rem',
-                '7xl': '4.5rem',
-                '8xl': '6.25rem'
-            },
-            boxShadow: {
-                small: '0 5px 10px rgba(0, 0, 0, 0.12)',
-                medium: '0 8px 30px rgba(0, 0, 0, 0.12)'
+                'brand': {
+                    
+                    '100': '#FFFFFF',
+                    '200': '#F8FBFB',
+                    '300': '#D8E9E9',
+                    '400': '#B7D7D7',
+                    '500': '#96C5C5',
+                    '600': '#75B3B3',
+                    '700': '#579E9E',
+                    '800': '#457D7D',
+                    '900': '#335C5C',
+                    DEFAULT: '#96C5C5',
+                  },
+                  'accent': {
+                    
+                    '100': '#A3C4DB',
+                    '200': '#7EACCD',
+                    '300': '#5A95BF',
+                    '400': '#407BA5',
+                    '500': '#326081',
+                    '600': '#24445C',
+                    '700': '#152937',
+                    '800': '#070E12',
+                    '900': '#000000',
+                    DEFAULT: '#326081',
+                  },
             }
         }
     }
