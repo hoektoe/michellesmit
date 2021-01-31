@@ -5,13 +5,12 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 
-const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto VF', ...defaultTheme.fontFamily.sans]
+        sans: ['Roboto VF', 'sans-serif']
       },
       colors: {
         brand: {
