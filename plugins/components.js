@@ -9,8 +9,6 @@ import Headline from '~/components/Headline.vue'
 import Feature from '~/components/Feature.vue'
 import LayoutGrid from '~/components/LayoutGrid.vue'
 
-import FeaturedArticles from '~/components/FeaturedArticles.vue'
-import ArticleTeaser from '~/components/ArticleTeaser.vue'
 import ContactDetails from '~/components/ContactDetails.vue'
 
 Vue.component('page', Page)
@@ -20,7 +18,4 @@ Vue.component('headline', Headline)
 Vue.component('layout-grid', LayoutGrid)
 Vue.component('call-to-action', CallToAction)
 Vue.component('contact-details', ContactDetails)
-
 Vue.component('feature', Feature)
-Vue.component('featured-articles', FeaturedArticles)
-Vue.component('article-teaser', ArticleTeaser)
