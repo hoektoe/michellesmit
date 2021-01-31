@@ -1,73 +1,98 @@
 <template>
-  <footer class="relative bg-gray-900 pt-8 pb-6">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-wrap">
-        <div class="w-full lg:w-2/12 px-4">
-          <img alt="Michelle Smit Logo Artum Lilly" class="object cover footer-logo" src="../assets/img/logo_block.svg"/>
-        </div>
-        <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl text-green-200 font-semibold uppercase">Michelle Smit</h4>
-          <h5 class="text-lg text-white mt-0 mb-6">
-            Psychologist - Addiction Therapy
-          </h5>
-          <p class="text-gray-200">HPCSA registered counselling psychologist based in Cape Town and specializing in addiction therapy. Online based therapy.
-Available after hours and weekends.</p>
-          <div class="mt-2">
-            <ul class="list-unstyled text-sm text-gray-700">
-                <li><a class="text-green-200" href="mailto:therapy@michellesmit.com">therapy@michellesmit.com</a></li>
-                <li><a class="text-green-200" href="mailto:practicemanager@michellesmit.com">practicemanager@michellesmit.com</a></li>
-            </ul>
+  <footer class="relative pt-4 pb-6 bg-accent-700">
+    <div class="pt-8 border-t-4 bg-accent-700 border-brand">
+      <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex flex-wrap">
+          <div
+            class="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12"
+          >
+            <img
+              alt="Michelle Smit Logo Artum Lilly"
+              src="~/assets/images/logo-block.svg"
+              class="object cover footer-logo"
+              width="150px"
+              height="150px"
+            />
           </div>
-        </div>
-        <div class="w-full lg:w-4/12 px-4 hidden lg:flex">
-          <div class="flex flex-wrap items-top mb-6">
-            <div class="w-full lg:w-6/12 px-4 ml-auto">
-              <span class="block uppercase text-gray-400 text-sm font-semibold mb-2">Sitemap</span>
-              <ul class="list-unstyled">
+          <div class="w-full px-4 text-center md:text-left lg:w-6/12">
+            <div class="text-3xl font-semibold uppercase text-brand-500">
+              Michelle Smit
+            </div>
+            <div class="mt-0 mb-6 text-lg text-white">
+              Psychologist - Online Therapy - Face to Face Therapy
+            </div>
+            <p class="text-gray-200">
+              HPCSA registered counselling psychologist based in Cape Town.
+              Online based therapy. Available after hours and weekends.
+            </p>
+            <div class="mt-2">
+              <ul class="text-sm text-gray-700 list-unstyled">
                 <li>
-                  <a class="text-gray-300 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="#about">About</a>
+                  <a
+                    href="mailto:therapy@michellesmit.com"
+                    class="text-brand-400"
+                  >
+                    therapy@michellesmit.com
+                  </a>
                 </li>
                 <li>
-                  <a class="text-gray-300 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="#therapy">Therapy Services</a>
-                </li>
-                <li>
-                  <a class="text-gray-300 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="#publication">Publication</a>
+                  <a
+                    href="mailto:practicemanager@michellesmit.com"
+                    class="text-brand-500"
+                  >
+                    practicemanager@michellesmit.com
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
+          <div class="hidden w-full px-4 lg:w-4/12 lg:flex">
+            <div class="flex flex-wrap mb-6 items-top">
+              <div class="w-full px-4 ml-auto lg:w-12/12">
+                <span class="block mb-2 text-sm uppercase text-brand-500">
+                  Sitemap
+                </span>
+                <ul class="list-unstyled">
+                  <li>
+                    <nuxt-link
+                      to="/about"
+                      class="block pb-2 text-sm text-gray-300 hover:text-gray-900"
+                    >
+                      About
+                    </nuxt-link>
+                  </li>
+                  <li>
+                    <nuxt-link
+                      to="/therapy-services"
+                      class="block pb-2 text-sm text-gray-300 hover:text-gray-900"
+                    >
+                      Therapy Services
+                    </nuxt-link>
+                  </li>
+                  <li>
+                    <nuxt-link
+                      to="/about"
+                      class="block pb-2 text-sm text-gray-300 hover:text-gray-900"
+                    >
+                      Rates and Insurance
+                    </nuxt-link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <hr class="my-6 border-gray-400" />
-      <div class="flex flex-wrap items-center md:justify-between justify-center">
-        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-gray-300 font-semibold py-1">
-            Copyright © {{date}} Michelle Smit.
+        <hr class="my-6 border-brand" />
+        <div
+          class="flex flex-wrap items-center justify-center md:justify-between"
+        >
+          <div class="w-full px-4 mx-auto text-center md:w-4/12">
+            <div class="py-1 text-sm text-gray-300">
+              Copyright © 2020 Michelle Smit - Counselling Psychologist
+            </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      date: new Date().getFullYear()
-    }
-  }
-}
-</script>
-<style>
-  .footer-logo {
-    width: 100px;
-  }
-  @media (min-width: 1024px) {
-    .footer-logo {
-      width: 100%;
-    }
-  }
-</style>

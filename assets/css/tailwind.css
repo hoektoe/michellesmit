@@ -1,16 +1,3 @@
-/* purgecss start ignore */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-/* purgecss end ignore */
 @import 'tailwindcss/utilities';
-html {
-  @apply font-mono;
-}
-
-.bg-green-200 {
-  background-color: #ccffd9 !important;
-}
-
-.text-green-200 {
-  color: #ccffd9 !important;
-}
