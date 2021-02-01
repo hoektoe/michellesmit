@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="grid grid-cols-1 py-12 sm:py-12 sm:grid-cols-2 auto-rows-auto md:grid-cols-3"
+    class="grid max-w-6xl grid-cols-1 py-12 mx-auto sm:py-12 sm:grid-cols-2 auto-rows-auto md:grid-cols-3"
     :key="blok._uid"
   >
     <template v-for="blok in blok.columns">

@@ -7,13 +7,13 @@
         </div>
         <h1
           v-if="blok.make_title_h1"
-          class="text-4xl font-extrabold leading-none uppercase text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
+          class="text-4xl font-extrabold leading-tight text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
         >
           {{ blok.title }}
         </h1>
         <h2
           v-else="blok.make_title_h1"
-          class="text-4xl font-extrabold uppercase text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
+          class="text-4xl font-extrabold leading-tight text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
         >
           {{ blok.title }}
         </h2>

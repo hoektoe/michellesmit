@@ -5,7 +5,7 @@
         class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-top"
       >
         <div class="lg:col-start-2">
-          <div class="pb-12 text-lg prose">
+          <div class="pb-3 text-lg prose">
             <div
               v-if="blok.description"
               v-html="$md.render(blok.description)"

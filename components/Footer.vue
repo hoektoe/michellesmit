@@ -71,7 +71,7 @@
                   </li>
                   <li>
                     <nuxt-link
-                      to="/about"
+                      to="/rates-and-insurance"
                       class="block pb-2 text-sm text-gray-300 hover:text-gray-900"
                     >
                       Rates and Insurance
