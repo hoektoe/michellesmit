@@ -92,7 +92,7 @@
                 /></label>
               </p>
               <input type="hidden" name="form-name" value="contactus" />
-              <label htmlFor="name" class="sr-only"> Full name </label>
+              <label for="name" class="sr-only"> Full name </label>
               <input
                 type="text"
                 name="name"
@@ -104,7 +104,7 @@
               />
             </div>
             <div>
-              <label htmlFor="email" class="sr-only"> Email </label>
+              <label for="email" class="sr-only"> Email </label>
               <input
                 id="email"
                 name="email"
@@ -116,7 +116,7 @@
               />
             </div>
             <div>
-              <label htmlFor="phone" class="sr-only"> Phone </label>
+              <label for="phone" class="sr-only"> Phone </label>
               <input
                 type="text"
                 name="phone"
@@ -127,7 +127,7 @@
               />
             </div>
             <div>
-              <label htmlFor="message" class="sr-only"> Message </label>
+              <label for="message" class="sr-only"> Message </label>
               <textarea
                 id="message"
                 name="message"

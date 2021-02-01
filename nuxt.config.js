@@ -69,7 +69,45 @@ export default {
       }
     ],
     ['@nuxtjs/markdownit', { html: true, injected: true }],
-    ['@nuxtjs/axios']
+    ['@nuxtjs/axios'],
+    ['nuxt-font-loader-strategy', {
+      ignoreLighthouse: true,
+      ignoredEffectiveTypes: ['2g', 'slow-2g'],
+      fonts: [
+        // Font
+        {
+          fileExtensions: ['woff2'],
+          fontFamily: 'Roboto',
+          fontFaces: [
+            // Font-Face
+            {
+              preload: true,
+              localSrc: ['Roboto', 'Roboto-Regular'],
+              src: '@/assets/fonts/roboto-v20-latin-400',
+              fontWeight: 400,
+              fontStyle: 'normal',
+              fontDisplay: 'optional'
+            },
+            // Font-Face
+            {
+              localSrc: ['Roboto Medium', 'Roboto-Medium'],
+              src: '@/assets/fonts/roboto-v20-latin-500',
+              fontWeight: 500,
+              fontStyle: 'normal',
+              fontDisplay: 'optional'
+            },
+            // Font-Face
+            {
+              localSrc: ['Roboto Bold', 'Roboto-Bold'],
+              src: '@/assets/fonts/roboto-v20-latin-700',
+              fontWeight: 700,
+              fontStyle: 'normal',
+              fontDisplay: 'optional'
+            }
+          ]
+        }
+      ]
+    }]
   ],
   generate: {
     routes: function (callback) {

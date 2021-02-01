@@ -56,7 +56,7 @@
                   <li>
                     <nuxt-link
                       to="/about"
-                      class="block pb-2 text-sm text-gray-300 hover:text-gray-900"
+                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
                     >
                       About
                     </nuxt-link>
@@ -64,7 +64,7 @@
                   <li>
                     <nuxt-link
                       to="/therapy-services"
-                      class="block pb-2 text-sm text-gray-300 hover:text-gray-900"
+                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
                     >
                       Therapy Services
                     </nuxt-link>
@@ -72,7 +72,7 @@
                   <li>
                     <nuxt-link
                       to="/rates-and-insurance"
-                      class="block pb-2 text-sm text-gray-300 hover:text-gray-900"
+                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
                     >
                       Rates and Insurance
                     </nuxt-link>

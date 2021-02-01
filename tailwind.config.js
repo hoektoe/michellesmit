@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto VF', 'sans-serif']
+        sans: ['Roboto', 'sans-serif']
       },
       colors: {
         brand: {
