@@ -127,12 +127,16 @@
             <div class="px-5 pt-5 pb-6">
               <div class="flex items-center justify-between">
                 <div>
-                  <nuxt-link to="/" class="flex items-center flex-shrink-0">
+                  <nuxt-link
+                    @click="isOpen = false"
+                    to="/"
+                    class="flex items-center flex-shrink-0"
+                  >
                     <img
                       src="~/assets/images/logo-block.svg"
                       alt="Michelle Smit Therapy logo"
-                      width="90px"
-                      height="90px"
+                      width="60px"
+                      height="60px"
                     />
                     <div
                       class="flex flex-col justify-center w-full ml-2 font-bold text-accent-600"
@@ -178,6 +182,7 @@
               <div class="mt-6">
                 <nav class="grid grid-cols-1 gap-7">
                   <nuxt-link
+                    @click="isOpen = false"
                     to="/about"
                     class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
                   >
@@ -186,6 +191,7 @@
                     </div>
                   </nuxt-link>
                   <nuxt-link
+                    @click="isOpen = false"
                     to="/therapy-services"
                     class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
                   >
@@ -195,6 +201,7 @@
                   </nuxt-link>
 
                   <nuxt-link
+                    @click="isOpen = false"
                     to="/contact"
                     class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
                   >
@@ -207,6 +214,7 @@
             </div>
             <div class="px-5 py-6">
               <nuxt-link
+                @click="isOpen = false"
                 to="/contact"
                 class="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700"
               >
