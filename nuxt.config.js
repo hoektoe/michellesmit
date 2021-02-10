@@ -107,8 +107,12 @@ export default {
           ]
         }
       ]
-    }]
+    }],
+    '@nuxtjs/gtm',
   ],
+  gtm: {
+    id: 'GTM-PFK9LKH'
+  },
   generate: {
     routes: function (callback) {
       const token = `4ajqyNCQdACZ3f1v9fbOGwtt`
