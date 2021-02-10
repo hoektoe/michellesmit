@@ -32,9 +32,10 @@
       v-if="blok.image.filename !== null"
       class="relative flex justify-center col-span-1 overflow-hidden bg-gray-50 h-96"
     >
+      {{ blok.image }}
       <img
         class="object-cover"
-        :src="transformImage(blok.image.filename, '/500x500')"
+        :src="transformImage(blok.image.filename, '400x400')"
       />
     </div>
   </div>
@@ -63,8 +64,8 @@ export default {
       if (!image) return "";
       if (!option) return "";
 
-      let imageService = "//img2.storyblok.com/";
-      let path = image.replace("//a.storyblok.com", "");
+      let imageService = "https://img2.storyblok.com/";
+      let path = image.replace("https://a.storyblok.com", "");
       return imageService + option + path;
     },
   },
