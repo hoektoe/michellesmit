@@ -32,7 +32,7 @@
       v-if="blok.image.filename !== null"
       class="relative flex justify-center col-span-1 overflow-hidden bg-gray-50 h-96"
     >
-      <img class="object-cover" :src="blok.image.filename" />
+      <img class="object-cover" :src="blok.image.filename + '/500x500'" />
     </div>
   </div>
 </template>
