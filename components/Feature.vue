@@ -32,7 +32,10 @@
       v-if="blok.image.filename !== null"
       class="relative flex justify-center col-span-1 overflow-hidden bg-gray-50 h-96"
     >
-      <img class="object-cover" :src="blok.image.filename + '/500x500'" />
+      <img
+        class="object-cover"
+        :src="transformImage(blok.image.filename, '/500x500')"
+      />
     </div>
   </div>
 </template>
@@ -54,6 +57,16 @@ export default {
         "blue-right-to-left": "bg-gradient-to-r from-accent-400 to-accent-500",
       },
     };
+  },
+  methods: {
+    transformImage(image, option) {
+      if (!image) return "";
+      if (!option) return "";
+
+      let imageService = "//img2.storyblok.com/";
+      let path = image.replace("//a.storyblok.com", "");
+      return imageService + option + path;
+    },
   },
 };
 </script>
