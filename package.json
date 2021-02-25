@@ -2,7 +2,7 @@
   "name": "michellesmit",
   "version": "1.0.0",
   "private": true,
-  "description": "Hi, I'm Michelle Smit - Counselling Psychologist. I am fully bilingual in English and Afrikaans. My therapy services include help with addiction, anxiety, relationships and depress. Schedule your free 15min consultation today.",
+  "description": "Hi, I'm Diaan.",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

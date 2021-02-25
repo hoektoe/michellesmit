@@ -64,7 +64,7 @@ export default {
     [
       'storyblok-nuxt',
       {
-        accessToken: '4ajqyNCQdACZ3f1v9fbOGwtt',
+        accessToken: 'fBsPFjcyfVNTUYlxgOESywtt',
         cacheProvider: 'memory'
       }
     ],
@@ -115,7 +115,7 @@ export default {
   },
   generate: {
     routes: function (callback) {
-      const token = `4ajqyNCQdACZ3f1v9fbOGwtt`
+      const token = `fBsPFjcyfVNTUYlxgOESywtt`
       const version = 'published'
       let cache_version = 0
 
