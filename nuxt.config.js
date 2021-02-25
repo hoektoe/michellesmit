@@ -57,6 +57,10 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+  tailwindcss: {
+    // add '~tailwind.config` alias
+    exposeConfig: true
+  },
   /*
   ** Nuxt.js modules
   */
