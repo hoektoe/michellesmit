@@ -18,7 +18,7 @@ module.exports = {
         accent: colors.cyan,
         fuchsia: colors.fuchsia,
         teal: colors.teal,
-        rose: colors.rose,
+        rose: colors.rose
       }
     }
   },

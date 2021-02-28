@@ -42,30 +42,10 @@
                   />
                 </svg>
                 <span class="ml-3 text-brand-600">
-                  therapy@michellesmit.com
+                  therapy@diaanbisogno.co.za
                 </span>
               </dd>
               <dt class="sr-only">Email</dt>
-              <dd class="flex text-brand-600">
-                <svg
-                  class="flex-shrink-0 w-6 h-6text-brand-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                <span class="ml-3 text-brand-600">
-                  practicemanager@michellesmit.com
-                </span>
-              </dd>
             </div>
           </dl>
           <div

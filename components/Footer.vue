@@ -1,6 +1,6 @@
 <template>
-  <footer class="relative pt-4 pb-6 bg-gray-50">
-    <div class="pt-8 text-gray-500 border-t-4 border-gray-300 bg-gray-50">
+  <footer class="relative pt-4 pb-6 bg-rose-50">
+    <div class="pt-8 text-gray-500 border-t-4 border-rose-300 bg-rose-50">
       <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-wrap">
           <div
@@ -15,7 +15,7 @@
             />
           </div>
           <div class="w-full px-4 text-center md:text-left lg:w-6/12">
-            <div class="text-3xl font-semibold uppercase text-accent-700">
+            <div class="text-3xl font-semibold text-gray-700 uppercase">
               Diaan Bisogno
             </div>
             <div class="mt-0 mb-6 text-lg text-gray-700">
@@ -30,7 +30,7 @@
                 <li>
                   <a
                     href="mailto:therapy@michellesmit.com"
-                    class="font-bold text-accent-700"
+                    class="font-bold text-rose-500"
                   >
                     therapy@diaanbisogno.com
                   </a>
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200" />
+        <hr class="my-6 border-rose-400" />
         <div
           class="flex flex-wrap items-center justify-center md:justify-between"
         >

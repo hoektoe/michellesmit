@@ -1,6 +1,8 @@
 <template>
   <header>
-    <nav class="relative z-20 shadow bg-accent-800">
+    <nav
+      class="relative z-20 shadow bg-gradient-to-r from-rose-400 to-rose-300"
+    >
       <div class="max-w-6xl mx-auto">
         <div class="flex justify-between h-20 md:h-24">
           <div class="flex ml-4 mr-2">
@@ -49,7 +51,7 @@
             <div class="flex-shrink-0">
               <nuxt-link
                 to="/contact"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-brand-400 hover:bg-brand-500 focus:outline-none focus:border-accent-400 focus:shadow-outline-green active:bg-accent-500"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out bg-teal-400 border border-transparent rounded-md shadow-sm hover:bg-teal-500 focus:outline-none focus:border-accent-400 focus:shadow-outline-green active:bg-accent-500"
               >
                 <svg
                   class="w-5 h-5 mr-2 -ml-1"
