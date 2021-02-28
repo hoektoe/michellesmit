@@ -9,7 +9,7 @@
       >
         <div class="max-w-lg mx-auto">
           <h2
-            class="text-2xl font-extrabold tracking-tight text-accent-600 sm:text-3xl"
+            class="text-2xl font-extrabold tracking-tight text-gray-700 sm:text-3xl"
           >
             {{ blok.title }}
           </h2>
@@ -25,9 +25,9 @@
             </div>
             <div class="mt-6">
               <dt class="sr-only">Email</dt>
-              <dd class="flex text-brand-600">
+              <dd class="flex text-rose-400">
                 <svg
-                  class="flex-shrink-0 w-6 h-6 text-brand-600"
+                  class="flex-shrink-0 w-6 h-6 text-rose-400"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -41,7 +41,7 @@
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span class="ml-3 text-brand-600">
+                <span class="ml-3 font-bold text-rose-400">
                   therapy@diaanbisogno.co.za
                 </span>
               </dd>
@@ -56,7 +56,7 @@
         </div>
       </div>
       <div
-        class="px-4 py-16 bg-white border rounded-lg shadow-sm border-brand-300 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
+        class="px-4 py-16 bg-white border border-teal-300 rounded-lg shadow-sm sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
       >
         <div class="max-w-lg mx-auto lg:max-w-none">
           <form
@@ -120,7 +120,7 @@
             <div>
               <button
                 type="submit"
-                class="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-500 hover:bg-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500"
+                class="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-rose-400 hover:bg-rose-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500"
               >
                 Send
               </button>
