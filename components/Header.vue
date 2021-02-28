@@ -1,26 +1,26 @@
 <template>
   <header>
-    <nav class="relative z-20 bg-white shadow">
+    <nav class="relative z-20 shadow bg-accent-800">
       <div class="max-w-6xl mx-auto">
         <div class="flex justify-between h-20 md:h-24">
           <div class="flex ml-4 mr-2">
             <nuxt-link to="/" class="flex items-center flex-shrink-0">
               <img
                 src="~/assets/images/logo-block.svg"
-                alt="Michelle Smit Therapy logo"
+                alt="Diaan Bisogno Therapy logo"
                 width="90px"
                 height="90px"
               />
               <div
-                class="flex flex-col justify-center w-full ml-2 font-bold text-accent-600"
+                class="flex flex-col justify-center w-full ml-2 font-bold text-white"
               >
                 <div class="w-full text-sm uppercase sm:text-xl lg:text-2xl">
-                  Michelle Smit
+                  Diaan Bisogno
                 </div>
                 <div
                   class="w-full text-xs uppercase md:-mt-2 sm:text-lg xl:text-base"
                 >
-                  counselling psychologist
+                  clinical psychologist
                 </div>
               </div>
             </nuxt-link>
@@ -28,19 +28,19 @@
           <div class="hidden md:flex">
             <nuxt-link
               to="/"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
             >
               Welcome
             </nuxt-link>
             <nuxt-link
               to="/about"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
             >
               About
             </nuxt-link>
             <nuxt-link
               to="/therapy-services"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
             >
               Therapy Services
             </nuxt-link>
@@ -49,7 +49,7 @@
             <div class="flex-shrink-0">
               <nuxt-link
                 to="/contact"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-accent-400 bg-accent hover:bg-accent-400 focus:outline-none focus:border-accent-400 focus:shadow-outline-green active:bg-accent-500"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-brand-400 hover:bg-brand-500 focus:outline-none focus:border-accent-400 focus:shadow-outline-green active:bg-accent-500"
               >
                 <svg
                   class="w-5 h-5 mr-2 -ml-1"
@@ -133,23 +133,23 @@
                     class="flex items-center flex-shrink-0"
                   >
                     <img
-                      src="~/assets/images/logo-block.svg"
-                      alt="Michelle Smit Therapy logo"
+                      src="~/assets/images/logo-color.svg"
+                      alt="Diaan Bisogno Therapy logo"
                       width="60px"
                       height="60px"
                     />
                     <div
-                      class="flex flex-col justify-center w-full ml-2 font-bold text-accent-600"
+                      class="flex flex-col justify-center w-full ml-2 font-bold text-gray-600"
                     >
                       <div
                         class="w-full text-sm uppercase sm:text-xl lg:text-2xl"
                       >
-                        Michelle Smit
+                        Diaan Bisogno
                       </div>
                       <div
                         class="w-full text-xs uppercase md:-mt-2 sm:text-lg xl:text-base"
                       >
-                        counselling psychologist
+                        clinical psychologist
                       </div>
                     </div>
                   </nuxt-link>

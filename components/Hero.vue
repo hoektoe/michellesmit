@@ -8,10 +8,10 @@
           <h1
             class="text-4xl font-extrabold leading-none tracking-tight sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
           >
-            <span class="block text-accent-500">{{ blok.headline }}</span>
+            <span class="block text-gray-800">{{ blok.headline }}</span>
           </h1>
           <p
-            class="max-w-md mt-3 text-lg text-gray-600 sm:text-xl md:mt-5 md:max-w-3xl"
+            class="max-w-md mt-3 text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl"
           >
             {{ blok.description }}
           </p>
@@ -24,7 +24,7 @@
               >
                 <nuxt-link
                   :to="blok.link_primary_href.cached_url"
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-accent-500 hover:bg-accent-400 md:py-4 md:text-lg md:px-10"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-pink-400 border border-transparent rounded-md hover:bg-pink-600 md:py-4 md:text-lg md:px-10"
                 >
                   {{ blok.link_primary_text }}
                 </nuxt-link>
@@ -35,7 +35,7 @@
               >
                 <nuxt-link
                   :to="blok.link_secondary_href.cached_url"
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-white border border-transparent rounded-md text-accent-500 hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-pink-500 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
                   {{ blok.link_secondary_text }}
                 </nuxt-link>

@@ -5,7 +5,7 @@
       class="relative max-w-6xl px-4 py-12 mx-auto sm:py-12 sm:px-6 lg:px-8"
     >
       <div
-        class="px-6 py-6 rounded-lg bg-accent-500 md:py-12 md:px-12 lg:py-12 lg:px-16 xl:flex xl:items-center"
+        class="px-6 py-6 rounded-lg bg-gradient-to-r from-brand-500 to-accent-600 md:py-12 md:px-12 lg:py-12 lg:px-16 xl:flex xl:items-center"
       >
         <div class="xl:w-0 xl:flex-1">
           <div

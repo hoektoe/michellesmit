@@ -1,46 +1,38 @@
 <template>
-  <footer class="relative pt-4 pb-6 bg-accent-700">
-    <div class="pt-8 border-t-4 bg-accent-700 border-brand">
+  <footer class="relative pt-4 pb-6 bg-gray-50">
+    <div class="pt-8 text-gray-500 border-t-4 border-gray-300 bg-gray-50">
       <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-wrap">
           <div
             class="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12"
           >
             <img
-              alt="Michelle Smit Logo Artum Lilly"
-              src="~/assets/images/logo-block.svg"
+              alt="Diaan Bisogno Logo Artum Lilly"
+              src="~/assets/images/logo-gray.svg"
               class="object cover footer-logo"
               width="150px"
               height="150px"
             />
           </div>
           <div class="w-full px-4 text-center md:text-left lg:w-6/12">
-            <div class="text-3xl font-semibold uppercase text-brand-500">
-              Michelle Smit
+            <div class="text-3xl font-semibold uppercase text-accent-700">
+              Diaan Bisogno
             </div>
-            <div class="mt-0 mb-6 text-lg text-white">
+            <div class="mt-0 mb-6 text-lg text-gray-700">
               Psychologist - Online Therapy - Face to Face Therapy
             </div>
-            <p class="text-gray-200">
-              HPCSA registered counselling psychologist based in Cape Town.
-              Online based therapy. Available after hours and weekends.
+            <p class="text-gray-700">
+              HPCSA registered clinical psychologist based in Cape Town. Online
+              based therapy. Available after hours and weekends.
             </p>
             <div class="mt-2">
-              <ul class="text-sm text-gray-700 list-unstyled">
+              <ul class="text-md list-unstyled">
                 <li>
                   <a
                     href="mailto:therapy@michellesmit.com"
-                    class="text-brand-400"
+                    class="font-bold text-accent-700"
                   >
-                    therapy@michellesmit.com
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:practicemanager@michellesmit.com"
-                    class="text-brand-500"
-                  >
-                    practicemanager@michellesmit.com
+                    therapy@diaanbisogno.com
                   </a>
                 </li>
               </ul>
@@ -49,14 +41,16 @@
           <div class="hidden w-full px-4 lg:w-4/12 lg:flex">
             <div class="flex flex-wrap mb-6 items-top">
               <div class="w-full px-4 ml-auto lg:w-12/12">
-                <span class="block mb-2 text-sm uppercase text-brand-500">
-                  Sitemap
+                <span
+                  class="block mb-2 text-sm font-bold text-gray-500 uppercase"
+                >
+                  Links
                 </span>
                 <ul class="list-unstyled">
                   <li>
                     <nuxt-link
                       to="/about"
-                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
+                      class="block pb-2 text-gray-500 hover:text-brand-600"
                     >
                       About
                     </nuxt-link>
@@ -64,7 +58,7 @@
                   <li>
                     <nuxt-link
                       to="/therapy-services"
-                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
+                      class="block pb-2 text-gray-500 hover:text-brand-600"
                     >
                       Therapy Services
                     </nuxt-link>
@@ -72,7 +66,7 @@
                   <li>
                     <nuxt-link
                       to="/rates-and-insurance"
-                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
+                      class="block pb-2 text-gray-500 hover:text-brand-600"
                     >
                       Rates and Insurance
                     </nuxt-link>
@@ -82,13 +76,13 @@
             </div>
           </div>
         </div>
-        <hr class="my-6 border-brand" />
+        <hr class="my-6 border-gray-200" />
         <div
           class="flex flex-wrap items-center justify-center md:justify-between"
         >
           <div class="w-full px-4 mx-auto text-center md:w-4/12">
-            <div class="py-1 text-sm text-gray-300">
-              Copyright © 2020 Michelle Smit - Counselling Psychologist
+            <div class="py-1 text-sm text-gray-500">
+              Copyright © 2020 Diaan Bisogno - Clinical Psychologist
             </div>
           </div>
         </div>

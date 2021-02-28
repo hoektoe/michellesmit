@@ -2,18 +2,18 @@
   <section v-editable="blok">
     <div class="max-w-4xl px-4 py-12 mx-auto sm:py-12 sm:px-6 lg:px-8">
       <div class="text-center">
-        <div class="text-base font-bold tracking-wide uppercase text-brand-700">
+        <div class="text-base font-bold tracking-wide uppercase text-brand-500">
           {{ blok.subtitle }}
         </div>
         <h1
           v-if="blok.make_title_h1"
-          class="text-4xl font-extrabold leading-tight text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
+          class="text-4xl font-extrabold leading-tight text-accent-700 sm:text-5xl sm:tracking-tight lg:text-6xl"
         >
           {{ blok.title }}
         </h1>
         <h2
           v-else="blok.make_title_h1"
-          class="text-4xl font-extrabold leading-tight text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
+          class="text-4xl font-extrabold leading-tight text-accent-700 sm:text-5xl sm:tracking-tight lg:text-6xl"
         >
           {{ blok.title }}
         </h2>
