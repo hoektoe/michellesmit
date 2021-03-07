@@ -17,7 +17,7 @@
             <div class="inline-flex rounded-md shadow">
               <nuxt-link
                 :to="blok.button_link.cached_url"
-                class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-rose-400 flex-inline hover:bg-rose-500 md:py-4 md:text-lg md:px-10"
+                class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-600 flex-inline hover:bg-brand-700 md:py-4 md:text-lg md:px-10"
               >
                 {{ blok.button_text }}
               </nuxt-link>

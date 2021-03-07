@@ -1,13 +1,12 @@
 <template>
   <header>
-    <nav
-      class="relative z-20 shadow bg-gradient-to-r from-rose-400 to-rose-300"
-    >
+    <nav class="relative z-20 bg-gray-800 shadow">
       <div class="max-w-6xl mx-auto">
         <div class="flex justify-between h-20 md:h-24">
           <div class="flex ml-4 mr-2">
             <nuxt-link to="/" class="flex items-center flex-shrink-0">
               <img
+                class=""
                 src="~/assets/images/logo-block.svg"
                 alt="Diaan Bisogno Therapy logo"
                 width="90px"
@@ -30,19 +29,19 @@
           <div class="hidden md:flex">
             <nuxt-link
               to="/"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-cyan-300 focus:outline-none focus:text-gray-700 focus:border-cyan-300"
             >
               Welcome
             </nuxt-link>
             <nuxt-link
               to="/about"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-cyan-300 focus:outline-none focus:text-gray-700 focus:border-cyan-300"
             >
               About
             </nuxt-link>
             <nuxt-link
               to="/therapy-services"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-cyan-300 focus:outline-none focus:text-gray-700 focus:border-cyan-300"
             >
               Therapy Services
             </nuxt-link>
@@ -51,7 +50,7 @@
             <div class="flex-shrink-0">
               <nuxt-link
                 to="/contact"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out bg-teal-400 border border-transparent rounded-md shadow-sm hover:bg-teal-500 focus:outline-none focus:border-accent-400 focus:shadow-outline-green active:bg-accent-500"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-teal-500 focus:outline-none focus:border-cyan-400 focus:shadow-outline-green active:bg-cyan-500"
               >
                 <svg
                   class="w-5 h-5 mr-2 -ml-1"

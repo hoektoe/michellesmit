@@ -2,6 +2,9 @@
 const axios = require('axios')
 
 export default {
+  server: {
+    port: 3000 // default: 3000
+  },
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode

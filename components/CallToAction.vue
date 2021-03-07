@@ -13,14 +13,14 @@
           >
             {{ blok.title }}
           </div>
-          <p class="max-w-3xl mt-3 text-lg leading-6 text-accent-100">
+          <p class="max-w-3xl mt-3 text-lg leading-6 text-cyan-100">
             {{ blok.description }}
           </p>
         </div>
         <div class="mt-8 text-center sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
           <nuxt-link
             to="/contact"
-            class="px-8 py-3 text-base font-medium bg-white border border-transparent rounded-md text-accent-500 hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+            class="px-8 py-3 text-base font-medium text-teal-800 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
           >
             Schedule now
           </nuxt-link>

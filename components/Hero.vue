@@ -24,7 +24,7 @@
               >
                 <nuxt-link
                   :to="blok.link_primary_href.cached_url"
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-rose-400 hover:bg-rose-500 md:py-4 md:text-lg md:px-10"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10"
                 >
                   {{ blok.link_primary_text }}
                 </nuxt-link>
@@ -35,7 +35,7 @@
               >
                 <nuxt-link
                   :to="blok.link_secondary_href.cached_url"
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-white border border-transparent rounded-md text-rose-500 hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-gray-700 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
                   {{ blok.link_secondary_text }}
                 </nuxt-link>

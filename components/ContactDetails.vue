@@ -25,9 +25,9 @@
             </div>
             <div class="mt-6">
               <dt class="sr-only">Email</dt>
-              <dd class="flex text-rose-400">
+              <dd class="flex text-brand-500">
                 <svg
-                  class="flex-shrink-0 w-6 h-6 text-rose-400"
+                  class="flex-shrink-0 w-6 h-6 text-brand-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -41,7 +41,7 @@
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span class="ml-3 font-bold text-rose-400">
+                <span class="ml-3 font-bold text-brand-500">
                   therapy@diaanbisogno.co.za
                 </span>
               </dd>
@@ -78,7 +78,7 @@
                 name="name"
                 id="name"
                 autoComplete="name"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-accent-500 focus:border-accent-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                 placeholder="Full name"
                 required
               />
@@ -90,7 +90,7 @@
                 name="email"
                 type="email"
                 autoComplete="email"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-accent-500 focus:border-accent-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                 placeholder="Email"
                 required
               />
@@ -102,7 +102,7 @@
                 name="phone"
                 id="phone"
                 autoComplete="tel"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-accent-500 focus:border-accent-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                 placeholder="Phone"
               />
             </div>
@@ -112,7 +112,7 @@
                 id="message"
                 name="message"
                 rows="4"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-accent-500 focus:border-accent-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                 placeholder="Message"
                 required
               ></textarea>
@@ -120,7 +120,7 @@
             <div>
               <button
                 type="submit"
-                class="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-rose-400 hover:bg-rose-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500"
+                class="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-500 hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
               >
                 Send
               </button>

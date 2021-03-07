@@ -14,11 +14,24 @@ module.exports = {
         sans: ['Roboto', 'sans-serif']
       },
       colors: {
-        brand: colors.green,
-        accent: colors.cyan,
+        green: colors.green,
+        cyan: colors.cyan,
         fuchsia: colors.fuchsia,
         teal: colors.teal,
-        rose: colors.rose
+        brand: colors.brand,
+        brand: {
+          DEFAULT: '#F28AAF',
+          '50': '#FFFFFF',
+          '100': '#FFFFFF',
+          '200': '#FFFFFF',
+          '300': '#FCE6EE',
+          '400': '#F7B8CE',
+          '500': '#F28AAF',
+          '600': '#ED5C90',
+          '700': '#E82E70',
+          '800': '#CC1757',
+          '900': '#9E1244'
+        },
       }
     }
   },

@@ -29,10 +29,10 @@
               <ul class="text-md list-unstyled">
                 <li>
                   <a
-                    href="mailto:therapy@michellesmit.com"
+                    href="mailto:therapy@diaanbisogno.co.za"
                     class="font-bold tracking-wider text-teal-400"
                   >
-                    therapy@diaanbisogno.com
+                    therapy@diaanbisogno.co.za
                   </a>
                 </li>
               </ul>
