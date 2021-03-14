@@ -10,6 +10,7 @@ import Feature from '~/components/Feature.vue'
 import LayoutGrid from '~/components/LayoutGrid.vue'
 
 import ContactDetails from '~/components/ContactDetails.vue'
+import QuoteBanner from '~/components/QuoteBanner.vue'
 
 Vue.component('page', Page)
 Vue.component('hero', Hero)
@@ -18,4 +19,5 @@ Vue.component('headline', Headline)
 Vue.component('layout-grid', LayoutGrid)
 Vue.component('call-to-action', CallToAction)
 Vue.component('contact-details', ContactDetails)
+Vue.component('quote-banner', QuoteBanner)
 Vue.component('feature', Feature)
