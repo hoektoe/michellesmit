@@ -2,7 +2,7 @@
   <section v-editable="blok">
     <div class="max-w-4xl px-4 py-12 mx-auto sm:py-12 sm:px-6 lg:px-8">
       <div class="text-center">
-        <div class="text-base font-bold tracking-wide uppercase text-brand-500">
+        <div class="text-xl font-bold tracking-wide uppercase text-brand-500">
           {{ blok.subtitle }}
         </div>
         <h1

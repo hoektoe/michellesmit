@@ -14,11 +14,7 @@ module.exports = {
         sans: ['Roboto', 'sans-serif']
       },
       colors: {
-        green: colors.green,
-        cyan: colors.cyan,
-        fuchsia: colors.fuchsia,
         teal: colors.teal,
-        brand: colors.brand,
         brand: {
           DEFAULT: '#F28AAF',
           '50': '#FFFFFF',

@@ -78,7 +78,7 @@
                 name="name"
                 id="name"
                 autoComplete="name"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
                 placeholder="Full name"
                 required
               />
@@ -90,7 +90,7 @@
                 name="email"
                 type="email"
                 autoComplete="email"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
                 placeholder="Email"
                 required
               />
@@ -102,7 +102,7 @@
                 name="phone"
                 id="phone"
                 autoComplete="tel"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
                 placeholder="Phone"
               />
             </div>
@@ -112,7 +112,7 @@
                 id="message"
                 name="message"
                 rows="4"
-                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
+                class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
                 placeholder="Message"
                 required
               ></textarea>
@@ -120,7 +120,7 @@
             <div>
               <button
                 type="submit"
-                class="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-500 hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                class="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
               >
                 Send
               </button>

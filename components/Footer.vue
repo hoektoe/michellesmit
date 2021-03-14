@@ -1,6 +1,6 @@
 <template>
   <footer class="relative pt-4 pb-6 bg-gray-50">
-    <div class="pt-8 text-gray-500 border-t-4 border-teal-300 bg-gray-50">
+    <div class="pt-8 text-gray-500 border-t-4 border-brand-500 bg-gray-50">
       <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-wrap">
           <div
@@ -8,7 +8,7 @@
           >
             <img
               alt="Diaan Bisogno Logo Artum Lilly"
-              src="~/assets/images/logo-gray.svg"
+              src="~/assets/images/logo-block.svg"
               class="object cover footer-logo"
               width="150px"
               height="150px"
@@ -30,7 +30,7 @@
                 <li>
                   <a
                     href="mailto:therapy@diaanbisogno.co.za"
-                    class="font-bold tracking-wider text-teal-400"
+                    class="font-bold tracking-wider text-brand-500"
                   >
                     therapy@diaanbisogno.co.za
                   </a>
@@ -71,12 +71,21 @@
                       Rates and Insurance
                     </nuxt-link>
                   </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/groups/446194273359179"
+                      target="_blank"
+                      class="block pb-2 text-gray-500 hover:text-brand-600"
+                    >
+                      Nature and Nurture Self-Care Facebook Group
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200" />
+        <hr class="my-6 border-brand-400" />
         <div
           class="flex flex-wrap items-center justify-center md:justify-between"
         >

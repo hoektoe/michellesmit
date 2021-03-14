@@ -51,10 +51,10 @@ export default {
   data: function () {
     return {
       bgStyle: {
-        "green-left-to-right": "bg-gradient-to-r from-brand-500 to-brand-500",
-        "green-right-to-left": "bg-gradient-to-r from-brand-500 to-brand-500",
-        "blue-left-to-right": "bg-gradient-to-r from-cyan-500 to-cyan-400",
-        "blue-right-to-left": "bg-gradient-to-r from-cyan-400 to-cyan-500",
+        "teal-left-to-right": "bg-gradient-to-r from-brand-500 to-brand-500",
+        "teal-right-to-left": "bg-gradient-to-r from-brand-500 to-brand-500",
+        "blue-left-to-right": "bg-gradient-to-r from-teal-500 to-teal-400",
+        "blue-right-to-left": "bg-gradient-to-r from-teal-400 to-teal-500",
       },
     };
   },

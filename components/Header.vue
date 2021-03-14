@@ -29,19 +29,19 @@
           <div class="hidden md:flex">
             <nuxt-link
               to="/"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-cyan-300 focus:outline-none focus:text-gray-700 focus:border-cyan-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-teal-300 focus:outline-none focus:text-gray-700 focus:border-teal-300"
             >
               Welcome
             </nuxt-link>
             <nuxt-link
               to="/about"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-cyan-300 focus:outline-none focus:text-gray-700 focus:border-cyan-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-teal-300 focus:outline-none focus:text-gray-700 focus:border-teal-300"
             >
               About
             </nuxt-link>
             <nuxt-link
               to="/therapy-services"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-cyan-300 focus:outline-none focus:text-gray-700 focus:border-cyan-300"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-teal-300 focus:outline-none focus:text-gray-700 focus:border-teal-300"
             >
               Therapy Services
             </nuxt-link>
@@ -50,7 +50,7 @@
             <div class="flex-shrink-0">
               <nuxt-link
                 to="/contact"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-teal-500 focus:outline-none focus:border-cyan-400 focus:shadow-outline-green active:bg-cyan-500"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-teal-500 focus:outline-none focus:border-teal-400 focus:shadow-outline-teal active:bg-teal-500"
               >
                 <svg
                   class="w-5 h-5 mr-2 -ml-1"

@@ -13,7 +13,7 @@
           >
             {{ blok.title }}
           </div>
-          <p class="max-w-3xl mt-3 text-lg leading-6 text-cyan-100">
+          <p class="max-w-3xl mt-3 text-lg leading-6 text-teal-100">
             {{ blok.description }}
           </p>
         </div>
