@@ -1,6 +1,13 @@
 <template>
   <section v-editable="blok">
-    <div class="relative flex flex-col-reverse mb-16 bg-gray-100 md:flex-row">
+    <div
+      class="relative flex flex-col-reverse mb-16 overflow-hidden bg-gray-100 md:flex-row"
+    >
+      <img
+        class="hidden w-full lg:block lg:absolute lg:inset-y-0 lg:left-0 lg:w-full lg:h-auto lg:max-w-none"
+        :src="blok.image.filename"
+        :alt="blok.image.alt"
+      />
       <div
         class="z-20 w-full max-w-6xl pt-8 pb-20 mx-auto text-center lg:py-40 lg:text-left"
       >
@@ -46,10 +53,7 @@
           </template>
         </div>
       </div>
-      <div
-        v-if="blok.image.filename"
-        class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
-      >
+      <div v-if="blok.image.filename" class="max-w-md px-4 mx-auto sm:hidden">
         <img
           class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
           :src="blok.image.filename"
