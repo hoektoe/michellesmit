@@ -55,7 +55,8 @@ export default {
   */
   buildModules: [
     '@nuxt/postcss8',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/eslint-module'
 
   ],
   /*
@@ -110,12 +111,18 @@ export default {
       ]
     }],
     '@nuxtjs/gtm',
+    ,
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap'
   ],
   tailwindcss: {
     jit: true
   },
   gtm: {
     id: 'GTM-PFK9LKH'
+  },
+  sitemap: {
+    hostname: 'https://michellesmit.com'
   },
   generate: {
     routes: function (callback) {
@@ -152,5 +159,14 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: 'chunk',
+        maxSize: 256000
+      }
+    }
   }
 }
