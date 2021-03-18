@@ -31,9 +31,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  tailwindcss: {
-    jit: true
-  },
   /*
   ** Global CSS
   */
@@ -58,6 +55,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8'
   ],
   /*
   ** Nuxt.js modules
@@ -112,6 +110,9 @@ export default {
     }],
     '@nuxtjs/gtm',
   ],
+  tailwindcss: {
+    jit: true
+  },
   gtm: {
     id: 'GTM-PFK9LKH'
   },
