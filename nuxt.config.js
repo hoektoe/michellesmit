@@ -57,7 +57,6 @@ export default {
     '@nuxt/postcss8',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module'
-
   ],
   /*
   ** Nuxt.js modules
@@ -111,7 +110,6 @@ export default {
       ]
     }],
     '@nuxtjs/gtm',
-    ,
     '@nuxtjs/robots',
     '@nuxtjs/sitemap'
   ],
