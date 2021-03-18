@@ -57,7 +57,6 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxt/postcss8',
     '@nuxtjs/tailwindcss',
   ],
