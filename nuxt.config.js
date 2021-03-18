@@ -31,6 +31,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  tailwindcss: {
+    jit: true
+  },
   /*
   ** Global CSS
   */
@@ -55,6 +58,7 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    '@nuxt/postcss8',
     '@nuxtjs/tailwindcss',
   ],
   /*
