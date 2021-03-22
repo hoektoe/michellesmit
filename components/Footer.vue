@@ -21,6 +21,9 @@
             <div class="mt-0 mb-6 text-lg text-white">
               Psychologist - Online Therapy - Face to Face Therapy
             </div>
+            <div class="mt-0 mb-6 text-brand-300">
+              M. Psych, Hons Psych
+            </div>
             <p class="text-gray-200">
               HPCSA registered counselling psychologist based in Cape Town.
               Online based therapy. Available after hours and weekends.
