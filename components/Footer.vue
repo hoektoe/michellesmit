@@ -18,7 +18,7 @@
             <div class="text-3xl font-semibold uppercase text-brand-500">
               Michelle Smit
             </div>
-            <div class="mt-0 mb-6 text-lg text-white">
+            <div class="mt-0 text-lg text-white">
               Psychologist - Online Therapy - Face to Face Therapy
             </div>
             <div class="mt-0 mb-6 text-brand-300">
