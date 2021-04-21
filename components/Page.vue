@@ -73,14 +73,9 @@ export default {
   },
   mounted() {
     if (this.$nuxt.$route.params.slug === "thank-you") {
+      console.log("trigger vissie_het_gebyt");
       this.$gtm.push({
-        event: "conversion",
-        transaction_id: this.$nuxt.$route.query.transaction_id
-          ? this.$nuxt.$route.query.transaction_id
-          : "IDENTICAL",
-        currency: "ZAR",
-        value: "500",
-        send_to: "AW-624837513/syqfCNb5s9MBEImH-akC",
+        event: "vissie_het_gebyt",
       });
     }
   },
