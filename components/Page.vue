@@ -72,9 +72,7 @@ export default {
     },
   },
   mounted() {
-    console.log(this.$nuxt.$route);
     if (this.$nuxt.$route.params.slug === "thank-you") {
-      console.log("pushing gtm event");
       this.$gtm.push({
         event: "conversion",
         transaction_id: this.$nuxt.$route.query.transaction_id
