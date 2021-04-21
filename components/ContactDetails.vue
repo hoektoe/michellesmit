@@ -81,6 +81,7 @@
         <div class="max-w-lg mx-auto lg:max-w-none">
           <form
             name="contactus"
+            action="/thank-you"
             data-netlify="true"
             method="POST"
             class="grid grid-cols-1 gap-y-6"

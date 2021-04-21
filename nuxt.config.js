@@ -22,13 +22,33 @@ export default {
   */
   head: {
     title: 'Michelle Smit - Counselling Psychologist',
+    htmlAttrs: {
+      lang: "en"
+    },
     meta: [
       { charset: 'utf-8' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { name: "keywords", hid: "keywords", content: "Online Counselling, Psychologist, South Africa, Noordhoek, Kommetjie, Therapy Services, Depression, Anxiety, Relationship, Michelle Smit, Counselling Psychologist, Online Therapy" },
+      { name: "theme-color", content: "#96C5C5" },
+      { name: "msapplication-starturl", content: "/" },
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { property: "og:type", hid: "og:type", content: "product" },
+      { property: "og:title", hid: "og:title", content: "Michelle Smit - Counselling Psychologist" },
+      { property: "og:url", hid: "og:url", content: 'http://michellesmit.com/' },
+      // TODO: change logo here
+      { property: "og:image", hid: "og:image", content: "https://a.storyblok.com/f/101001/697x886/ef66c7389e/michellesmit.jpg" },
+      { property: "og:description", hid: "og:description", content: process.env.npm_package_description || '' },
+      { property: "og:site_name", hid: "og:site_name", content: "Michelle Smit" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "preconnect", href: "https://www.google.co.za" },
+      { rel: "preconnect", href: "https://www.google.com" },
+      { rel: "preconnect", href: "https://www.google-analytics.com" },
+      { rel: "preconnect", href: "https://googleads.g.doubleclick.net" },
+      { rel: "preconnect", href: "https://www.googleadservices.com" },
+      { rel: "preconnect", href: "https://www.googletagmanager.com" },
     ]
   },
   /*
@@ -56,7 +76,6 @@ export default {
   buildModules: [
     '@nuxt/postcss8',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/eslint-module'
   ],
   /*
   ** Nuxt.js modules
@@ -113,11 +132,10 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap'
   ],
-  tailwindcss: {
-    jit: true
-  },
   gtm: {
-    id: 'GTM-PFK9LKH'
+    id: 'GTM-PFK9LKH',
+    debug: true,
+    pageTracking: true
   },
   sitemap: {
     hostname: 'https://michellesmit.com'
