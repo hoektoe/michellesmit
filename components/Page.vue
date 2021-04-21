@@ -75,7 +75,7 @@ export default {
     if (this.$nuxt.$route.params.slug === "thank-you") {
       console.log("trigger vissie_het_gebyt");
       this.$gtm.push({
-        event: "vissie_het_gebyt",
+        event: "transactionComplete",
       });
     }
   },
