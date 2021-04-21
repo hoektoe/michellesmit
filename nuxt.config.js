@@ -133,8 +133,8 @@ export default {
     '@nuxtjs/sitemap'
   ],
   gtm: {
+    enabled: true,
     id: 'GTM-PFK9LKH',
-    debug: false,
     pageTracking: true,
     scriptURL: "https://www.googletagmanager.com/gtag/js"
   },
