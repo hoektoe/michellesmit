@@ -135,7 +135,8 @@ export default {
   gtm: {
     id: 'GTM-PFK9LKH',
     debug: false,
-    pageTracking: true
+    pageTracking: true,
+    scriptURL: "https://www.googletagmanager.com/gtag/js"
   },
   sitemap: {
     hostname: 'https://michellesmit.com'
