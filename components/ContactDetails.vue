@@ -81,9 +81,10 @@
         <div class="max-w-lg mx-auto lg:max-w-none">
           <form
             name="contactus"
-            action="/thank-you"
+            :action="`/thank-you?transaction_id=${transactionID}`"
             data-netlify="true"
             method="POST"
+            data-netlify-honeypot="bot-field"
             class="grid grid-cols-1 gap-y-6"
           >
             <div>
@@ -111,6 +112,7 @@
                 name="email"
                 type="email"
                 autoComplete="email"
+                v-model="email"
                 class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-accent-500 focus:border-accent-500"
                 placeholder="Email"
                 required
@@ -158,6 +160,23 @@ export default {
     blok: {
       type: Object,
       required: true,
+    },
+  },
+  data() {
+    return {
+      email: "",
+    };
+  },
+  computed: {
+    transactionID: function () {
+      return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+        /[xy]/g,
+        function (c) {
+          var r = (Math.random() * 16) | 0,
+            v = c == "x" ? r : (r & 0x3) | 0x8;
+          return v.toString(16);
+        }
+      );
     },
   },
 };

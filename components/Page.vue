@@ -1,5 +1,6 @@
 <template>
   <div v-editable="blok">
+    {{ blok }}
     <component
       v-for="blok in blok.body"
       :key="blok._uid"
@@ -72,11 +73,16 @@ export default {
     },
   },
   mounted() {
+    console.log(this.$nuxt.$route);
     if (this.$nuxt.$route.params.slug === "thank-you") {
       console.log("pushing gtm event");
       this.$gtm.push({
         event: "conversion",
-        conversionValue: "500",
+        transaction_id: this.$nuxt.$route.query.transaction_id
+          ? this.$nuxt.$route.query.transaction_id
+          : "IDENTICAL",
+        currency: "ZAR",
+        value: "500",
         send_to: "AW-624837513/syqfCNb5s9MBEImH-akC",
       });
     }
