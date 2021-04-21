@@ -134,7 +134,7 @@ export default {
   ],
   gtm: {
     id: 'GTM-PFK9LKH',
-    debug: true,
+    debug: false,
     pageTracking: true
   },
   sitemap: {

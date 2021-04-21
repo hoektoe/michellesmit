@@ -71,5 +71,15 @@ export default {
       return this.$nuxt.$route.params.slug === "thank-you";
     },
   },
+  mounted() {
+    if (this.$nuxt.$route.params.slug === "thank-you") {
+      console.log("pushing gtm event");
+      this.$gtm.push({
+        event: "conversion",
+        conversionValue: "500",
+        send_to: "AW-624837513/syqfCNb5s9MBEImH-akC",
+      });
+    }
+  },
 };
 </script>
