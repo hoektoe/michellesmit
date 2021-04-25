@@ -90,17 +90,6 @@ export default {
         transaction_id: this.transactionID,
       });
 
-      // this.$gtag.purchase({
-      //   transaction_id: this.transactionID,
-      //   affiliation: "Contact Form Submitted",
-      //   value: 500,
-      // });
-
-      this.$gtag.event("conversion", {
-        event_category: "conversion",
-        event_label: "conversion",
-        value: 500,
-      });
       this.$gtag.event("generate_lead", {
         event_category: "engagement",
         event_label: "Contact Form Lead",
