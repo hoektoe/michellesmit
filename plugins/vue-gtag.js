@@ -20,8 +20,7 @@ export default ({ app }) => {
         }
       ],
       appName: "michellesmit",
-      enabled: true,
-      pageTrackerScreenviewEnabled: true
+      enabled: true
     },
     app.router
   );
