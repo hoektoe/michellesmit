@@ -86,6 +86,7 @@ export default {
       this.$gtag.event("conversion", {
         send_to: "AW-624837513/MhzFCNOC7IkCEImH-akC",
         value: 500,
+        currency: "ZAR",
         transaction_id: this.transactionID,
       });
 
