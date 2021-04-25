@@ -85,15 +85,24 @@ export default {
     if (this.$nuxt.$route.params.slug === "thank-you") {
       this.$gtag.event("conversion", {
         send_to: "AW-624837513/MhzFCNOC7IkCEImH-akC",
-        event_category: "conversion",
-        event_label: "conversion-thank-you",
         value: 500,
         transaction_id: this.transactionID,
       });
 
-      this.$gtag.purchase({
-        transaction_id: this.transactionID,
-        affiliation: "Contact Form Submitted",
+      // this.$gtag.purchase({
+      //   transaction_id: this.transactionID,
+      //   affiliation: "Contact Form Submitted",
+      //   value: 500,
+      // });
+
+      this.$gtag.event("conversion", {
+        event_category: "conversion",
+        event_label: "conversion",
+        value: 500,
+      });
+      this.$gtag.event("generate_lead", {
+        event_category: "engagement",
+        event_label: "Contact Form Lead",
         value: 500,
       });
     }
