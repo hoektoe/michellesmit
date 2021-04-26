@@ -25,7 +25,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "{{ blok.seo.description }}",
+          content: this.blok.seo.description,
         },
         {
           hid: "title",
