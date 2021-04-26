@@ -99,10 +99,33 @@ export default {
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
+  image: {
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      "2xl": 1536
+    },
+    provider: "storyblok",
+    storyblok: {
+      baseURL: "https://img2.storyblok.com"
+    }
+  },
+  googleAnalytics: {
+    id: "G-Q72VRYTGE2"
+  },
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxt/postcss8", "@nuxtjs/tailwindcss"],
+  buildModules: [
+    "@nuxt/postcss8",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/image",
+    "@nuxtjs/web-vitals"
+  ],
   /*
    ** Nuxt.js modules
    */

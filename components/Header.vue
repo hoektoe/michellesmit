@@ -8,8 +8,8 @@
               <img
                 src="~/assets/images/logo-block.svg"
                 alt="Michelle Smit Therapy logo"
-                width="90px"
-                height="90px"
+                width="80px"
+                height="80px"
               />
               <div
                 class="flex flex-col justify-center w-full ml-2 font-bold text-accent-600"

@@ -32,9 +32,13 @@
       v-if="blok.image.filename !== null"
       class="relative flex justify-center col-span-1 overflow-hidden bg-gray-50 h-96"
     >
-      <img
+      <NuxtImg
         class="object-cover"
-        :src="transformImage(blok.image.filename, '400x400')"
+        width="400"
+        height="400"
+        quality="80"
+        provider="storyblok"
+        :src="blok.image.filename"
       />
     </div>
   </div>
@@ -57,16 +61,6 @@ export default {
         "blue-right-to-left": "bg-gradient-to-r from-accent-400 to-accent-500",
       },
     };
-  },
-  methods: {
-    transformImage(image, option) {
-      if (!image) return "";
-      if (!option) return "";
-
-      let imageService = "https://img2.storyblok.com/";
-      let path = image.replace("https://a.storyblok.com", "");
-      return imageService + option + path;
-    },
   },
 };
 </script>

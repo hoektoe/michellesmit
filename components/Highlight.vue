@@ -26,10 +26,11 @@
         <div
           class="relative mt-10 sm:text-right sm:-mx-4 sm:pr-8 lg:mt-0 lg:col-start-1"
         >
-          <img
+          <NuxtImg
             v-if="blok.image.filename !== null"
-            class="relative mx-auto rounded-lg"
             width="400"
+            provider="storyblok"
+            class="relative mx-auto rounded-lg"
             :src="blok.image.filename"
           />
         </div>

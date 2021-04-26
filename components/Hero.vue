@@ -48,7 +48,18 @@
         v-if="blok.image.filename"
         class="relative w-full h-52 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full"
       >
+        <nuxt-img
+          v-if="!isSvg"
+          class="absolute z-10 object-cover w-full h-full"
+          provider="storyblok"
+          quality="80"
+          :src="blok.image.filename"
+          :alt="blok.image.alt"
+        />
         <img
+          v-else
+          height="480px"
+          ;
           class="absolute z-10 object-cover w-full h-full"
           :src="blok.image.filename"
           :alt="blok.image.alt"
@@ -64,6 +75,11 @@ export default {
     blok: {
       type: Object,
       required: true,
+    },
+  },
+  methods: {
+    isSvg: function (filename) {
+      return filename.includes(".svg");
     },
   },
 };

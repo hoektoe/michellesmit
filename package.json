@@ -28,6 +28,8 @@
     "vue-gtag": "^1.14.0"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.4.7",
+    "@nuxtjs/web-vitals": "^0.1.4",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.10"
   }
