@@ -53,19 +53,11 @@ export default {
     // // This what would we do in real project
     const version =
       context.query._storyblok || context.isDev ? "draft" : "published";
-    console.log(
-      "🚀 ~ file: _slug.vue ~ line 59 ~ asyncData ~ version",
-      version
-    );
 
     const fullSlug =
       context.route.path == "/" || context.route.path == ""
         ? "home"
         : context.route.path;
-    console.log(
-      "🚀 ~ file: _slug.vue ~ line 61 ~ asyncData ~ fullSlug",
-      fullSlug
-    );
 
     // Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi
@@ -73,7 +65,6 @@ export default {
         version: version,
       })
       .then((res) => {
-        console.log("🚀 ~ file: _slug.vue ~ line 76 ~ .then ~ res", res);
         return res.data;
       })
       .catch((res) => {
