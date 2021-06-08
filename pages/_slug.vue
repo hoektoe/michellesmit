@@ -17,18 +17,21 @@ export default {
     };
   },
   mounted() {
-    // Use the input event for instant update of content
-    this.$storybridge.on("input", (event) => {
-      if (event.story.id === this.story.id) {
-        this.story.content = event.story.content;
-      }
-    });
-    // Use the bridge to listen the events
-    this.$storybridge.on(["published", "change"], (event) => {
-      // window.location.reload()
-      this.$nuxt.$router.go({
-        path: this.$nuxt.$router.currentRoute,
-        force: true,
+    this.$storybridge(() => {
+      const storyblokInstance = new StoryblokBridge();
+      // Use the input event for instant update of content
+      storyblokInstance.on("input", (event) => {
+        if (event.story.id === this.story.id) {
+          this.story.content = event.story.content;
+        }
+      });
+      // Use the bridge to listen the events
+      storyblokInstance.on(["published", "change"], (event) => {
+        // window.location.reload()
+        this.$nuxt.$router.go({
+          path: this.$nuxt.$router.currentRoute,
+          force: true,
+        });
       });
     });
   },
@@ -61,7 +64,7 @@ export default {
       })
       .catch((res) => {
         if (!res.response) {
-          console.error(res);
+          console.error(resbaseSetAttr);
           context.error({
             statusCode: 404,
             message: "Failed to receive content form api",
