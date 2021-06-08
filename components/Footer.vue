@@ -4,7 +4,16 @@
       <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-wrap">
           <div
-            class="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12"
+            class="
+              flex
+              justify-center
+              w-full
+              px-4
+              pb-6
+              md:pb-0
+              md:justify-start
+              lg:w-2/12
+            "
           >
             <img
               alt="Michelle Smit Logo Artum Lilly"
@@ -21,9 +30,7 @@
             <div class="mt-0 text-lg text-white">
               Psychologist - Online Therapy - Face to Face Therapy
             </div>
-            <div class="mt-0 mb-6 text-brand-300">
-              M. Psych, Hons Psych
-            </div>
+            <div class="mt-0 mb-6 text-brand-300">M. Psych, Hons Psych</div>
             <p class="text-gray-200">
               HPCSA registered counselling psychologist based in Cape Town.
               Online based therapy. Available after hours and weekends.
@@ -57,28 +64,43 @@
                 </span>
                 <ul class="list-unstyled">
                   <li>
-                    <nuxt-link
-                      to="/about"
-                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
+                    <a
+                      href="/about"
+                      class="
+                        block
+                        pb-2
+                        text-sm text-gray-300
+                        hover:text-brand-400
+                      "
                     >
                       About
-                    </nuxt-link>
+                    </a>
                   </li>
                   <li>
-                    <nuxt-link
-                      to="/therapy-services"
-                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
+                    <a
+                      href="/therapy-services"
+                      class="
+                        block
+                        pb-2
+                        text-sm text-gray-300
+                        hover:text-brand-400
+                      "
                     >
                       Therapy Services
-                    </nuxt-link>
+                    </a>
                   </li>
                   <li>
-                    <nuxt-link
-                      to="/rates-and-insurance"
-                      class="block pb-2 text-sm text-gray-300 hover:text-brand-400"
+                    <a
+                      href="/rates-and-insurance"
+                      class="
+                        block
+                        pb-2
+                        text-sm text-gray-300
+                        hover:text-brand-400
+                      "
                     >
                       Rates and Insurance
-                    </nuxt-link>
+                    </a>
                   </li>
                 </ul>
               </div>

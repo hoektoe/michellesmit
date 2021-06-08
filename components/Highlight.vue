@@ -2,7 +2,11 @@
   <section v-editable="blok">
     <div class="relative max-w-6xl px-4 py-12 mx-auto sm:py-12 sm:px-6 lg:px-8">
       <div
-        class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-top"
+        class="
+          lg:grid lg:grid-flow-row-dense lg:grid-cols-2
+          lg:gap-8
+          lg:items-top
+        "
       >
         <div class="lg:col-start-2">
           <div class="pb-3 text-lg prose">
@@ -14,17 +18,42 @@
 
           <div v-if="blok.button_link && blok.button_text !== ''">
             <div class="inline-flex rounded-md shadow">
-              <nuxt-link
-                :to="blok.button_link.cached_url"
-                class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-accent-500 flex-inline hover:bg-accent-400 md:py-4 md:text-lg md:px-10"
+              <a
+                :href="blok.button_link.cached_url"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  px-8
+                  py-3
+                  text-base
+                  font-medium
+                  text-white
+                  border border-transparent
+                  rounded-md
+                  bg-accent-500
+                  flex-inline
+                  hover:bg-accent-400
+                  md:py-4
+                  md:text-lg
+                  md:px-10
+                "
               >
                 {{ blok.button_text }}
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
         <div
-          class="relative mt-10 sm:text-right sm:-mx-4 sm:pr-8 lg:mt-0 lg:col-start-1"
+          class="
+            relative
+            mt-10
+            sm:text-right
+            sm:-mx-4
+            sm:pr-8
+            lg:mt-0
+            lg:col-start-1
+          "
         >
           <NuxtImg
             v-if="blok.image.filename !== null"
