@@ -4,7 +4,7 @@
       <div class="max-w-6xl mx-auto">
         <div class="flex justify-between h-20 md:h-24">
           <div class="flex ml-4 mr-2">
-            <nuxt-link to="/" class="flex items-center flex-shrink-0">
+            <a href="/" class="flex items-center flex-shrink-0">
               <img
                 src="~/assets/images/logo-block.svg"
                 alt="Michelle Smit Therapy logo"
@@ -12,44 +12,44 @@
                 height="80px"
               />
               <div
-                class="flex flex-col justify-center w-full ml-2 font-bold text-accent-600"
+                class="flex flex-col justify-center w-full ml-2 font-bold  text-accent-600"
               >
                 <div class="w-full text-sm uppercase sm:text-xl lg:text-2xl">
                   Michelle Smit
                 </div>
                 <div
-                  class="w-full text-xs uppercase md:-mt-2 sm:text-lg xl:text-base"
+                  class="w-full text-xs uppercase  md:-mt-2 sm:text-lg xl:text-base"
                 >
                   counselling psychologist
                 </div>
               </div>
-            </nuxt-link>
+            </a>
           </div>
           <div class="hidden md:flex">
-            <nuxt-link
-              to="/"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+            <a
+              href="/"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent  hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
             >
               Welcome
-            </nuxt-link>
-            <nuxt-link
-              to="/about"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+            </a>
+            <a
+              href="/about"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent  hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
             >
               About
-            </nuxt-link>
-            <nuxt-link
-              to="/therapy-services"
-              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
+            </a>
+            <a
+              href="/therapy-services"
+              class="inline-flex items-center px-1 pt-1 ml-8 text-base font-medium leading-5 text-gray-800 transition duration-150 ease-in-out border-b-2 border-transparent  hover:text-gray-600 hover:border-accent-300 focus:outline-none focus:text-gray-700 focus:border-accent-300"
             >
               Therapy Services
-            </nuxt-link>
+            </a>
           </div>
           <div class="items-center hidden -mr-4 md:flex">
             <div class="flex-shrink-0">
-              <nuxt-link
-                to="/contact"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-accent-400 bg-accent hover:bg-accent-400 focus:outline-none focus:border-accent-400 focus:shadow-outline-green active:bg-accent-500"
+              <a
+                href="/contact"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm  bg-accent-400 bg-accent hover:bg-accent-400 focus:outline-none focus:border-accent-400 focus:shadow-outline-green active:bg-accent-500"
               >
                 <svg
                   class="w-5 h-5 mr-2 -ml-1"
@@ -66,13 +66,13 @@
                   ></path>
                 </svg>
                 <span>Contact</span>
-              </nuxt-link>
+              </a>
             </div>
           </div>
           <div class="flex items-center ml-2 mr-2 md:hidden">
             <button
               @click="isOpen = !isOpen"
-              class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
+              class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md  hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
               aria-label="Main menu"
               aria-expanded="false"
             >
@@ -119,17 +119,17 @@
       >
         <div
           v-show="isOpen"
-          class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
+          class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform  md:hidden"
         >
           <div
-            class="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50"
+            class="bg-white divide-y-2 rounded-lg shadow-lg  ring-1 ring-black ring-opacity-5 divide-gray-50"
           >
             <div class="px-5 pt-5 pb-6">
               <div class="flex items-center justify-between">
                 <div>
-                  <nuxt-link
+                  <a
                     @click="isOpen = false"
-                    to="/"
+                    href="/"
                     class="flex items-center flex-shrink-0"
                   >
                     <img
@@ -139,7 +139,7 @@
                       height="60px"
                     />
                     <div
-                      class="flex flex-col justify-center w-full ml-2 font-bold text-accent-600"
+                      class="flex flex-col justify-center w-full ml-2 font-bold  text-accent-600"
                     >
                       <div
                         class="w-full text-sm uppercase sm:text-xl lg:text-2xl"
@@ -147,18 +147,18 @@
                         Michelle Smit
                       </div>
                       <div
-                        class="w-full text-xs uppercase md:-mt-2 sm:text-lg xl:text-base"
+                        class="w-full text-xs uppercase  md:-mt-2 sm:text-lg xl:text-base"
                       >
                         counselling psychologist
                       </div>
                     </div>
-                  </nuxt-link>
+                  </a>
                 </div>
                 <div class="-mr-2">
                   <button
                     type="button"
                     @click="isOpen = !isOpen"
-                    class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md  hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                   >
                     <span class="sr-only">Close menu</span>
                     <svg
@@ -181,45 +181,45 @@
               </div>
               <div class="mt-6">
                 <nav class="grid grid-cols-1 gap-7">
-                  <nuxt-link
+                  <a
                     @click="isOpen = false"
-                    to="/about"
-                    class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
+                    href="/about"
+                    class="flex items-center p-3 -m-3 rounded-lg  hover:bg-gray-50"
                   >
                     <div class="ml-4 text-base font-medium text-gray-900">
                       About Me
                     </div>
-                  </nuxt-link>
-                  <nuxt-link
+                  </a>
+                  <a
                     @click="isOpen = false"
-                    to="/therapy-services"
-                    class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
+                    href="/therapy-services"
+                    class="flex items-center p-3 -m-3 rounded-lg  hover:bg-gray-50"
                   >
                     <div class="ml-4 text-base font-medium text-gray-900">
                       Therapy Services
                     </div>
-                  </nuxt-link>
+                  </a>
 
-                  <nuxt-link
+                  <a
                     @click="isOpen = false"
-                    to="/contact"
-                    class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
+                    href="/contact"
+                    class="flex items-center p-3 -m-3 rounded-lg  hover:bg-gray-50"
                   >
                     <div class="ml-4 text-base font-medium text-gray-900">
                       Contact
                     </div>
-                  </nuxt-link>
+                  </a>
                 </nav>
               </div>
             </div>
             <div class="px-5 py-6">
-              <nuxt-link
+              <a
                 @click="isOpen = false"
-                to="/contact"
-                class="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700"
+                href="/contact"
+                class="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm  bg-brand-600 hover:bg-brand-700"
               >
                 Free 15 minute consultation
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
