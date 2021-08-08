@@ -1,0 +1,9 @@
+[
+  {
+    "name": "slug",
+    "path": "/:slug?",
+    "component": "/home/hoektoe/git/michellesmit/pages/_slug.vue",
+    "chunkName": "pages/_slug",
+    "_name": "_9f52f918"
+  }
+]

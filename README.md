@@ -1,33 +1,20 @@
-# A Nuxtjs Website using Storyblok
+## Storyblok Next.js Multi-language Blog
 
-> Sample Nuxt.js project/webstie built with Storyblok as CMS
+This is the example repository for building a multi-language blog with Storyblok.
 
-## Build Setup
+Follow our [The Complete Guide to Build a Full Blown Multilanguage Website with Next.js](https://www.storyblok.com/tp/next-js-react-guide) tutorial to set it up
 
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-```
-
-## Content Setup
-
-1. [Register](https://app.storyblok.com/#!/signup) at Storyblok for free.
-2. Create a new Space and exchange the preview token with your own.
-3. Follow our [Complete Guide to Build a Full Blown Multilanguage Website with Nuxt.js](https://www.storyblok.com/tp/nuxt-js-multilanguage-website-tutorial)
-
-## Deploy with Vercel
-
-1. Install Vercel CLI
-2. Replace `ACCOUNT_NAME` with your account name
-
-```
-# deploy to vercel
-$ vercel
-```
+1. Clone the example space with this link: <https://app.storyblok.com/#!/build/95804>
+2. Enter your preview token in the `util/storyblok.js` file
+3. Install dependencies and start the development server `npm install && npm run dev`
+4. Add your [http://localhost:3000](http://localhost:3000) as the **default location URL** in your Storyblok space settings
 
 
+## Learn More
 
-For detailed explanation on how Nuxt.js works, checkout the [Nuxt.js docs](https://nuxtjs.org) and for the TailwindCSS check out the [TailwindCSS docs](https://tailwindcss.com/docs/installation).
+To learn more about Next.js, take a look at the following resources:
+
+- [Add a headless CMS to Next.js in 5 minutes](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes) - Tutorial to get started with Next.js & Storyblok
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
