@@ -27,7 +27,7 @@ export async function getStaticProps({
   let slug = params.slug ? params.slug.join("/") : "home";
 
   let sbParams = {
-    version: "draft", // or 'draft'
+    version: "published", // or 'draft'
     cv: Date.now(),
     resolve_relations: ["featured-posts.posts", "selected-posts.posts"],
     language: locale,
