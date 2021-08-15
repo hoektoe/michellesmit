@@ -135,7 +135,7 @@ export default function Navigation({ locale, locales }) {
                 </div>
                 <div className="px-5 py-6 space-y-6">
                   <div>
-                    <Link href="/contact">
+                    <Link href="/contact" locale={locale}>
                       <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700">
                         Contact
                       </a>
