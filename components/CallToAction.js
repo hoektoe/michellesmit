@@ -9,7 +9,7 @@ export default function CallToAction({ blok }) {
       <div className="bg-accent-600">
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-white md:text-4xl">
+            <h2 className="pb-3 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
               <span className="block">{blok.title}</span>
             </h2>
             <p className="text-accent-100">{render(blok.description)}</p>

@@ -124,13 +124,13 @@ export default function ContactForm({ blok }) {
                 <h3 className="mb-6 text-lg font-medium text-white">
                   Contact information
                 </h3>
-                <p className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base text-brand-50">
                   {render(blok.description)}
-                </p>
+                </div>
 
-                <p className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base text-brand-50">
                   {render(blok.address)}
-                </p>
+                </div>
                 <dl className="my-8 space-y-6">
                   <dt>
                     <span className="sr-only">Phone number</span>
@@ -153,9 +153,9 @@ export default function ContactForm({ blok }) {
                     <span className="ml-3">therapy@michellesmit.com</span>
                   </dd>
                 </dl>
-                <p className="max-w-3xl mt-6 text-base text-brand-50">
+                <div className="max-w-3xl mt-6 text-base text-brand-50">
                   {render(blok.additional_info)}
-                </p>
+                </div>
               </div>
 
               {/* Contact form */}
@@ -164,19 +164,19 @@ export default function ContactForm({ blok }) {
                   {blok.title}
                 </h3>
                 <form
-                  action="#"
+                  action={`/thank-you?transaction_id=${transactionID()}`}
                   method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
-                  <input
-                    type="hidden"
-                    name="_next"
-                    value={`https://michellesmit.com/thank-you?transaction_id=${transactionID()}`}
-                  />
-                  <input type="hidden" name="_cc" value="hoektoe@gmail.com" />
-                  <input type="text" name="_honey" className="hidden" />
-                  <input type="hidden" name="_captcha" value="false" />
-
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out if you’re human:{" "}
+                      <input name="bot-field" />
+                    </label>
+                  </p>
+                  <input type="hidden" name="form-name" value="contactus" />
                   <div>
                     <label
                       htmlFor="first-name"
@@ -191,6 +191,7 @@ export default function ContactForm({ blok }) {
                         id="first-name"
                         autoComplete="given-name"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
+                        required
                       />
                     </div>
                   </div>
@@ -208,6 +209,7 @@ export default function ContactForm({ blok }) {
                         id="last-name"
                         autoComplete="family-name"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
+                        required
                       />
                     </div>
                   </div>
@@ -225,6 +227,7 @@ export default function ContactForm({ blok }) {
                         type="email"
                         autoComplete="email"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
+                        required
                       />
                     </div>
                   </div>
@@ -275,6 +278,7 @@ export default function ContactForm({ blok }) {
                         className="block w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
                         aria-describedby="message-max"
                         defaultValue={""}
+                        required
                       />
                     </div>
                   </div>

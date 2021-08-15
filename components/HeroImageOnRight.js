@@ -17,16 +17,16 @@ export default function HeroImageOnRight({ blok }) {
               <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href={blok.link_secondary_href}
-                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-brand-600 border border-transparent rounded-md hover:bg-brand-700 md:py-4 md:text-lg md:px-10"
+                    href={blok.link_secondary_href.cached_url}
+                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10"
                   >
                     {blok.link_secondary_text}
                   </a>
                 </div>
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                   <a
-                    href={blok.link_primary_href}
-                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-brand-600 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                    href={blok.link_primary_href.cached_url}
+                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-white border border-transparent rounded-md text-brand-600 hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                   >
                     {blok.link_primary_text}
                   </a>
