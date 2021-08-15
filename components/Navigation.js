@@ -23,7 +23,7 @@ const menu = [
       en: "Therapy Services",
       af: "Dienste",
     },
-    href: "/therapy-services",
+    href: "#therapy-services",
   },
 ];
 export default function Navigation({ locale, locales }) {
@@ -77,12 +77,11 @@ export default function Navigation({ locale, locales }) {
                 ))}
               </Popover.Group>
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-                <a
-                  href={`${defaultLocale}contact`}
-                  className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 whitespace-nowrap hover:bg-brand-700"
-                >
-                  Contact
-                </a>
+                <Link href="/contact">
+                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 whitespace-nowrap hover:bg-brand-700">
+                    Contact
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

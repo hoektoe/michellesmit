@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
@@ -51,11 +52,7 @@ module.exports = {
       "components/**/*.js",
       "layouts/**/*.js",
       "pages/**/*.js",
-      "plugins/**/*.js",
       "next.config.js",
-      // TypeScript
-      "plugins/**/*.ts",
-      "next.config.ts",
     ],
   },
 };

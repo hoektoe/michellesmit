@@ -5,9 +5,9 @@ import DynamicComponent from "../components/DynamicComponent";
 import Storyblok, { useStoryblok } from "../utils/storyblok";
 
 export default function Page({ story, preview, locale, locales }) {
-  // const enableBridge = true; // load the storyblok bridge everywhere
+  const enableBridge = true; // load the storyblok bridge everywhere
   // use the preview variable to enable the bridge only in preview mode
-  const enableBridge = preview;
+  // const enableBridge = preview;
 
   story = useStoryblok(story, enableBridge, locale);
 
@@ -47,7 +47,7 @@ export async function getStaticProps({
       locale,
       locales,
     },
-    revalidate: 10, // revalidate every hour
+    revalidate: 3600, // revalidate every hour
   };
 }
 
