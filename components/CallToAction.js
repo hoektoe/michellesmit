@@ -5,7 +5,7 @@ import { render } from "storyblok-rich-text-react-renderer";
 
 export default function CallToAction({ blok }) {
   return (
-    <SbEditable content={blok}>
+    <SbEditable content={blok} key={blok._uid}>
       <div className="bg-accent-600">
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <div>

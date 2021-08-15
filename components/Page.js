@@ -4,7 +4,7 @@ import Head from "next/head";
 import { HOME_META_IMAGE_URL } from "lib/constant";
 
 const Page = ({ blok }) => (
-  <SbEditable content={blok}>
+  <SbEditable content={blok} key={blok._uid}>
     <main>
       <Head>
         <title>{blok.seo.title}</title>

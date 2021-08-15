@@ -3,7 +3,7 @@ import SbEditable from "storyblok-react";
 
 export default function HeroImageOnRight({ blok }) {
   return (
-    <SbEditable content={blok}>
+    <SbEditable content={blok} key={blok._uid}>
       <div className="relative bg-gray-50">
         <main className="lg:relative">
           <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left">
