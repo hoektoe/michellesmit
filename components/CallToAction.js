@@ -17,7 +17,7 @@ export default function CallToAction({ blok }) {
           <div className="flex mt-8 lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
               <a
-                href={blok.button_link}
+                href={blok.button_link.cached_url}
                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700"
               >
                 {blok.button_text}

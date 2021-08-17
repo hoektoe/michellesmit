@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import StoryblokClient from "storyblok-js-client";
 
 const Storyblok = new StoryblokClient({
-  accessToken: "4ajqyNCQdACZ3f1v9fbOGwtt",
+  accessToken: "4ajqyNCQdACZ3f1v9fbOGwtt", // Preview Token
   cache: {
     clear: "auto",
     type: "memory",
@@ -80,6 +80,10 @@ export function useStoryblok(originalStory, preview, locale) {
       addBridge(initEventListeners);
     }
   }, []);
+
+  useEffect(() => {
+    setStory(originalStory);
+  }, [originalStory]);
 
   return story;
 }

@@ -6,10 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export -o dist",
-    "build-stats": "ANALYZE=true yarn run build",
-    "build-prod": "run-s clean build",
-    "clean": "rimraf .next dist"
+    "build-stats": "ANALYZE=true yarn run build"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -29,13 +26,10 @@
     "@tailwindcss/jit": "^0.1.18",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.6",
     "react-gtm-module": "^2.0.11",
-    "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
-
-    "npm-run-all": "^3.1.1"
+    "postcss": "^8.3.6"
   }
 }
