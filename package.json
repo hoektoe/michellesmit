@@ -9,14 +9,6 @@
     "build-stats": "ANALYZE=true yarn run build"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "marked": "^2.1.3",
-    "next": "11.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "storyblok-js-client": "^4.1.3",
-    "storyblok-react": "^0.1.2",
-    "storyblok-rich-text-react-renderer": "^2.3.1",
     "@headlessui/react": "^1.4.0",
     "@heroicons/react": "^1.0.3",
     "@netlify/plugin-nextjs": "^3.8.0",
@@ -26,10 +18,20 @@
     "@tailwindcss/jit": "^0.1.18",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.1",
+    "axios": "^0.21.1",
+    "marked": "^2.1.3",
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-gtm-module": "^2.0.11",
+    "storyblok-js-client": "^4.1.3",
+    "storyblok-react": "^0.1.2",
+    "storyblok-rich-text-react-renderer": "^2.3.1",
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
     "postcss": "^8.3.6"
   }
 }
