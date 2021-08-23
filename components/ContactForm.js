@@ -12,28 +12,30 @@ function transactionID() {
   });
 }
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
 export default function ContactForm({ blok }) {
   const router = useRouter();
   const { locale } = router;
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    let myForm = document.getElementById("leads-form");
+    console.log(
+      "🚀 ~ file: ContactForm.js ~ line 22 ~ handleSubmit ~ myForm",
+      myForm
+    );
+    let formData = new FormData(myForm);
+    console.log(
+      "🚀 ~ file: ContactForm.js ~ line 23 ~ handleSubmit ~ formData",
+      formData
+    );
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": event.target.getAttribute("name"),
-        ...name,
-      }),
+      body: new URLSearchParams(formData).toString(),
     })
-      .then(() =>
-        router.push(`/${locale}/thank-you?transaction_id=${transactionID()}`)
+      .then(
+        () => alert("success")
+        // router.push(`/${locale}/thank-you?transaction_id=${transactionID()}`)
       )
       .catch((error) => alert(error));
   };
@@ -191,11 +193,13 @@ export default function ContactForm({ blok }) {
                 </h3>
                 <form
                   onSubmit={handleSubmit}
-                  name="leads"
                   method="POST"
+                  id="leads-form"
                   data-netlify="true"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
+                  <input type="hidden" name="form-name" value="leads" />
+
                   <div>
                     <label
                       htmlFor="firstname"
