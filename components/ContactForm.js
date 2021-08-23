@@ -2,7 +2,7 @@ import React from "react";
 import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 function transactionID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -13,32 +13,33 @@ function transactionID() {
 }
 
 export default function ContactForm({ blok }) {
-  const router = useRouter();
-  const { locale } = router;
+  // const router = useRouter();
+  // const { locale } = router;
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    let myForm = document.getElementById("leads-form");
-    console.log(
-      "🚀 ~ file: ContactForm.js ~ line 22 ~ handleSubmit ~ myForm",
-      myForm
-    );
-    let formData = new FormData(myForm);
-    console.log(
-      "🚀 ~ file: ContactForm.js ~ line 23 ~ handleSubmit ~ formData",
-      formData
-    );
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(
-        () => alert("success")
-        // router.push(`/${locale}/thank-you?transaction_id=${transactionID()}`)
-      )
-      .catch((error) => alert(error));
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.log(
+  //     "🚀 ~ file: ContactForm.js ~ line 39 ~ handleSubmit ~ event",
+  //     event.target
+  //   );
+
+  //   let formData = new FormData(event.target);
+
+  //   console.log(
+  //     "🚀 ~ file: ContactForm.js ~ line 23 ~ handleSubmit ~ formData",
+  //     formData
+  //   );
+  // fetch("/", {
+  //   method: "POST",
+  //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //   body: new URLSearchParams(formData).toString(),
+  // })
+  //   .then(
+  //     () => alert("success")
+  //     // router.push(`/${locale}/thank-you?transaction_id=${transactionID()}`)
+  //   )
+  //   .catch((error) => alert(error));
+  // };
 
   return (
     <SbEditable content={blok} key={blok._uid}>
@@ -192,14 +193,17 @@ export default function ContactForm({ blok }) {
                   {blok.title}
                 </h3>
                 <form
-                  onSubmit={handleSubmit}
-                  method="POST"
-                  id="leads-form"
+                  name="contact v2"
+                  method="post"
                   data-netlify="true"
+                  onSubmit="submit"
+                  data-netlify-honeypot="bot-field"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
-                  <input type="hidden" name="form-name" value="leads" />
-
+                  <input type="hidden" name="form-name" value="contact v2" />
+                  <div className="hidden">
+                    <input name="bot-field" />
+                  </div>
                   <div>
                     <label
                       htmlFor="firstname"
