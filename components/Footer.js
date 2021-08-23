@@ -79,7 +79,7 @@ const Footer = () => {
                         </a>
                       </Link>
                     </li>
-                    <li>
+                    <li className="hidden">
                       <Link href="/rates-and-insurance">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
                           Sien in Afrikaans

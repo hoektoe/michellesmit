@@ -15,10 +15,10 @@ const Head = ({ title, description }) => (
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/png" href="/static/meta/favicon.ico" />
     <link rel="apple-touch-icon" href="/static/meta/apple-touch-icon.png" />
-    {/* <link rel="canonical" href={window.location.href} /> */}
     <meta property="og:image" content={HOME_META_IMAGE_URL} />
     <meta name="twitter:image" content={HOME_META_IMAGE_URL} />
     <meta name="theme-color" content="#96C5C5" />
+    <meta name="og:url" content="https://www.michellesmit.com/" />
   </NextHead>
 );
 
