@@ -169,7 +169,7 @@ export default function ContactForm({ blok }) {
                 </h3>
                 <form
                   name="contactus"
-                  action={`${locale}/thank-you?transaction_id=${transactionID()}`}
+                  action={`/${locale}/thank-you?transaction_id=${transactionID()}`}
                   method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
