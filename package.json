@@ -9,6 +9,7 @@
     "build-stats": "ANALYZE=true yarn run build"
   },
   "dependencies": {
+    "@babel/core": "^7.15.0",
     "@headlessui/react": "^1.4.0",
     "@heroicons/react": "^1.0.4",
     "@netlify/plugin-nextjs": "^3.8.0",
