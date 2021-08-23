@@ -13,10 +13,11 @@ import ImageWithTextOnRight from "./ImageWithTextOnRight";
 import ImageWithTextOnLeft from "./ImageWithTextOnLeft";
 import CallToAction from "./CallToAction";
 import ContactForm from "./ContactForm";
+import Testimonial from "./Testimonial";
 
 const Components = {
   teaser: Teaser,
-  grid: Grid,
+  "layout-grid": Grid,
   feature: Feature,
   "featured-posts": FeaturedPosts,
   page: Page,
@@ -29,6 +30,7 @@ const Components = {
   "image-with-text-on-left": ImageWithTextOnLeft,
   "call-to-action": CallToAction,
   "contact-form": ContactForm,
+  testimonial: Testimonial,
 };
 
 const DynamicComponent = ({ blok }) => {
