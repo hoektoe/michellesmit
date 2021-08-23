@@ -168,19 +168,12 @@ export default function ContactForm({ blok }) {
                   {blok.title}
                 </h3>
                 <form
-                  name="contactus_v3"
                   // action={`/${locale}/thank-you?transaction_id=${transactionID()}`}
                   method="POST"
                   data-netlify="true"
-                  data-netlify-honeypot="bot-field"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
-                  <p className="hidden">
-                    <label>
-                      Don’t fill this out if you’re human:{" "}
-                      <input name="bot-field" />
-                    </label>
-                  </p>
+                  <input type="hidden" name="form-name" value="contact" />
                   <p className="hidden">
                     <label>
                       <input
@@ -192,7 +185,7 @@ export default function ContactForm({ blok }) {
                   </p>
                   <div>
                     <label
-                      htmlFor="first-name"
+                      htmlFor="firstname"
                       className="block text-sm font-medium text-gray-900"
                     >
                       First name
@@ -200,8 +193,8 @@ export default function ContactForm({ blok }) {
                     <div className="mt-1">
                       <input
                         type="text"
-                        name="first-name"
-                        id="first-name"
+                        name="firstname"
+                        id="firstname"
                         autoComplete="given-name"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
                         required
@@ -210,7 +203,7 @@ export default function ContactForm({ blok }) {
                   </div>
                   <div>
                     <label
-                      htmlFor="last-name"
+                      htmlFor="lastname"
                       className="block text-sm font-medium text-gray-900"
                     >
                       Last name
@@ -218,8 +211,8 @@ export default function ContactForm({ blok }) {
                     <div className="mt-1">
                       <input
                         type="text"
-                        name="last-name"
-                        id="last-name"
+                        name="lastname"
+                        id="lastname"
                         autoComplete="family-name"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
                         required
