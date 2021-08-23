@@ -12,5 +12,4 @@ const Layout = ({ children, locale, locales }) => (
     <Footer />
   </div>
 );
-
 export default Layout;

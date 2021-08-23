@@ -1,8 +1,14 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { AtSymbolIcon, XIcon } from "@heroicons/react/outline";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-export default function HeaderBanner({ locale, locales }) {
-  const defaultLocale = locale === "en" ? "/" : `/${locale}/`;
+export default function HeaderBanner({ locale }) {
+  const { asPath } = useRouter();
+  const textLanguageSwitch =
+    locale === "en" ? "Sien in Afrikaans" : "Browse in English";
+
+  const switchLocale = locale === "en" ? "af" : "en";
 
   return (
     <div className="text-xs bg-accent-600">
@@ -19,15 +25,14 @@ export default function HeaderBanner({ locale, locales }) {
               </span>
             </p>
           </div>
-          <div className="flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
-            <a
-              href="#"
-              className="flex items-center justify-center px-4 py-1 text-xs font-medium bg-white border border-transparent rounded-md shadow-sm text-accent-600 hover:bg-accent-50"
-            >
-              Sien in Afrikaans
-            </a>
+          <div className="flex-shrink-0 order-3 hidden w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
+            <Link href={asPath} locale={switchLocale}>
+              <a className="flex items-center justify-center px-4 py-1 text-xs font-medium bg-white border border-transparent rounded-md shadow-sm text-accent-600 hover:bg-accent-50">
+                {textLanguageSwitch}
+              </a>
+            </Link>
           </div>
-          <div className="flex-shrink-0 order-2 sm:order-3 sm:ml-3">
+          <div className="flex-shrink-0 order-2 hidden sm:order-3 sm:ml-3">
             <button
               type="button"
               className="flex p-2 -mr-1 rounded-md hover:bg-accent-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2"
