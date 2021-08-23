@@ -12,9 +12,31 @@ function transactionID() {
   });
 }
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default function ContactForm({ blok }) {
   const router = useRouter();
   const { locale } = router;
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": event.target.getAttribute("name"),
+        ...name,
+      }),
+    })
+      .then(() =>
+        router.push(`/${locale}/thank-you?transaction_id=${transactionID()}`)
+      )
+      .catch((error) => alert(error));
+  };
 
   return (
     <SbEditable content={blok} key={blok._uid}>
@@ -168,21 +190,12 @@ export default function ContactForm({ blok }) {
                   {blok.title}
                 </h3>
                 <form
-                  // action={`/${locale}/thank-you?transaction_id=${transactionID()}`}
+                  onSubmit={handleSubmit}
+                  name="leads"
                   method="POST"
                   data-netlify="true"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p className="hidden">
-                    <label>
-                      <input
-                        type="text"
-                        name="website-language"
-                        value={locale}
-                      />
-                    </label>
-                  </p>
                   <div>
                     <label
                       htmlFor="firstname"
