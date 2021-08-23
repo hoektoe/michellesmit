@@ -2,6 +2,7 @@ import React from "react";
 import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
 
 function transactionID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -12,6 +13,9 @@ function transactionID() {
 }
 
 export default function ContactForm({ blok }) {
+  const router = useRouter();
+  const { locale } = router;
+
   return (
     <SbEditable content={blok} key={blok._uid}>
       <div className="bg-gray-100">
@@ -174,6 +178,15 @@ export default function ContactForm({ blok }) {
                     <label>
                       Don’t fill this out if you’re human:{" "}
                       <input name="bot-field" />
+                    </label>
+                  </p>
+                  <p className="hidden">
+                    <label>
+                      <input
+                        type="text"
+                        name="website-language"
+                        value={locale}
+                      />
                     </label>
                   </p>
                   <input type="hidden" name="form-name" value="contactus" />

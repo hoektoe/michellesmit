@@ -8,4 +8,7 @@ module.exports = withBundleAnalyzer({
     locales: ["en", "af"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ["a.storyblok.com", "localhost:3000"],
+  },
 });

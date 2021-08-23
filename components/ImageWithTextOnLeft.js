@@ -2,6 +2,7 @@ import React from "react";
 import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ImageWithTextOnLeft({ blok }) {
   return (
@@ -36,10 +37,12 @@ export default function ImageWithTextOnLeft({ blok }) {
                   blok.image_grayscale && "filter grayscale"
                 }`}
               >
-                <img
-                  className="max-w-md rounded-lg"
+                <Image
+                  className="max-w-md rounded-lg "
                   src={blok.image.filename}
                   alt={blok.image.alt}
+                  width={400}
+                  height={400}
                 />
               </div>
             </div>

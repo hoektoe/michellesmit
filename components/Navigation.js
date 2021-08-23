@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 const menu = [
   {
@@ -27,8 +28,6 @@ const menu = [
   },
 ];
 export default function Navigation({ locale, locales }) {
-  const defaultLocale = locale === "en" ? "/" : `/${locale}/`;
-
   return (
     <Popover className="relative bg-white">
       {({ open }) => (
@@ -37,16 +36,19 @@ export default function Navigation({ locale, locales }) {
             <div className="flex items-center justify-between py-3 border-b-2 border-gray-100 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/" locale={locale}>
-                  <a className="flex items-center">
+                  <a className="relative flex items-center">
                     <span className="sr-only">
                       Michelle Smit - Counselling Psychologist
                     </span>
-                    <img
-                      className="w-auto mr-3 h-14 sm:h-20"
-                      src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                      alt=""
-                    />
-                    <div className="font-extrabold text-gray-800 uppercase">
+                    <div className="relative w-14 sm:w-20 h-14 sm:h-20">
+                      <Image
+                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
+                        alt="Go to homepage of Michelle Smit"
+                        layout="fill"
+                        priority
+                      />
+                    </div>
+                    <div className="ml-3 font-extrabold text-gray-800 uppercase">
                       <div className="text-xl leading-5 sm:text-2xl">
                         Michelle Smit
                       </div>
@@ -105,10 +107,12 @@ export default function Navigation({ locale, locales }) {
                 <div className="px-5 pt-5 pb-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <img
+                      <Image
                         className="w-auto h-8"
                         src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
                         alt="Michelle Smit"
+                        width={32}
+                        height={32}
                       />
                     </div>
                     <div className="-mr-2">

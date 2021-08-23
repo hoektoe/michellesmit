@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,12 +8,12 @@ const Footer = () => {
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-wrap">
             <div className="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12">
-              <img
+              <Image
                 alt="Michelle Smit Logo Artum Lilly"
                 src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                className="object cover footer-logo"
-                width="150px"
-                height="150px"
+                className="object cover"
+                width={150}
+                height={150}
               />
             </div>
             <div className="w-full px-4 text-center md:text-left lg:w-6/12">
