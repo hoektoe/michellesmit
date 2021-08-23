@@ -95,7 +95,7 @@ const Footer = () => {
           <div className="flex flex-wrap items-center justify-center md:justify-between">
             <div className="w-full px-4 mx-auto text-center md:w-4/12">
               <div className="py-1 text-sm text-gray-300">
-                Copyright © 2020 Michelle Smit - Counselling Psychologist
+                Copyright © 2021 Michelle Smit - Counselling Psychologist
               </div>
             </div>
           </div>
