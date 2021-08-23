@@ -24,7 +24,7 @@ const menu = [
       en: "Therapy Services",
       af: "Dienste",
     },
-    href: "#therapy-services",
+    href: "/#therapy-services",
   },
 ];
 export default function Navigation({ locale, locales }) {

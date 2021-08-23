@@ -5,7 +5,7 @@ import { HOME_META_IMAGE_URL } from "lib/constant";
 
 const Page = ({ blok }) => (
   <SbEditable content={blok} key={blok._uid}>
-    <main>
+    <main className="min-h-screen">
       <Head>
         <title>{blok.seo.title}</title>
         <meta name="description" content={blok.seo.description} />
