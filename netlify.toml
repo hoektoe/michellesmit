@@ -3,4 +3,4 @@
   command = "yarn build"
 
 [context.production]
-  environment = { NODE_VERSION = "15.3.0", NETLIFY_USE_YARN  = "true", YARN_VERSION: "1.22.10", NODE_ENV = "production" }
+  environment = { NODE_VERSION = "15.3.0", NETLIFY_USE_YARN  = "true", YARN_VERSION = "1.22.10", NODE_ENV = "production" }
