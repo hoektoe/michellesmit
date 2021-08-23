@@ -169,16 +169,18 @@ export default function ContactForm({ blok }) {
                 </h3>
                 <form
                   name="contact"
-                  action={`${locale}/thank-you?transaction_id=${transactionID()}`}
+                  action="https://formsubmit.co/66cf5bf0719ba3518e64583d04a90ec1"
                   method="POST"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div className="hidden">
-                    <input name="bot-field" />
-                  </div>
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value={`https://michellesmit.com/${locale}/thank-you?transaction_id=${transactionID()}`}
+                  />
+                  <input type="hidden" name="_subject" value="Vissie"></input>
+                  <input type="text" name="_honey" className="hidden" />
+                  <input type="hidden" name="_captcha" value="false" />
                   <div>
                     <label
                       htmlFor="firstname"
