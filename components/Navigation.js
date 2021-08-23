@@ -21,10 +21,24 @@ const menu = [
   },
   {
     name: {
-      en: "Therapy Services",
+      en: "Services",
       af: "Dienste",
     },
     href: "/#therapy-services",
+  },
+  {
+    name: {
+      en: "Testimonials",
+      af: "Dienste",
+    },
+    href: "/testimonials",
+  },
+  {
+    name: {
+      en: "Blog",
+      af: "Dienste",
+    },
+    href: "/blog",
   },
 ];
 export default function Navigation({ locale, locales }) {
@@ -37,24 +51,14 @@ export default function Navigation({ locale, locales }) {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/" locale={locale}>
                   <a className="relative flex items-center">
-                    <span className="sr-only">
-                      Michelle Smit - Counselling Psychologist
-                    </span>
-                    <div className="relative w-14 sm:w-20 h-14 sm:h-20">
+                    <span className="sr-only">kd language services</span>
+                    <div className="relative w-44 sm:w-60 h-14 sm:h-12">
                       <Image
-                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                        alt="Go to homepage of Michelle Smit"
+                        src="https://a.storyblok.com/f/123701/x/765b8c8d70/logo.svg"
+                        alt="Go to homepage of kd language services"
                         layout="fill"
                         priority
                       />
-                    </div>
-                    <div className="ml-3 font-extrabold text-gray-800 uppercase">
-                      <div className="text-xl leading-5 sm:text-2xl">
-                        Michelle Smit
-                      </div>
-                      <div className="text-md sm:text-base">
-                        Counselling Psychologist
-                      </div>
                     </div>
                   </a>
                 </Link>
@@ -109,10 +113,10 @@ export default function Navigation({ locale, locales }) {
                     <div>
                       <Image
                         className="w-auto h-8"
-                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                        alt="Michelle Smit"
-                        width={32}
-                        height={32}
+                        src="https://a.storyblok.com/f/123701/x/765b8c8d70/logo.svg"
+                        alt="kd language services"
+                        width={120}
+                        height={30}
                       />
                     </div>
                     <div className="-mr-2">
@@ -144,7 +148,7 @@ export default function Navigation({ locale, locales }) {
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">
-                      therapy@michellesmit.com
+                      karli@kdlanguageservices.co.za
                     </p>
                   </div>
                 </div>

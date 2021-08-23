@@ -16,6 +16,7 @@ export default function ImageWithTextOnLeft({ blok }) {
                   {blok.title}
                 </h2>
               )}
+
               <div className="max-w-3xl mt-3 text-lg text-gray-500">
                 {render(blok.description)}
               </div>

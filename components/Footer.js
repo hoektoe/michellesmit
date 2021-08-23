@@ -34,10 +34,10 @@ const Footer = () => {
                 <ul className="text-sm text-gray-700 list-unstyled">
                   <li>
                     <a
-                      href="mailto:therapy@michellesmit.com"
+                      href="mailto:karli@kdlanguageservices.co.za"
                       className="text-brand-400"
                     >
-                      therapy@michellesmit.com
+                      karli@kdlanguageservices.co.za
                     </a>
                   </li>
                   <li>
