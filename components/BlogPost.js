@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import Image from "next/image";
