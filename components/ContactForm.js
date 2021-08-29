@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
+import { useFormspark } from "@formspark/use-formspark";
+
+const FORMSPARK_FORM_ID = "d9x4tlQD";
 
 function transactionID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -15,6 +18,35 @@ function transactionID() {
 export default function ContactForm({ blok }) {
   const router = useRouter();
   const { locale } = router;
+  const initialValues = {
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    message: "",
+    language: locale,
+  };
+
+  const [submit, submitting] = useFormspark({
+    formId: FORMSPARK_FORM_ID,
+  });
+
+  const [values, setValues] = useState(initialValues);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value,
+    });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    values.language = locale;
+    await submit({ ...values });
+    router.push(`/${locale}/thank-you?transaction_id=${transactionID()}`);
+  };
 
   return (
     <SbEditable content={blok} key={blok._uid}>
@@ -169,18 +201,18 @@ export default function ContactForm({ blok }) {
                 </h3>
                 <form
                   name="contact"
-                  action="https://formsubmit.co/66cf5bf0719ba3518e64583d04a90ec1"
+                  onSubmit={onSubmit}
                   method="POST"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
                   <input
                     type="hidden"
-                    name="_next"
-                    value={`https://michellesmit.com/${locale}/thank-you?transaction_id=${transactionID()}`}
+                    name="language"
+                    id="language"
+                    className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
+                    value={locale}
+                    onChange={handleInputChange}
                   />
-                  <input type="hidden" name="_subject" value="Vissie"></input>
-                  <input type="text" name="_honey" className="hidden" />
-                  <input type="hidden" name="_captcha" value="false" />
                   <div>
                     <label
                       htmlFor="firstname"
@@ -195,6 +227,8 @@ export default function ContactForm({ blok }) {
                         id="firstname"
                         autoComplete="given-name"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
+                        value={values.firstname}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>
@@ -213,6 +247,8 @@ export default function ContactForm({ blok }) {
                         id="lastname"
                         autoComplete="family-name"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
+                        value={values.lastname}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>
@@ -231,6 +267,8 @@ export default function ContactForm({ blok }) {
                         type="email"
                         autoComplete="email"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
+                        value={values.email}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>
@@ -258,6 +296,8 @@ export default function ContactForm({ blok }) {
                         autoComplete="tel"
                         className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
                         aria-describedby="phone-optional"
+                        value={values.phone}
+                        onChange={handleInputChange}
                       />
                     </div>
                   </div>
@@ -281,7 +321,8 @@ export default function ContactForm({ blok }) {
                         rows={4}
                         className="block w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
                         aria-describedby="message-max"
-                        defaultValue={""}
+                        value={values.message}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>
@@ -289,6 +330,7 @@ export default function ContactForm({ blok }) {
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
                       type="submit"
+                      disabled={submitting}
                       className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 sm:w-auto"
                     >
                       Submit
