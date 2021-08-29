@@ -7,13 +7,6 @@ import Image from "next/image";
 const menu = [
   {
     name: {
-      en: "Welcome",
-      af: "Welkom",
-    },
-    href: "/",
-  },
-  {
-    name: {
       en: "About",
       af: "Meer oor my",
     },

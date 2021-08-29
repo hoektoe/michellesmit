@@ -34,16 +34,15 @@ export default function ImageWithTextOnLeft({ blok }) {
             </div>
             <div className="mt-8 ">
               <div
-                className={`flex justify-center col-span-1 px-8 py-8 ${
+                className={`flex justify-center col-span-1 px-8 py-8 aspect-w-1 aspect-h-1 h-96 w-96 shadow-lg rounded-lg ${
                   blok.image_grayscale && "filter grayscale"
                 }`}
               >
                 <Image
-                  className="max-w-md rounded-lg "
+                  className=""
                   src={blok.image.filename}
                   alt={blok.image.alt}
-                  width={400}
-                  height={400}
+                  layout="fill"
                 />
               </div>
             </div>

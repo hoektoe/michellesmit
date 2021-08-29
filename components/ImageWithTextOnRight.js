@@ -12,7 +12,7 @@ export default function ImageWithTextOnLeft({ blok }) {
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="mt-8">
               <div
-                className={`flex justify-center col-span-1 px-8 py-8 ${
+                className={`flex justify-center col-span-1 px-8 py-8 aspect-w-1 aspect-h-1 h-96 w-96 shadow-lg ${
                   blok.image_grayscale && "filter grayscale"
                 }`}
               >
@@ -20,8 +20,7 @@ export default function ImageWithTextOnLeft({ blok }) {
                   className="max-w-md rounded-lg"
                   src={blok.image.filename}
                   alt={blok.image.alt}
-                  width={400}
-                  height={400}
+                  layout="fill"
                 />
               </div>
             </div>
