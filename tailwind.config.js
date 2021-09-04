@@ -40,7 +40,9 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    opacity: ["disabled"],
+  },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
