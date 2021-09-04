@@ -26,7 +26,7 @@ module.exports = {
           900: "#590000",
           DEFAULT: "#8C1919",
         },
-        accent: colors.coolGray,
+        accent: colors.trueGray,
       },
     },
   },

@@ -160,11 +160,11 @@ export default function ContactForm({ blok }) {
                 <h3 className="mb-6 text-lg font-medium text-white">
                   Contact information
                 </h3>
-                <div className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base text-brand-100">
                   {render(blok.description)}
                 </div>
 
-                <div className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base text-brand-100">
                   {render(blok.address)}
                 </div>
                 <dl className="my-8 space-y-6">
@@ -189,7 +189,7 @@ export default function ContactForm({ blok }) {
                     <span className="ml-3">karli@kdlanguageservices.co.za</span>
                   </dd>
                 </dl>
-                <div className="max-w-3xl mt-6 text-base text-brand-50">
+                <div className="max-w-3xl mt-6 text-base text-brand-100">
                   {render(blok.additional_info)}
                 </div>
               </div>

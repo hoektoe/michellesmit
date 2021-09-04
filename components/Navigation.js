@@ -29,7 +29,7 @@ const menu = [
   {
     name: {
       en: "Blog",
-      af: "Dienste",
+      af: "Berugte",
     },
     href: "/blog",
   },

@@ -12,7 +12,7 @@ export default function ImageWithTextOnLeft({ blok }) {
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
               {blok.title && (
-                <h2 className="text-3xl font-extrabold text-accent-500 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold text-accent-700 sm:text-4xl">
                   {blok.title}
                 </h2>
               )}

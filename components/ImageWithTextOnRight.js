@@ -26,7 +26,7 @@ export default function ImageWithTextOnLeft({ blok }) {
             </div>
             <div>
               {blok.title && (
-                <h2 className="text-3xl font-extrabold text-accent-500 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold text-accent-700 sm:text-4xl">
                   {blok.title}
                 </h2>
               )}

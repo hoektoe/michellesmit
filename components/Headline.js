@@ -13,7 +13,7 @@ export default function Headline({ blok }) {
           {blok.make_title_h1 && (
             <h1
               id={blok.scroll_to_hash && blok.scroll_to_hash}
-              className="text-4xl font-extrabold leading-tight text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
+              className="text-4xl font-extrabold leading-tight text-accent-700 sm:text-5xl sm:tracking-tight lg:text-6xl"
             >
               {blok.title}
             </h1>
@@ -22,7 +22,7 @@ export default function Headline({ blok }) {
           {!blok.make_title_h1 && (
             <h2
               id={blok.scroll_to_hash && blok.scroll_to_hash}
-              className="text-4xl font-extrabold leading-tight text-accent-500 sm:text-5xl sm:tracking-tight lg:text-6xl"
+              className="text-4xl font-extrabold leading-tight text-accent-700 sm:text-5xl sm:tracking-tight lg:text-6xl"
             >
               {blok.title}
             </h2>
