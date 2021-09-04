@@ -101,6 +101,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <a href="https://nappycare.co.za/" className="hidden">
+        nappycare.co.za
+      </a>
     </footer>
   );
 };
