@@ -11,8 +11,17 @@ export default function Page({ blok }) {
     <SbEditable content={blok} key={blok._uid}>
       <main className="min-h-screen">
         <Head>
-          <title>{blok.seo.title}</title>
-          <meta name="description" content={blok.seo.description} />
+          <title>
+            {blok.seo && blok.seo.title ? blok.seo.title : "Enter a seo title"}
+          </title>
+          <meta
+            name="description"
+            content={
+              blok.seo && blok.seo.description
+                ? blok.seo.description
+                : "Enter a seo decription"
+            }
+          />
           {router.asPath.includes("thank") && (
             <meta name="robots" content="noindex" />
           )}

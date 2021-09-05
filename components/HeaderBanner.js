@@ -15,12 +15,12 @@ export default function HeaderBanner({ locale }) {
       <div className="px-3 py-1 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex items-center flex-1 w-0">
-            <span className="flex p-1 rounded-lg bg-brand-800">
+            <span className="flex p-1 rounded-lg bg-accent-400">
               <AtSymbolIcon className="w-3 h-3 text-white" aria-hidden="true" />
             </span>
             <p className="ml-3 font-medium text-white truncate">
-              <span className="md:hidden">therapy@michellesmit.com</span>
-              <span className="hidden md:inline">therapy@michellesmit.com</span>
+              <span className="md:hidden">therapy@elenadurr.co.za</span>
+              <span className="hidden md:inline">therapy@elenadurr.co.za</span>
             </p>
           </div>
           <div className="flex-shrink-0 order-3 hidden w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">

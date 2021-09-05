@@ -13,7 +13,7 @@ module.exports = {
         sans: ["Roboto", "sans-serif"],
       },
       colors: {
-        brand: {
+        accent: {
           50: "#EEF6F6",
           100: "#DDEEED",
           200: "#BBDDDC",
@@ -26,7 +26,7 @@ module.exports = {
           900: "#112221",
           DEFAULT: "#56A9A7",
         },
-        accent: {
+        brand: {
           50: "#FDF0CE",
           100: "#FDE9B5",
           200: "#FBD984",

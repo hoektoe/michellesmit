@@ -3,6 +3,7 @@ import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import Link from "next/link";
 import Image from "next/image";
+import image from "next/image";
 
 export default function ImageWithTextOnLeft({ blok }) {
   return (
@@ -31,21 +32,23 @@ export default function ImageWithTextOnLeft({ blok }) {
                 </div>
               </div>
             </div>
-            <div className="mt-8 ">
-              <div
-                className={`flex justify-center col-span-1 px-8 py-8 ${
-                  blok.image_grayscale && "filter grayscale"
-                }`}
-              >
-                <Image
-                  className="max-w-md rounded-lg "
-                  src={blok.image.filename}
-                  alt={blok.image.alt}
-                  width={400}
-                  height={400}
-                />
+            {blok.image && blok.image.filename !== "" && (
+              <div className="mt-8 ">
+                <div
+                  className={`flex justify-center col-span-1 px-8 py-8 ${
+                    blok.image_grayscale && "filter grayscale"
+                  }`}
+                >
+                  <Image
+                    className="max-w-md rounded-lg "
+                    src={blok.image.filename}
+                    alt={blok.image.alt}
+                    width={400}
+                    height={400}
+                  />
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const Head = ({ title, description }) => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="keywords"
-      content="Online Counselling, Psychologist, South Africa, Noordhoek, Kommetjie, Therapy Services, Depression, Anxiety, Relationship, Michelle Smit, Counselling Psychologist, Online Therapy"
+      content="Online Counselling, Psychologist, South Africa, Noordhoek, Kommetjie, Therapy Services, Depression, Anxiety, Relationship, Dr Elna Dürr Counselling, Counselling Psychologist, Online Therapy"
     />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/png" href="/meta/favicon.ico" />
