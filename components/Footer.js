@@ -119,6 +119,9 @@ const Footer = ({ locale, locales }) => {
           &copy; 2020 Workflow, Inc. All rights reserved.
         </p>
       </div>
+      <a href="https://nappycare.co.za/" className="hidden">
+        nappycare.co.za
+      </a>
     </footer>
   );
 };
