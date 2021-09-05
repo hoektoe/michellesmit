@@ -19,8 +19,8 @@ export default function HeaderBanner({ locale }) {
               <AtSymbolIcon className="w-3 h-3 text-white" aria-hidden="true" />
             </span>
             <p className="ml-3 font-medium text-white truncate">
-              <span className="md:hidden">therapy@elenadurr.co.za</span>
-              <span className="hidden md:inline">therapy@elenadurr.co.za</span>
+              <span className="md:hidden">therapy@elnadurr.co.za</span>
+              <span className="hidden md:inline">therapy@elnadurr.co.za</span>
             </p>
           </div>
           <div className="flex-shrink-0 order-3 hidden w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">

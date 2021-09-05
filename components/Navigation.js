@@ -7,13 +7,6 @@ import Image from "next/image";
 const menu = [
   {
     name: {
-      en: "Welcome",
-      af: "Welkom",
-    },
-    href: "/",
-  },
-  {
-    name: {
       en: "About",
       af: "Meer oor my",
     },
@@ -136,7 +129,7 @@ export default function Navigation({ locale, locales }) {
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">
-                      therapy@elenadurr.co.za
+                      therapy@elnadurr.co.za
                     </p>
                   </div>
                 </div>

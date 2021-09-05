@@ -26,7 +26,7 @@ export default function HeroImageOnRight({ blok }) {
                       <Link href={blok.link_secondary_href.cached_url}>
                         <a
                           href={blok.link_secondary_href.cached_url}
-                          className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10"
+                          className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-500 hover:bg-brand-600 md:py-4 md:text-lg md:px-10"
                         >
                           {blok.link_secondary_text}
                         </a>

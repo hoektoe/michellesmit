@@ -33,10 +33,10 @@ const Footer = () => {
                 <ul className="text-sm text-gray-700 list-unstyled">
                   <li>
                     <a
-                      href="mailto:therapy@elenadurr.co.za"
+                      href="mailto:therapy@elnadurr.co.za"
                       className="text-brand-500"
                     >
-                      therapy@elenadurr.co.za
+                      therapy@elnadurr.co.za
                     </a>
                   </li>
                 </ul>
