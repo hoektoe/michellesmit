@@ -14,6 +14,7 @@ import ImageWithTextOnLeft from "./ImageWithTextOnLeft";
 import CallToAction from "./CallToAction";
 import ContactForm from "./ContactForm";
 import Testimonial from "./Testimonial";
+import Prose from "./Prose";
 
 const Components = {
   teaser: Teaser,
@@ -31,6 +32,7 @@ const Components = {
   "call-to-action": CallToAction,
   "contact-form": ContactForm,
   testimonial: Testimonial,
+  prose: Prose,
 };
 
 const DynamicComponent = ({ blok }) => {
