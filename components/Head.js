@@ -13,7 +13,7 @@ const Head = ({ title, description }) => (
       content="Online Counselling, Psychologist, South Africa, Noordhoek, Kommetjie, Therapy Services, Depression, Anxiety, Relationship, Michelle Smit, Counselling Psychologist, Online Therapy"
     />
     <meta name="twitter:card" content="summary" />
-    <link rel="icon" type="image/png" href="/meta/favicon.ico" />
+    <link rel="icon" type="image/png" href="/meta/favicon-32x32.png" />
     <link rel="apple-touch-icon" href="/meta/apple-touch-icon.png" />
     <meta name="og:image" content={HOME_META_IMAGE_URL} />
     <meta name="twitter:image" content={HOME_META_IMAGE_URL} />
