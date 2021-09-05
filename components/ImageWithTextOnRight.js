@@ -40,7 +40,7 @@ export default function ImageWithTextOnLeft({ blok }) {
                 <div className="rounded-md shadow">
                   {blok.button_text && blok.button_link.cached_url && (
                     <Link href={blok.button_link.cached_url}>
-                      <a className="flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700">
+                      <a className="flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-500 hover:bg-brand-600">
                         {blok.button_text}
                       </a>
                     </Link>
