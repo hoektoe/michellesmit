@@ -17,7 +17,7 @@ const menu = [
       en: "Services",
       af: "Dienste",
     },
-    href: "/#therapy-services",
+    href: "/#services",
   },
   {
     name: {

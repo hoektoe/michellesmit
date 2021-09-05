@@ -66,7 +66,7 @@ const navigation = {
         en: "Services",
         af: "Dienste",
       },
-      href: "/#therapy-services",
+      href: "/#services",
     },
     {
       name: {
@@ -116,7 +116,7 @@ const Footer = ({ locale, locales }) => {
           ))}
         </div>
         <p className="mt-8 text-base text-center text-gray-400">
-          &copy; 2020 Workflow, Inc. All rights reserved.
+          &copy; {new Date().getFullYear()} KD Language Services
         </p>
       </div>
       <a href="https://nappycare.co.za/" className="hidden">
