@@ -57,7 +57,7 @@ export default function ContactForm({ blok }) {
 
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Contact information */}
-              <div className="relative px-6 py-10 overflow-hidden bg-brand-700 sm:px-10 xl:p-12">
+              <div className="relative px-6 py-10 overflow-hidden bg-brand-400 sm:px-10 xl:p-12">
                 <div
                   className="absolute inset-0 pointer-events-none sm:hidden"
                   aria-hidden="true"
@@ -171,13 +171,13 @@ export default function ContactForm({ blok }) {
                   <dt>
                     <span className="sr-only">Phone number</span>
                   </dt>
-                  {/* <dd className="flex text-base text-brand-100">
+                  <dd className="flex text-base text-brand-100">
                     <PhoneIcon
                       className="flex-shrink-0 w-6 h-6 text-brand-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">+1 (555) 123-4567</span>
-                  </dd> */}
+                    <span className="ml-3">076 684 1249</span>
+                  </dd>
                   <dt>
                     <span className="sr-only">Email</span>
                   </dt>
@@ -186,7 +186,7 @@ export default function ContactForm({ blok }) {
                       className="flex-shrink-0 w-6 h-6 text-brand-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">therapy@michellesmit.com</span>
+                    <span className="ml-3">therapy@elenadurr.co.za</span>
                   </dd>
                 </dl>
                 <div className="max-w-3xl mt-6 text-base text-brand-50">
