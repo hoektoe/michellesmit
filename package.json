@@ -20,7 +20,7 @@
     "@tailwindcss/jit": "^0.1.18",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.2",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.1.0",
     "marked": "^3.0.0",
