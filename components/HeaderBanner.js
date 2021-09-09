@@ -23,7 +23,7 @@ export default function HeaderBanner({ locale }) {
               <span className="hidden md:inline">therapy@michellesmit.com</span>
             </p>
           </div>
-          <div className="flex-shrink-0 order-3 hidden w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
+          <div className="flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
             <Link href={asPath} locale={switchLocale}>
               <a className="flex items-center justify-center px-4 py-1 text-xs font-medium bg-white border border-transparent rounded-md shadow-sm text-accent-600 hover:bg-accent-50">
                 {textLanguageSwitch}
