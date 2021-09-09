@@ -4,6 +4,17 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import Image from "next/image";
 
+const trans = {
+  counselling: {
+    en: "Counselling Psychologist",
+    af: "Beradingsielkundige",
+  },
+  contact: {
+    en: "Contact",
+    af: "Kontak",
+  },
+};
+
 const menu = [
   {
     name: {
@@ -22,7 +33,7 @@ const menu = [
   {
     name: {
       en: "Therapy Services",
-      af: "Dienste",
+      af: "Terapiedienste",
     },
     href: "/#therapy-services",
   },
@@ -38,7 +49,7 @@ export default function Navigation({ locale, locales }) {
                 <Link href="/" locale={locale}>
                   <a className="relative flex items-center">
                     <span className="sr-only">
-                      Michelle Smit - Counselling Psychologist
+                      Michelle Smit - {trans.counselling[locale]}
                     </span>
                     <div className="relative w-14 sm:w-20 h-14 sm:h-20">
                       <Image
@@ -53,7 +64,7 @@ export default function Navigation({ locale, locales }) {
                         Michelle Smit
                       </div>
                       <div className="text-md sm:text-base">
-                        Counselling Psychologist
+                        {trans.counselling[locale]}
                       </div>
                     </div>
                   </a>
@@ -81,7 +92,7 @@ export default function Navigation({ locale, locales }) {
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <Link href="/contact">
                   <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 whitespace-nowrap hover:bg-brand-700">
-                    Contact
+                    {trans.contact[locale]}
                   </a>
                 </Link>
               </div>
@@ -140,7 +151,7 @@ export default function Navigation({ locale, locales }) {
                   <div>
                     <Link href="/contact" locale={locale}>
                       <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700">
-                        Contact
+                        {trans.contact[locale]}
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">

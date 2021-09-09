@@ -27,6 +27,41 @@ export default function ContactForm({ blok }) {
     language: locale,
   };
 
+  const trans = {
+    contact: {
+      en: "Contact Information",
+      af: "Kontakbesonderhede",
+    },
+    submit: {
+      en: "Submit",
+      af: "Stuur",
+    },
+    name: {
+      en: "First name",
+      af: "Naame",
+    },
+    surname: {
+      en: "Last name",
+      af: "Van",
+    },
+    email: {
+      en: "Email",
+      af: "E-pos",
+    },
+    cellphone: {
+      en: "Cellphone",
+      af: "Selfoon",
+    },
+    message: {
+      en: "Message",
+      af: "Boodskap",
+    },
+    max: {
+      en: "Max. 500 characters",
+      af: "Maximum 500 letters",
+    },
+  };
+
   const [submit, submitting] = useFormspark({
     formId: FORMSPARK_FORM_ID,
   });
@@ -158,7 +193,7 @@ export default function ContactForm({ blok }) {
                   </svg>
                 </div>
                 <h3 className="mb-6 text-lg font-medium text-white">
-                  Contact information
+                  {trans.contact[locale]}
                 </h3>
                 <div className="max-w-3xl mb-6 text-base text-brand-50">
                   {render(blok.description)}
@@ -218,7 +253,7 @@ export default function ContactForm({ blok }) {
                       htmlFor="firstname"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      First name
+                      {trans.name[locale]}
                     </label>
                     <div className="mt-1">
                       <input
@@ -238,7 +273,7 @@ export default function ContactForm({ blok }) {
                       htmlFor="lastname"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      Last name
+                      {trans.surname[locale]}
                     </label>
                     <div className="mt-1">
                       <input
@@ -258,7 +293,7 @@ export default function ContactForm({ blok }) {
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      Email
+                      {trans.email[locale]}
                     </label>
                     <div className="mt-1">
                       <input
@@ -279,14 +314,8 @@ export default function ContactForm({ blok }) {
                         htmlFor="phone"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Phone
+                        {trans.cellphone[locale]}
                       </label>
-                      <span
-                        id="phone-optional"
-                        className="text-sm text-gray-500"
-                      >
-                        Optional
-                      </span>
                     </div>
                     <div className="mt-1">
                       <input
@@ -308,10 +337,10 @@ export default function ContactForm({ blok }) {
                         htmlFor="message"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Message
+                        {trans.message[locale]}
                       </label>
                       <span id="message-max" className="text-sm text-gray-500">
-                        Max. 500 characters
+                        {trans.max[locale]}
                       </span>
                     </div>
                     <div className="mt-1">
@@ -333,8 +362,8 @@ export default function ContactForm({ blok }) {
                       disabled={submitting}
                       className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 sm:w-auto"
                     >
-                      {submitting && "Submitting"}
-                      {!submitting && "Submit"}
+                      {submitting && "..."}
+                      {!submitting && trans.submit[locale]}
                     </button>
                   </div>
                 </form>

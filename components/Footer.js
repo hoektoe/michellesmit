@@ -1,7 +1,42 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Footer = () => {
+const trans = {
+  tagline: {
+    en: "Psychologist - Online Therapy - Face to Face Therapy",
+    af: "Beradingsielkundige - Aanlyn Terapie - Terapie in persoon",
+  },
+  qualifications: {
+    en: "M. Psych, Hons Psych",
+    af: "M. Sielk., Hons. Sielk.",
+  },
+  description: {
+    en: "HPCSA registered counselling psychologist based in Cape Town. Online based therapy. Available after hours and weekends.",
+    af: "HPCSA-geregistreerde beradingsielkundige gebaseer in Kaapstad. Aanlyn-gebaseerde terapie. Beskikbaar na-ure en naweke.",
+  },
+  about: {
+    en: "About",
+    af: "Meer oor my",
+  },
+  therapy: {
+    en: "Therapy Services",
+    af: "Terapiedienste",
+  },
+  rates: {
+    en: "Rates & Insurance",
+    af: "Tariewe & Medies",
+  },
+  counselling: {
+    en: "Counselling Psychologist",
+    af: "Beradingsielkundige",
+  },
+  copyright: {
+    en: "Copyright",
+    af: "Kopiereg",
+  },
+};
+
+export default function Footer({ locale, locales }) {
   return (
     <footer className="relative pt-4 pb-6 bg-accent-700">
       <div className="pt-8 border-t-4 bg-accent-700 border-brand">
@@ -21,15 +56,12 @@ const Footer = () => {
                 Michelle Smit
               </div>
               <div className="mt-0 text-lg text-white">
-                Psychologist - Online Therapy - Face to Face Therapy
+                {trans.tagline[locale]}
               </div>
               <div className="mt-0 mb-6 text-brand-300">
-                M. Psych, Hons Psych
+                {trans.qualifications[locale]}
               </div>
-              <p className="text-gray-200">
-                HPCSA registered counselling psychologist based in Cape Town.
-                Online based therapy. Available after hours and weekends.
-              </p>
+              <p className="text-gray-200">{trans.description[locale]}</p>
               <div className="mt-2">
                 <ul className="text-sm text-gray-700 list-unstyled">
                   <li>
@@ -61,21 +93,21 @@ const Footer = () => {
                     <li>
                       <Link href="/about">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          About
+                          {trans.about[locale]}
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/therapy-services">
+                      <Link href="/#therapy-services">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          Therapy Services
+                          {trans.therapy[locale]}
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/rates-and-insurance">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          Rates and Insurance
+                          {trans.rates[locale]}
                         </a>
                       </Link>
                     </li>
@@ -95,7 +127,8 @@ const Footer = () => {
           <div className="flex flex-wrap items-center justify-center md:justify-between">
             <div className="w-full px-4 mx-auto text-center md:w-4/12">
               <div className="py-1 text-sm text-gray-300">
-                Copyright © 2021 Michelle Smit - Counselling Psychologist
+                {trans.copyright[locale]} © 2021 Michelle Smit -{" "}
+                {trans.counselling[locale]}
               </div>
             </div>
           </div>
@@ -106,6 +139,4 @@ const Footer = () => {
       </a>
     </footer>
   );
-};
-
-export default Footer;
+}
