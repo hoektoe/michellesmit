@@ -6,11 +6,10 @@ import Placeholder from "./Placeholder";
 import PostsList from "./PostsList";
 import Page from "./Page";
 import BlogPost from "./BlogPost";
-import Text from "./Text";
 import HeroImageOnRight from "./HeroImageOnRight";
 import Headline from "./Headline";
 import ImageWithTextOnRight from "./ImageWithTextOnRight";
-import ImageWithTextOnLeft from "./ImageWithTextOnLeft";
+import TextWithImage from "./text-with-image";
 import CallToAction from "./CallToAction";
 import ContactForm from "./ContactForm";
 import Testimonial from "./Testimonial";
@@ -23,12 +22,11 @@ const Components = {
   "featured-posts": FeaturedPosts,
   page: Page,
   post: BlogPost,
-  text: Text,
   "selected-posts": PostsList,
   "hero-image-on-right": HeroImageOnRight,
   headline: Headline,
   "image-with-text-on-right": ImageWithTextOnRight,
-  "image-with-text-on-left": ImageWithTextOnLeft,
+  "text-with-image": TextWithImage,
   "call-to-action": CallToAction,
   "contact-form": ContactForm,
   testimonial: Testimonial,

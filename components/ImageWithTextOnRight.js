@@ -10,7 +10,7 @@ export default function ImageWithTextOnLeft({ blok }) {
       <div className="bg-white">
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div className="mt-8">
+            <div className="">
               <div
                 className={`flex justify-center col-span-1 px-8 py-8 ${
                   blok.image_grayscale && "filter grayscale"

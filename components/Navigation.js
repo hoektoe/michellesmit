@@ -7,7 +7,7 @@ import Image from "next/image";
 const trans = {
   counselling: {
     en: "Counselling Psychologist",
-    af: "Beradingsielkundige",
+    af: "Voorligting Sielkundige",
   },
   contact: {
     en: "Contact",
@@ -35,7 +35,7 @@ const menu = [
       en: "Therapy Services",
       af: "Terapiedienste",
     },
-    href: "/#therapy-services",
+    href: "/therapy-services",
   },
 ];
 export default function Navigation({ locale, locales }) {

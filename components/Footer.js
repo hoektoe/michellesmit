@@ -4,7 +4,7 @@ import Image from "next/image";
 const trans = {
   tagline: {
     en: "Psychologist - Online Therapy - Face to Face Therapy",
-    af: "Beradingsielkundige - Aanlyn Terapie - Terapie in persoon",
+    af: "Voorligting Sielkundige - Aanlyn Terapie - Terapie in persoon",
   },
   qualifications: {
     en: "M. Psych, Hons Psych",
@@ -12,7 +12,7 @@ const trans = {
   },
   description: {
     en: "HPCSA registered counselling psychologist based in Cape Town. Online based therapy. Available after hours and weekends.",
-    af: "HPCSA-geregistreerde beradingsielkundige gebaseer in Kaapstad. Aanlyn-gebaseerde terapie. Beskikbaar na-ure en naweke.",
+    af: "HPCSA-geregistreerde voorligting sielkundige gebaseer in Kaapstad. Aanlyn-gebaseerde terapie. Beskikbaar na-ure en naweke.",
   },
   about: {
     en: "About",
@@ -28,7 +28,7 @@ const trans = {
   },
   counselling: {
     en: "Counselling Psychologist",
-    af: "Beradingsielkundige",
+    af: "Voorligting Sielkundige",
   },
   copyright: {
     en: "Copyright",
@@ -98,7 +98,7 @@ export default function Footer({ locale, locales }) {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/#therapy-services">
+                      <Link href="/therapy-services">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
                           {trans.therapy[locale]}
                         </a>
