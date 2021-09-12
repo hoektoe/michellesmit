@@ -9,7 +9,7 @@ const Layout = ({ children, locale, locales }) => (
     <HeaderBanner locale={locale} locales={locales} />
     <Navigation locale={locale} locales={locales} />
     {children}
-    <Footer />
+    <Footer locale={locale} locales={locales} />
   </div>
 );
 export default Layout;

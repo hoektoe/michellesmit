@@ -4,6 +4,17 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import Image from "next/image";
 
+const trans = {
+  counselling: {
+    en: "Counselling Psychologist",
+    af: "Voorligting Sielkundige",
+  },
+  contact: {
+    en: "Contact",
+    af: "Kontak",
+  },
+};
+
 const menu = [
   {
     name: {
@@ -15,9 +26,9 @@ const menu = [
   {
     name: {
       en: "Therapy Services",
-      af: "Dienste",
+      af: "Terapiedienste",
     },
-    href: "/#therapy-services",
+    href: "/therapy-services",
   },
 ];
 export default function Navigation({ locale, locales }) {
@@ -66,7 +77,7 @@ export default function Navigation({ locale, locales }) {
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <Link href="/contact">
                   <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-500 whitespace-nowrap hover:bg-brand-600">
-                    Contact
+                    {trans.contact[locale]}
                   </a>
                 </Link>
               </div>
@@ -125,7 +136,7 @@ export default function Navigation({ locale, locales }) {
                   <div>
                     <Link href="/contact" locale={locale}>
                       <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-500 hover:bg-brand-600">
-                        Contact
+                        {trans.contact[locale]}
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">

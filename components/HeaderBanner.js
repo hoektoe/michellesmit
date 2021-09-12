@@ -12,7 +12,7 @@ export default function HeaderBanner({ locale }) {
 
   return (
     <div className="text-xs bg-accent-600">
-      <div className="px-3 py-1 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-3 py-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex items-center flex-1 w-0">
             <span className="flex p-1 rounded-lg bg-accent-400">
@@ -23,7 +23,7 @@ export default function HeaderBanner({ locale }) {
               <span className="hidden md:inline">therapy@elnadurr.co.za</span>
             </p>
           </div>
-          <div className="flex-shrink-0 order-3 hidden w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
+          <div className="flex-shrink-0 order-3 w-full sm:order-2 sm:mt-0 sm:w-auto">
             <Link href={asPath} locale={switchLocale}>
               <a className="flex items-center justify-center px-4 py-1 text-xs font-medium bg-white border border-transparent rounded-md shadow-sm text-accent-600 hover:bg-accent-50">
                 {textLanguageSwitch}

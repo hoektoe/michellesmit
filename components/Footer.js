@@ -1,7 +1,42 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Footer = () => {
+const trans = {
+  tagline: {
+    en: "Psychologist - Online Therapy - Face to Face Therapy",
+    af: "Voorligting Sielkundige - Aanlyn Terapie - Terapie in persoon",
+  },
+  qualifications: {
+    en: "M. Psych, Hons Psych",
+    af: "M. Sielk., Hons. Sielk.",
+  },
+  description: {
+    en: "HPCSA registered counselling psychologist based in Cape Town. Online based therapy. Available after hours and weekends.",
+    af: "HPCSA-geregistreerde voorligting sielkundige gebaseer in Kaapstad. Aanlyn-gebaseerde terapie. Beskikbaar na-ure en naweke.",
+  },
+  about: {
+    en: "About",
+    af: "Meer oor my",
+  },
+  therapy: {
+    en: "Therapy Services",
+    af: "Terapiedienste",
+  },
+  rates: {
+    en: "Rates & Insurance",
+    af: "Tariewe & Medies",
+  },
+  counselling: {
+    en: "Counselling Psychologist",
+    af: "Voorligting Sielkundige",
+  },
+  copyright: {
+    en: "Copyright",
+    af: "Kopiereg",
+  },
+};
+
+export default function Footer({ locale, locales }) {
   return (
     <footer className="relative pt-4 pb-6 bg-white">
       <div className="pt-8 bg-white border-t-4 border-brand">
@@ -51,19 +86,26 @@ const Footer = () => {
                   <ul className="list-unstyled">
                     <li>
                       <Link href="/about">
-                        <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
-                          About
+                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                          {trans.about[locale]}
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/therapy-services">
-                        <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
-                          Therapy Services
+                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                          {trans.therapy[locale]}
                         </a>
                       </Link>
                     </li>
-                    <li className="hidden">
+                    <li>
+                      <Link href="/rates-and-insurance">
+                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                          {trans.rates[locale]}
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/rates-and-insurance">
                         <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
                           Sien in Afrikaans
@@ -91,6 +133,4 @@ const Footer = () => {
       </a>
     </footer>
   );
-};
-
-export default Footer;
+}

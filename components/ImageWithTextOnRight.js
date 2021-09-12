@@ -10,23 +10,21 @@ export default function ImageWithTextOnLeft({ blok }) {
       <div className="bg-white">
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-            {blok.image && blok.image.filename !== "" && (
-              <div className="mt-8">
-                <div
-                  className={`flex justify-center col-span-1 px-8 py-8 ${
-                    blok.image_grayscale && "filter grayscale"
-                  }`}
-                >
-                  <Image
-                    className="max-w-md rounded-lg"
-                    src={blok.image.filename}
-                    alt={blok.image.alt}
-                    width={400}
-                    height={400}
-                  />
-                </div>
+            <div className="mt-8">
+              <div
+                className={`flex justify-center col-span-1 px-8 py-8 ${
+                  blok.image_grayscale && "filter grayscale"
+                }`}
+              >
+                <Image
+                  className="max-w-md rounded-lg"
+                  src={blok.image.filename}
+                  alt={blok.image.alt}
+                  width={400}
+                  height={400}
+                />
               </div>
-            )}
+            </div>
             <div>
               {blok.title && (
                 <h2 className="text-3xl font-extrabold text-accent-500 sm:text-4xl">
@@ -40,7 +38,7 @@ export default function ImageWithTextOnLeft({ blok }) {
                 <div className="rounded-md shadow">
                   {blok.button_text && blok.button_link.cached_url && (
                     <Link href={blok.button_link.cached_url}>
-                      <a className="flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-500 hover:bg-brand-600">
+                      <a className="flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700">
                         {blok.button_text}
                       </a>
                     </Link>
