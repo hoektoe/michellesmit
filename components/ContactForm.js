@@ -5,7 +5,7 @@ import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import { useFormspark } from "@formspark/use-formspark";
 
-const FORMSPARK_FORM_ID = "d9x4tlQD";
+const FORMSPARK_FORM_ID = "DOzUQauS";
 
 function transactionID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -221,7 +221,7 @@ export default function ContactForm({ blok }) {
                       className="flex-shrink-0 w-6 h-6 text-brand-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">therapy@elnadurr.co.za</span>
+                    <span className="ml-3">elnadurr@gmail.com</span>
                   </dd>
                 </dl>
                 <div className="max-w-3xl mt-6 text-base text-brand-50">

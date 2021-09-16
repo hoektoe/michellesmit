@@ -41,7 +41,7 @@ export default function ImageWithTextOnLeft({ blok }) {
               </div>
             </div>
             <div
-              className={` mt-8 order-1 ${
+              className={`order-1 ${
                 blok.place_image_on_right ? "sm:order-2" : "sm:order-1"
               }`}
             >

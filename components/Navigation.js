@@ -44,11 +44,12 @@ export default function Navigation({ locale, locales }) {
                     <span className="sr-only">
                       Dr Elna Dürr Counselling - Counselling Psychologist
                     </span>
-                    <div className="relative w-20 sm:w-40 aspect-w-3 aspect-h-2 ">
+                    <div className="relative">
                       <Image
-                        src="https://a.storyblok.com/f/125511/300x207/bdc43b6882/logomakr-45wp0i.png"
+                        src="https://a.storyblok.com/f/125511/300x128/d191e6b134/logomakr-1mqgla.png"
                         alt="Go to homepage of Dr Elna Dürr Counselling"
-                        layout="fill"
+                        width={150}
+                        height={64}
                         priority
                       />
                     </div>
@@ -140,7 +141,7 @@ export default function Navigation({ locale, locales }) {
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">
-                      therapy@elnadurr.co.za
+                      elnadurr@gmail.com
                     </p>
                   </div>
                 </div>

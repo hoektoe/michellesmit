@@ -46,10 +46,10 @@ export default function Footer({ locale, locales }) {
               <div>
                 <Image
                   alt="Dr Elna Dürr Counselling Logo Artum Lilly"
-                  src="https://a.storyblok.com/f/125511/300x207/bdc43b6882/logomakr-45wp0i.png"
+                  src="https://a.storyblok.com/f/125511/300x128/d191e6b134/logomakr-1mqgla.png"
                   className=""
-                  width={200}
-                  height={150}
+                  width={300}
+                  height={128}
                 />
               </div>
             </div>
@@ -68,10 +68,10 @@ export default function Footer({ locale, locales }) {
                 <ul className="text-sm text-gray-700 list-unstyled">
                   <li>
                     <a
-                      href="mailto:therapy@elnadurr.co.za"
+                      href="mailto:elnadurr@gmail.com"
                       className="text-brand-500"
                     >
-                      therapy@elnadurr.co.za
+                      elnadurr@gmail.com
                     </a>
                   </li>
                 </ul>
