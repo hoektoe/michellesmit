@@ -86,25 +86,19 @@ export default function Footer({ locale, locales }) {
                   <ul className="list-unstyled">
                     <li>
                       <Link href="/about">
-                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                        <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
                           {trans.about[locale]}
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/therapy-services">
-                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                        <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
                           {trans.therapy[locale]}
                         </a>
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/rates-and-insurance">
-                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          {trans.rates[locale]}
-                        </a>
-                      </Link>
-                    </li>
+
                     <li>
                       <Link href="/rates-and-insurance">
                         <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">

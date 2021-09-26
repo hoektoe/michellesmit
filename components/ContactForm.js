@@ -195,20 +195,20 @@ export default function ContactForm({ blok }) {
                 <h3 className="mb-6 text-lg font-medium text-white">
                   {trans.contact[locale]}
                 </h3>
-                <div className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base">
                   {render(blok.description)}
                 </div>
 
-                <div className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base">
                   {render(blok.address)}
                 </div>
                 <dl className="my-8 space-y-6">
                   <dt>
                     <span className="sr-only">Phone number</span>
                   </dt>
-                  <dd className="flex text-base text-brand-100">
+                  <dd className="flex text-base">
                     <PhoneIcon
-                      className="flex-shrink-0 w-6 h-6 text-brand-200"
+                      className="flex-shrink-0 w-6 h-6"
                       aria-hidden="true"
                     />
                     <span className="ml-3">076 684 1249</span>
@@ -216,9 +216,9 @@ export default function ContactForm({ blok }) {
                   <dt>
                     <span className="sr-only">Email</span>
                   </dt>
-                  <dd className="flex text-base text-brand-100">
+                  <dd className="flex text-base">
                     <MailIcon
-                      className="flex-shrink-0 w-6 h-6 text-brand-200"
+                      className="flex-shrink-0 w-6 h-6"
                       aria-hidden="true"
                     />
                     <span className="ml-3">elnadurr@gmail.com</span>
@@ -360,7 +360,7 @@ export default function ContactForm({ blok }) {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 sm:w-auto"
+                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-500 hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 sm:w-auto"
                     >
                       {submitting && "..."}
                       {!submitting && trans.submit[locale]}
