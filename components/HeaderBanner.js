@@ -11,16 +11,18 @@ export default function HeaderBanner({ locale }) {
   const switchLocale = locale === "en" ? "af" : "en";
 
   return (
-    <div className="text-xs bg-accent-600">
+    <div className="text-xs bg-accent-700">
       <div className="px-3 py-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex items-center flex-1 w-0">
-            <span className="flex p-1 rounded-lg bg-brand-800">
+            <span className="flex p-1 rounded-lg bg-brand-500">
               <AtSymbolIcon className="w-3 h-3 text-white" aria-hidden="true" />
             </span>
             <p className="ml-3 font-medium text-white truncate">
-              <span className="md:hidden">therapy@michellesmit.com</span>
-              <span className="hidden md:inline">therapy@michellesmit.com</span>
+              <span className="md:hidden">maitland@batterypro.co.za</span>
+              <span className="hidden md:inline">
+                maitland@batterypro.co.za
+              </span>
             </p>
           </div>
           <div className="flex-shrink-0 order-3 w-full sm:order-2 sm:mt-0 sm:w-auto">

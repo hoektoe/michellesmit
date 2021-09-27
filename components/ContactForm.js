@@ -221,7 +221,7 @@ export default function ContactForm({ blok }) {
                       className="flex-shrink-0 w-6 h-6 text-brand-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">therapy@michellesmit.com</span>
+                    <span className="ml-3">maitland@batterypro.co.za</span>
                   </dd>
                 </dl>
                 <div className="max-w-3xl mt-6 text-base text-brand-50">

@@ -3,12 +3,8 @@ import Image from "next/image";
 
 const trans = {
   tagline: {
-    en: "Psychologist - Online Therapy - Face to Face Therapy",
-    af: "Voorligting Sielkundige - Aanlyn Terapie - Terapie in persoon",
-  },
-  qualifications: {
-    en: "M. Psych, Hons Psych",
-    af: "M. Sielk., Hons. Sielk.",
+    en: "Quality - Value - Service",
+    af: "Kwaliteit - Value - Diens",
   },
   description: {
     en: "HPCSA registered counselling psychologist based in Cape Town. Online based therapy. Available after hours and weekends.",
@@ -42,42 +38,23 @@ export default function Footer({ locale, locales }) {
       <div className="pt-8 border-t-4 bg-accent-700 border-brand">
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-wrap">
-            <div className="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12">
-              <Image
-                alt="Michelle Smit Logo Artum Lilly"
-                src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                className="object cover"
-                width={150}
-                height={150}
-              />
-            </div>
             <div className="w-full px-4 text-center md:text-left lg:w-6/12">
               <div className="text-3xl font-semibold uppercase text-brand-500">
-                Michelle Smit
+                BATTERY PRO MAITLAND
               </div>
-              <div className="mt-0 text-lg text-white">
+              <div className="mt-0 mb-6 text-lg text-white">
                 {trans.tagline[locale]}
               </div>
-              <div className="mt-0 mb-6 text-brand-300">
-                {trans.qualifications[locale]}
-              </div>
+
               <p className="text-gray-200">{trans.description[locale]}</p>
               <div className="mt-2">
                 <ul className="text-sm text-gray-700 list-unstyled">
                   <li>
                     <a
-                      href="mailto:therapy@michellesmit.com"
+                      href="mailto:maitland@batterypro.co.za"
                       className="text-brand-400"
                     >
-                      therapy@michellesmit.com
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:practicemanager@michellesmit.com"
-                      className="text-brand-500"
-                    >
-                      practicemanager@michellesmit.com
+                      maitland@batterypro.co.za
                     </a>
                   </li>
                 </ul>
@@ -127,8 +104,7 @@ export default function Footer({ locale, locales }) {
           <div className="flex flex-wrap items-center justify-center md:justify-between">
             <div className="w-full px-4 mx-auto text-center md:w-4/12">
               <div className="py-1 text-sm text-gray-300">
-                {trans.copyright[locale]} © 2021 Michelle Smit -{" "}
-                {trans.counselling[locale]}
+                {trans.copyright[locale]} © 2021 Battery Pro Maitland
               </div>
             </div>
           </div>

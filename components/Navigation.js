@@ -23,50 +23,51 @@ const menu = [
     },
     href: "/",
   },
+
   {
     name: {
-      en: "About",
-      af: "Meer oor my",
+      en: "Batteries",
+      af: "Batterye",
     },
-    href: "/about",
+    href: "/batteries",
   },
   {
     name: {
-      en: "Therapy Services",
-      af: "Terapiedienste",
+      en: "Specials",
+      af: "Specials",
     },
-    href: "/therapy-services",
+    href: "/specials",
+  },
+  {
+    name: {
+      en: "About",
+      af: "Meer oor ons",
+    },
+    href: "/about",
   },
 ];
 export default function Navigation({ locale, locales }) {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-brand-500">
       {({ open }) => (
         <>
           <div className="px-4 mx-auto max-w-7xl sm:px-6">
             <div className="flex items-center justify-between py-3 border-b-2 border-gray-100 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/" locale={locale}>
-                  <a className="relative flex items-center">
-                    <span className="sr-only">
-                      Michelle Smit - {trans.counselling[locale]}
-                    </span>
-                    <div className="relative w-14 sm:w-20 h-14 sm:h-20">
+                  <a className="relative flex flex-col">
+                    <span className="sr-only">BATTERY PRO MAITLAND</span>
+                    <span className="relative h-8 w-60">
                       <Image
-                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
+                        src="https://a.storyblok.com/f/125509/451x59/1e9ae78517/battery_top.png"
                         alt="Go to homepage of Michelle Smit"
                         layout="fill"
                         priority
                       />
-                    </div>
-                    <div className="ml-3 font-extrabold text-gray-800 uppercase">
-                      <div className="text-xl leading-5 sm:text-2xl">
-                        Michelle Smit
-                      </div>
-                      <div className="text-md sm:text-base">
-                        {trans.counselling[locale]}
-                      </div>
-                    </div>
+                    </span>
+                    <span className="text-xl font-extrabold text-accent-800">
+                      MAITLAND
+                    </span>
                   </a>
                 </Link>
               </div>
@@ -83,7 +84,7 @@ export default function Navigation({ locale, locales }) {
                     locale={locale}
                     key={item.name.en}
                   >
-                    <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <a className="text-base font-medium text-white hover:text-black">
                       {item.name[locale]}
                     </a>
                   </Link>
@@ -91,7 +92,7 @@ export default function Navigation({ locale, locales }) {
               </Popover.Group>
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 whitespace-nowrap hover:bg-brand-700">
+                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-700 whitespace-nowrap hover:bg-accent-800">
                     {trans.contact[locale]}
                   </a>
                 </Link>
@@ -155,7 +156,7 @@ export default function Navigation({ locale, locales }) {
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">
-                      therapy@michellesmit.com
+                      maitland@batterypro.co.za
                     </p>
                   </div>
                 </div>
