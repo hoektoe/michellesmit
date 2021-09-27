@@ -85,7 +85,7 @@ export default function Footer({ locale, locales }) {
                   </span>
                   <ul className="list-unstyled">
                     <li>
-                      <Link href="/about">
+                      <Link href="/about-me">
                         <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
                           {trans.about[locale]}
                         </a>

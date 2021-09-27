@@ -21,7 +21,7 @@ const menu = [
       en: "About",
       af: "Meer oor my",
     },
-    href: "/about",
+    href: "/about-me",
   },
   {
     name: {
