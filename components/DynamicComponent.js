@@ -14,7 +14,6 @@ import CallToAction from "./CallToAction";
 import ContactForm from "./ContactForm";
 import Testimonial from "./Testimonial";
 import Prose from "./Prose";
-import Iframe from "./Iframe";
 
 const Components = {
   teaser: Teaser,
@@ -31,7 +30,6 @@ const Components = {
   "call-to-action": CallToAction,
   "contact-form": ContactForm,
   testimonial: Testimonial,
-  Iframe: Iframe,
   prose: Prose,
 };
 
