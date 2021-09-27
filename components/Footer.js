@@ -61,8 +61,8 @@ export default function Footer({ locale, locales }) {
                 M. Psych, Hons Psych
               </div>
               <p className="text-gray-400">
-                HPCSA registered counselling psychologist based in Cape Town.
-                Online based therapy. Available after hours and weekends.
+                ASCHP registered counsellor based in Cape Town. Online based
+                therapy. Available after hours and weekends.
               </p>
               <div className="mt-2">
                 <ul className="text-sm text-gray-700 list-unstyled">
@@ -98,14 +98,6 @@ export default function Footer({ locale, locales }) {
                         </a>
                       </Link>
                     </li>
-
-                    <li>
-                      <Link href="/rates-and-insurance">
-                        <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
-                          Sien in Afrikaans
-                        </a>
-                      </Link>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -115,8 +107,7 @@ export default function Footer({ locale, locales }) {
           <div className="flex flex-wrap items-center justify-center md:justify-between">
             <div className="w-full px-4 mx-auto text-center md:w-4/12">
               <div className="py-1 text-sm text-gray-300">
-                Copyright © 2021 Dr Elna Dürr Counselling - Counselling
-                Psychologist
+                Copyright © 2021 Dr Elna Dürr Counselling
               </div>
             </div>
           </div>
