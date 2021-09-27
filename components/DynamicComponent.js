@@ -9,7 +9,7 @@ import BlogPost from "./BlogPost";
 import HeroImageOnRight from "./HeroImageOnRight";
 import Headline from "./Headline";
 import ImageWithTextOnRight from "./ImageWithTextOnRight";
-import TextWithImage from "./text-with-image";
+import TextWithImage from "./Text";
 import CallToAction from "./CallToAction";
 import ContactForm from "./ContactForm";
 import Testimonial from "./Testimonial";
