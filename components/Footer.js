@@ -14,13 +14,13 @@ const trans = {
     en: "About",
     af: "Meer oor my",
   },
-  therapy: {
-    en: "Therapy Services",
-    af: "Terapiedienste",
+  batteries: {
+    en: "Batteries",
+    af: "Batterye",
   },
-  rates: {
-    en: "Rates & Insurance",
-    af: "Tariewe & Medies",
+  specials: {
+    en: "Specials",
+    af: "Specials",
   },
   counselling: {
     en: "Counselling Psychologist",
@@ -34,8 +34,8 @@ const trans = {
 
 export default function Footer({ locale, locales }) {
   return (
-    <footer className="relative pt-4 pb-6 bg-accent-700">
-      <div className="pt-8 border-t-4 bg-accent-700 border-brand">
+    <footer className="relative pt-4 pb-6 bg-accent-800">
+      <div className="pt-8 border-t-4 bg-accent-800 border-brand">
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-wrap">
             <div className="w-full px-4 text-center md:text-left lg:w-6/12">
@@ -46,19 +46,28 @@ export default function Footer({ locale, locales }) {
                 {trans.tagline[locale]}
               </div>
 
-              <p className="text-gray-200">{trans.description[locale]}</p>
-              <div className="mt-2">
-                <ul className="text-sm text-gray-700 list-unstyled">
-                  <li>
-                    <a
-                      href="mailto:maitland@batterypro.co.za"
-                      className="text-brand-400"
-                    >
-                      maitland@batterypro.co.za
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              {/* <p className="text-gray-200">{trans.description[locale]}</p> */}
+              <p className="text-gray-200">
+                Email:{"  "}
+                <a
+                  href="mailto:maitland@batterypro.co.za"
+                  className="text-brand-500"
+                >
+                  maitland@batterypro.co.za
+                </a>
+                <br />
+                Cell:{"  "}
+                <a href="tel:+27826228400" className="text-brand-500">
+                  +27 82 622 8400
+                </a>
+                <br />
+                <br />
+                Mon - Fri....... 08h00 - 17h00
+                <br />
+                Sat...... 08h00 - 13h00
+                <br />
+                Closed Sundays and public holidays
+              </p>
             </div>
             <div className="hidden w-full px-4 lg:w-4/12 lg:flex">
               <div className="flex flex-wrap mb-6 items-top">
@@ -75,26 +84,26 @@ export default function Footer({ locale, locales }) {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/therapy-services">
+                      <Link href="/batteries">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          {trans.therapy[locale]}
+                          {trans.batteries[locale]}
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/rates-and-insurance">
+                      <Link href="/specials">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          {trans.rates[locale]}
+                          {trans.specials[locale]}
                         </a>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/rates-and-insurance">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
                           Sien in Afrikaans
                         </a>
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
