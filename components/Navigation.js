@@ -52,7 +52,7 @@ export default function Navigation({ locale, locales }) {
       {({ open }) => (
         <>
           <div className="px-4 mx-auto max-w-7xl sm:px-6">
-            <div className="flex items-center justify-between py-3 border-b-2 border-gray-100 md:justify-start md:space-x-10">
+            <div className="flex items-center justify-between py-3 border-b-2 border-gray-100 md:border-0 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/" locale={locale}>
                   <a className="relative flex flex-col">
