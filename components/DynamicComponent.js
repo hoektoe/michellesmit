@@ -9,12 +9,11 @@ import BlogPost from "./BlogPost";
 import HeroImageOnRight from "./HeroImageOnRight";
 import Headline from "./Headline";
 import ImageWithTextOnRight from "./ImageWithTextOnRight";
-import TextWithImage from "./text-with-image";
+import TextWithImage from "./TextWithImage";
 import CallToAction from "./CallToAction";
 import ContactForm from "./ContactForm";
 import Testimonial from "./Testimonial";
 import Prose from "./Prose";
-import Iframe from "./Iframe";
 
 const Components = {
   teaser: Teaser,
@@ -31,7 +30,6 @@ const Components = {
   "call-to-action": CallToAction,
   "contact-form": ContactForm,
   testimonial: Testimonial,
-  Iframe: Iframe,
   prose: Prose,
 };
 
