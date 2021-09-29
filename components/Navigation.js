@@ -18,18 +18,17 @@ const trans = {
 const menu = [
   {
     name: {
-      en: "Welcome",
-      af: "Welkom",
-    },
-    href: "/",
-  },
-
-  {
-    name: {
       en: "Batteries",
       af: "Batterye",
     },
     href: "/batteries",
+  },
+  {
+    name: {
+      en: "Loadshedding",
+      af: "Loadshedding",
+    },
+    href: "/loadshedding",
   },
   {
     name: {
@@ -48,7 +47,7 @@ const menu = [
 ];
 export default function Navigation({ locale, locales }) {
   return (
-    <Popover className="relative bg-brand-500">
+    <Popover className="relative bg-accent-800">
       {({ open }) => (
         <>
           <div className="px-4 mx-auto max-w-7xl sm:px-6">
@@ -65,7 +64,7 @@ export default function Navigation({ locale, locales }) {
                         priority
                       />
                     </span>
-                    <span className="text-xl font-extrabold text-accent-800">
+                    <span className="text-xl font-extrabold text-white">
                       MAITLAND
                     </span>
                   </a>
@@ -92,7 +91,7 @@ export default function Navigation({ locale, locales }) {
               </Popover.Group>
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-700 whitespace-nowrap hover:bg-accent-800">
+                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 whitespace-nowrap hover:bg-brand-500">
                     {trans.contact[locale]}
                   </a>
                 </Link>
