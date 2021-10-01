@@ -18,7 +18,7 @@ const Head = ({ title, description }) => (
     <meta name="og:image" content={HOME_META_IMAGE_URL} />
     <meta name="twitter:image" content={HOME_META_IMAGE_URL} />
     <meta name="theme-color" content="#96C5C5" />
-    <meta name="og:url" content="https://www.michellesmit.com/" />
+    <meta name="og:url" content="https://elnadurr.co.za/" />
   </NextHead>
 );
 

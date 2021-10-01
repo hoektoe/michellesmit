@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const trans = {
   counselling: {
-    en: "Counselling Psychologist",
+    en: "Registered Counsellor",
     af: "Voorligting Sielkundige",
   },
   contact: {

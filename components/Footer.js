@@ -7,7 +7,7 @@ const trans = {
     af: "Voorligting Sielkundige - Aanlyn Terapie - Terapie in persoon",
   },
   qualifications: {
-    en: "M. Psych, Hons Psych",
+    en: "M. Psych, Hons Psych, PhD Psychology",
     af: "M. Sielk., Hons. Sielk.",
   },
   description: {
