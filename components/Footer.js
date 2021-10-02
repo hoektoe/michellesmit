@@ -61,8 +61,8 @@ export default function Footer({ locale, locales }) {
                 M. Psych, Hons Psych
               </div>
               <p className="text-gray-400">
-                ASCHP registered counsellor based in Cape Town. Online based
-                counselling. Available after hours and weekends.
+                ASCHP specialist wellness counsellor based in Cape Town. Online
+                based counselling. Available after hours and weekends.
               </p>
               <div className="mt-2">
                 <ul className="text-sm text-gray-700 list-unstyled">
