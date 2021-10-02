@@ -62,7 +62,7 @@ export default function Footer({ locale, locales }) {
               </div>
               <p className="text-gray-400">
                 ASCHP registered counsellor based in Cape Town. Online based
-                therapy. Available after hours and weekends.
+                counselling. Available after hours and weekends.
               </p>
               <div className="mt-2">
                 <ul className="text-sm text-gray-700 list-unstyled">
