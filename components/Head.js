@@ -6,7 +6,13 @@ const Head = ({ title, description }) => (
   <NextHead>
     <meta charSet="UTF-8" />
     <title>{title || ""}</title>
-    <meta name="description" content={description || ""} />
+    <meta
+      name="description"
+      content={
+        description ||
+        "BATTERY PRO MAITLAND supplies and fits quality MAXIM batteries. All of our batteries carry a 2-year no-fuss warranty."
+      }
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="keywords"
@@ -14,7 +20,6 @@ const Head = ({ title, description }) => (
     />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/png" href="/meta/favicon.ico" />
-    <link rel="apple-touch-icon" href="/meta/apple-touch-icon.png" />
     <meta name="og:image" content={HOME_META_IMAGE_URL} />
     <meta name="twitter:image" content={HOME_META_IMAGE_URL} />
     <meta name="theme-color" content="#EB6A28" />
