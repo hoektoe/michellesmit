@@ -13,7 +13,7 @@ export default function HeaderBanner({ locale }) {
   return (
     <div className="text-xs bg-brand-500">
       <div className="px-3 py-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center justify-between">
+        <div className="flex items-center">
           <div className="flex items-center flex-1 w-0">
             <span className="flex p-1 rounded-lg bg-brand-700">
               <AtSymbolIcon className="w-3 h-3 text-white" aria-hidden="true" />
@@ -21,25 +21,9 @@ export default function HeaderBanner({ locale }) {
             <p className="ml-3 font-medium text-white truncate">
               <span className="md:hidden">maitland@batterypro.co.za</span>
               <span className="hidden md:inline">
-                maitland@batterypro.co.za
+                maitland@batterypro.co.za | +27 82 622 8400
               </span>
             </p>
-          </div>
-          {/* <div className="flex-shrink-0 order-3 w-full sm:order-2 sm:mt-0 sm:w-auto">
-            <Link href={asPath} locale={switchLocale}>
-              <a className="flex items-center justify-center px-4 py-1 text-xs font-medium bg-white border border-transparent rounded-md shadow-sm text-accent-600 hover:bg-accent-50">
-                {textLanguageSwitch}
-              </a>
-            </Link>
-          </div> */}
-          <div className="flex-shrink-0 order-2 hidden sm:order-3 sm:ml-3">
-            <button
-              type="button"
-              className="flex p-2 -mr-1 rounded-md hover:bg-accent-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2"
-            >
-              <span className="sr-only">Dismiss</span>
-              <XIcon className="w-4 h-4 text-white" aria-hidden="true" />
-            </button>
           </div>
         </div>
       </div>

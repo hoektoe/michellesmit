@@ -25,24 +25,17 @@ const menu = [
   },
   {
     name: {
-      en: "Loadshedding",
-      af: "Loadshedding",
+      en: "Loadshedding Package",
+      af: "Loadshedding Paket",
     },
     href: "/loadshedding",
   },
   {
     name: {
-      en: "Specials",
-      af: "Specials",
+      en: "Services",
+      af: "Dienste",
     },
-    href: "/specials",
-  },
-  {
-    name: {
-      en: "About",
-      af: "Meer oor ons",
-    },
-    href: "/about",
+    href: "/sevices",
   },
 ];
 export default function Navigation({ locale, locales }) {

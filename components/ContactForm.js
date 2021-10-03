@@ -5,7 +5,7 @@ import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import { useFormspark } from "@formspark/use-formspark";
 
-const FORMSPARK_FORM_ID = "d9x4tlQD";
+const FORMSPARK_FORM_ID = "kDFzsA7G";
 
 function transactionID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -92,7 +92,7 @@ export default function ContactForm({ blok }) {
 
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Contact information */}
-              <div className="relative px-6 py-10 overflow-hidden bg-brand-700 sm:px-10 xl:p-12">
+              <div className="relative px-6 py-10 overflow-hidden bg-brand-600 sm:px-10 xl:p-12">
                 <div
                   className="absolute inset-0 pointer-events-none sm:hidden"
                   aria-hidden="true"
@@ -195,24 +195,24 @@ export default function ContactForm({ blok }) {
                 <h3 className="mb-6 text-lg font-medium text-white">
                   {trans.contact[locale]}
                 </h3>
-                <div className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base prose text-brand-50">
                   {render(blok.description)}
                 </div>
 
-                <div className="max-w-3xl mb-6 text-base text-brand-50">
+                <div className="max-w-3xl mb-6 text-base prose text-brand-50">
                   {render(blok.address)}
                 </div>
                 <dl className="my-8 space-y-6">
                   <dt>
                     <span className="sr-only">Phone number</span>
                   </dt>
-                  {/* <dd className="flex text-base text-brand-100">
+                  <dd className="flex text-base text-brand-100">
                     <PhoneIcon
                       className="flex-shrink-0 w-6 h-6 text-brand-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">+1 (555) 123-4567</span>
-                  </dd> */}
+                    <span className="ml-3">+27 82 622 8400</span>
+                  </dd>
                   <dt>
                     <span className="sr-only">Email</span>
                   </dt>

@@ -10,17 +10,17 @@ const trans = {
     en: "HPCSA registered counselling psychologist based in Cape Town. Online based therapy. Available after hours and weekends.",
     af: "HPCSA-geregistreerde voorligting sielkundige gebaseer in Kaapstad. Aanlyn-gebaseerde terapie. Beskikbaar na-ure en naweke.",
   },
-  about: {
-    en: "About",
-    af: "Meer oor my",
+  services: {
+    en: "Services",
+    af: "Dienste",
   },
   batteries: {
     en: "Batteries",
     af: "Batterye",
   },
-  specials: {
-    en: "Specials",
-    af: "Specials",
+  loadshedding: {
+    en: "Loadshedding Package",
+    af: "Loadshedding Paket",
   },
   counselling: {
     en: "Counselling Psychologist",
@@ -77,9 +77,9 @@ export default function Footer({ locale, locales }) {
                   </span>
                   <ul className="list-unstyled">
                     <li>
-                      <Link href="/about">
+                      <Link href="/services">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          {trans.about[locale]}
+                          {trans.services[locale]}
                         </a>
                       </Link>
                     </li>
@@ -91,9 +91,9 @@ export default function Footer({ locale, locales }) {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/specials">
+                      <Link href="/loadshedding">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
-                          {trans.specials[locale]}
+                          {trans.loadshedding[locale]}
                         </a>
                       </Link>
                     </li>
