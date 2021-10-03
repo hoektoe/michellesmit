@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import DynamicComponent from "../components/DynamicComponent";
-
 import Storyblok, { useStoryblok } from "../utils/storyblok";
 
 export default function Page({ story, preview, locale, locales }) {
