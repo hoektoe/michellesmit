@@ -25,10 +25,10 @@ const menu = [
   },
   {
     name: {
-      en: "Therapy Services",
+      en: "Counselling Services",
       af: "Terapiedienste",
     },
-    href: "/therapy-services",
+    href: "/counselling-services",
   },
 ];
 export default function Navigation({ locale, locales }) {

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const trans = {
   tagline: {
-    en: "Psychologist - Online Therapy - Face to Face Therapy",
+    en: "Psychologist - Online Counselling Services - Face to Face Counselling Services",
     af: "Voorligting Sielkundige - Aanlyn Terapie - Terapie in persoon",
   },
   qualifications: {
@@ -19,7 +19,7 @@ const trans = {
     af: "Meer oor my",
   },
   therapy: {
-    en: "Therapy Services",
+    en: "Counselling Services",
     af: "Terapiedienste",
   },
   rates: {
@@ -92,7 +92,7 @@ export default function Footer({ locale, locales }) {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/therapy-services">
+                      <Link href="/counselling-services">
                         <a className="block pb-2 text-sm text-gray-400 hover:text-brand-400">
                           {trans.therapy[locale]}
                         </a>
