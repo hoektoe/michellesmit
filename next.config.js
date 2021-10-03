@@ -3,8 +3,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 module.exports = withBundleAnalyzer({
-  siteUrl: "https://batterypromaitland.co.za",
-  generateRobotsTxt: true,
   i18n: {
     localeDetection: false,
     locales: ["en", "af"],
