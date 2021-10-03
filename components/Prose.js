@@ -6,7 +6,9 @@ const Prose = ({ blok }) => {
   return (
     <SbEditable content={blok} key={blok._uid}>
       <div className="w-full bg-white">
-        <div className="container py-12 mx-auto">{render(blok.text)}</div>
+        <div className="container py-12 mx-auto prose">
+          {render(blok.description)}
+        </div>
       </div>
     </SbEditable>
   );

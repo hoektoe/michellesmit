@@ -52,7 +52,7 @@ export default function Navigation({ locale, locales }) {
                     <span className="relative h-8 w-60">
                       <Image
                         src="https://a.storyblok.com/f/125509/451x59/1e9ae78517/battery_top.png"
-                        alt="Go to homepage of Michelle Smit"
+                        alt="Go to homepage of Battery Pro Maitland"
                         layout="fill"
                         priority
                       />
@@ -76,7 +76,7 @@ export default function Navigation({ locale, locales }) {
                     locale={locale}
                     key={item.name.en}
                   >
-                    <a className="text-base font-medium text-white hover:text-black">
+                    <a className="text-base font-medium text-white hover:text-brand-500">
                       {item.name[locale]}
                     </a>
                   </Link>
@@ -110,7 +110,7 @@ export default function Navigation({ locale, locales }) {
               <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
                 <div className="px-5 pt-5 pb-6">
                   <div className="flex items-center justify-between">
-                    <div>
+                    <div className="invisible">
                       <Image
                         className="w-auto h-8"
                         src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"

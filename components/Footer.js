@@ -30,6 +30,10 @@ const trans = {
     en: "Copyright",
     af: "Kopiereg",
   },
+  warranty: {
+    en: "Warranty",
+    af: "Waarborg",
+  },
 };
 
 export default function Footer({ locale, locales }) {
@@ -62,9 +66,9 @@ export default function Footer({ locale, locales }) {
                 </a>
                 <br />
                 <br />
-                Mon - Fri....... 08h00 - 17h00
+                Mon - Fri: 08h00 - 17h00
                 <br />
-                Sat...... 08h00 - 13h00
+                Sat: 08h00 - 13h00
                 <br />
                 Closed Sundays and public holidays
               </p>
@@ -94,6 +98,13 @@ export default function Footer({ locale, locales }) {
                       <Link href="/loadshedding">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
                           {trans.loadshedding[locale]}
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/warranty">
+                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                          {trans.warranty[locale]}
                         </a>
                       </Link>
                     </li>

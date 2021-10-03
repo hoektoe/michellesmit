@@ -15,7 +15,7 @@ export default function HeroImageOnRight({ blok }) {
                 <span className="block xl:inline">{blok.headline}</span>
               </h1>
               {blok.description && (
-                <div className="max-w-md mx-auto mt-3 text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                <div className="max-w-md mx-auto mt-3 text-lg prose text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
                   {render(blok.description)}
                 </div>
               )}
