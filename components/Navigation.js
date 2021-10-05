@@ -35,7 +35,7 @@ const menu = [
       en: "Services",
       af: "Dienste",
     },
-    href: "/sevices",
+    href: "/services",
   },
 ];
 export default function Navigation({ locale, locales }) {
