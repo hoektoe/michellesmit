@@ -139,7 +139,7 @@ export default function Navigation({ locale, locales }) {
                         <Link href={item.href} key={item.name.en}>
                           <a className="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
                             <span className="ml-3 text-base font-medium text-gray-900">
-                              {item.name.en}
+                              {item.name[locale]}
                             </span>
                           </a>
                         </Link>
