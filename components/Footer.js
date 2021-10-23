@@ -98,6 +98,26 @@ export default function Footer({ locale, locales }) {
                         </a>
                       </Link>
                     </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/drelnadurrcounselling"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block pb-2 text-sm text-gray-400 hover:text-brand-400"
+                      >
+                        Facebook
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/dr-elna-d%C3%BCrr-counselling/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block pb-2 text-sm text-gray-400 hover:text-brand-400"
+                      >
+                        LinkedIn
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
