@@ -40,7 +40,7 @@ export default function Page({ blok }) {
                 : blok.seo.description
             }
           />
-          {/* <meta property="og:url" content={router.asPath} /> */}
+          <meta property="og:url" content={router.asPath} />
           <meta
             name="twitter:title"
             content={
