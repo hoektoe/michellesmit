@@ -46,7 +46,7 @@ export default function Page({ blok }) {
                 : blok.seo.description
             }
           />
-          <meta
+          {/* <meta
             property="og:image"
             content={
               blok.seo.og_image ? blok.seo.og_image : HOME_META_IMAGE_URL
@@ -57,7 +57,7 @@ export default function Page({ blok }) {
             content={
               blok.seo.og_image ? blok.seo.og_image : HOME_META_IMAGE_URL
             }
-          />
+          /> */}
         </Head>
 
         {/* {JSON.stringify(blok, null, "\t")} */}

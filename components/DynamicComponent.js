@@ -14,6 +14,7 @@ import CallToAction from "./CallToAction";
 import ContactForm from "./ContactForm";
 import Testimonial from "./Testimonial";
 import Prose from "./Prose";
+import DoubleColumnText from "./DoubleColumnText";
 
 const Components = {
   teaser: Teaser,
@@ -31,6 +32,7 @@ const Components = {
   "contact-form": ContactForm,
   testimonial: Testimonial,
   prose: Prose,
+  "double-column": DoubleColumnText,
 };
 
 const DynamicComponent = ({ blok }) => {
