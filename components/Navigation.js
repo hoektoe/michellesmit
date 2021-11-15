@@ -32,6 +32,13 @@ const menu = [
   },
   {
     name: {
+      en: "Alarm Batteries",
+      af: "Alarm Batterye",
+    },
+    href: "/alarm-batteries",
+  },
+  {
+    name: {
       en: "Services",
       af: "Dienste",
     },
