@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const trans = {
   tagline: {
-    en: "Psychologist - Online Therapy - Face to Face Therapy",
-    af: "Voorligting Sielkundige - Aanlyn Terapie - Terapie in persoon",
+    en: "Psychologist - Face to Face Therapy",
+    af: "Voorligting Sielkundige - Terapie in persoon",
   },
   qualifications: {
     en: "M. Psych, Hons Psych",
     af: "M. Sielk., Hons. Sielk.",
   },
   description: {
-    en: "HPCSA registered counselling psychologist based in Cape Town. Online based therapy. Available after hours and weekends.",
-    af: "HPCSA-geregistreerde voorligting sielkundige gebaseer in Kaapstad. Aanlyn-gebaseerde terapie. Beskikbaar na-ure en naweke.",
+    en: "HPCSA registered counselling psychologist based in Paarl. Online based therapy.",
+    af: "HPCSA-geregistreerde voorligting sielkundige gebaseer in Paarl. Aanlyn-gebaseerde terapie.",
   },
   about: {
     en: "About",
