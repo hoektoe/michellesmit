@@ -111,13 +111,13 @@ export default function Footer({ locale, locales }) {
                         </a>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/rates-and-insurance">
                         <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
                           Sien in Afrikaans
                         </a>
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

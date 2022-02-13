@@ -5,7 +5,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 module.exports = withBundleAnalyzer({
   i18n: {
     localeDetection: false,
-    locales: ["en", "af"],
+    locales: ["en"],
     defaultLocale: "en",
   },
   images: {
