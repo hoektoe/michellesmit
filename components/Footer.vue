@@ -29,12 +29,21 @@
               <ul class="text-md list-unstyled">
                 <li>
                   <a
+                    href="mailto:admin@jeninesmithinc.co.za"
+                    class="font-bold tracking-wider text-brand-500"
+                  >
+                    admin@jeninesmithinc.co.za
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="mailto:therapy@diaanbisogno.co.za"
                     class="font-bold tracking-wider text-brand-500"
                   >
                     therapy@diaanbisogno.co.za
                   </a>
                 </li>
+                
               </ul>
             </div>
           </div>
