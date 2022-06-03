@@ -4,7 +4,15 @@
       <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-wrap">
           <div
-            class="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12"
+            class="
+              flex
+              justify-center
+              w-full
+              px-4
+              pb-6
+              md:pb-0 md:justify-start
+              lg:w-2/12
+            "
           >
             <img
               alt="Diaan Bisogno Logo Artum Lilly"
@@ -29,21 +37,12 @@
               <ul class="text-md list-unstyled">
                 <li>
                   <a
-                    href="mailto:admin@jeninesmithinc.co.za"
-                    class="font-bold tracking-wider text-brand-500"
-                  >
-                    admin@jeninesmithinc.co.za
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="mailto:therapy@diaanbisogno.co.za"
                     class="font-bold tracking-wider text-brand-500"
                   >
                     therapy@diaanbisogno.co.za
                   </a>
                 </li>
-                
               </ul>
             </div>
           </div>
