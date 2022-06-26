@@ -19,6 +19,7 @@ const Head = ({ title, description }) => (
     {/* <meta name="twitter:image" content={HOME_META_IMAGE_URL} /> */}
     <meta name="theme-color" content="#ffffff" />
     <meta name="og:url" content="https://www.adam-krbalek.com/" />
+    <meta name="google-site-verification" content="ODfbJ3wHyUnhcJs9dMklPnjx_ooY9_AfUeKR1G0wYf0" />
   </NextHead>
 );
 
