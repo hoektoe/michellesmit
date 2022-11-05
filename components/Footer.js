@@ -11,8 +11,8 @@ const trans = {
     af: "M. Sielk., Hons. Sielk.",
   },
   description: {
-    en: "HPCSA registered counselling psychologist based in Paarl. Online based therapy.",
-    af: "HPCSA-geregistreerde voorligting sielkundige gebaseer in Paarl. Aanlyn-gebaseerde terapie.",
+    en: "HPCSA registered counselling psychologist based in Paarl & Stellenbosch. Online & face to face therapy available.",
+    af: "HPCSA-geregistreerde voorligting sielkundige gebaseer in Paarl.",
   },
   about: {
     en: "About",
