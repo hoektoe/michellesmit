@@ -61,7 +61,7 @@
         <div class="max-w-lg mx-auto lg:max-w-none">
           <form
             name="contactus"
-            data-netlify="true"
+            action="https://submit-form.com/nw6jPO74"
             method="POST"
             class="grid grid-cols-1 gap-y-6"
           >

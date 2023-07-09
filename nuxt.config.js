@@ -122,7 +122,7 @@ export default {
   },
   generate: {
     routes: function (callback) {
-      const token = `fBsPFjcyfVNTUYlxgOESywtt`
+      const token = `aWCNNEoiXTXvk0JgHjk3Vwtt`
       const version = 'published'
       let cache_version = 0
 
