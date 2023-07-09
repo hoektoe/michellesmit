@@ -71,7 +71,7 @@ export default {
     [
       'storyblok-nuxt',
       {
-        accessToken: 'fBsPFjcyfVNTUYlxgOESywtt',
+        accessToken: 'aWCNNEoiXTXvk0JgHjk3Vwtt',
         cacheProvider: 'memory'
       }
     ],
