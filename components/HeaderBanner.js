@@ -19,7 +19,7 @@ export default function HeaderBanner({ locale }) {
           <div className="flex-shrink-0 ml-8 order-3 w-full sm:order-2 sm:mt-0 sm:w-auto">
             <a href="https://www.google.com/maps/place/33%C2%B049'26.7%22S+18%C2%B056'17.9%22E/@-33.82409,18.9361023,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa56137bb04d3db77!8m2!3d-33.82409!4d18.938291
 " className="text-white">
-              Psychologist based in Paarl & Stellenbosch
+              Psychologist based in Paarl
             </a>
           </div>
           <div className="flex-shrink-0 order-2 hidden sm:order-3 sm:ml-3">
