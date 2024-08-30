@@ -9,7 +9,7 @@ const Testimonial = ({ blok }) => {
         <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
           <div className="relative text-lg text-white md:flex-grow">
             <svg
-              className="absolute top-0 left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-600"
+              className="absolute top-0 left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-brand-800"
               fill="currentColor"
               viewBox="0 0 32 32"
               aria-hidden="true"

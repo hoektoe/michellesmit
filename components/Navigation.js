@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const trans = {
   counselling: {
-    en: "Counselling Psychologist",
+    en: "Addiction Practitioner",
     af: "Voorligting Sielkundige",
   },
   contact: {
@@ -18,7 +18,7 @@ const trans = {
 const menu = [
   {
     name: {
-      en: "Welcome",
+      en: "Home",
       af: "Welkom",
     },
     href: "/",
@@ -32,7 +32,14 @@ const menu = [
   },
   {
     name: {
-      en: "Therapy Services",
+      en: "Services",
+      af: "Terapiedienste",
+    },
+    href: "/therapy-services",
+  },
+  {
+    name: {
+      en: "Why Counselling",
       af: "Terapiedienste",
     },
     href: "/therapy-services",
@@ -91,7 +98,7 @@ export default function Navigation({ locale, locales }) {
               </Popover.Group>
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 whitespace-nowrap hover:bg-brand-700">
+                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-800 whitespace-nowrap hover:bg-brand-700">
                     {trans.contact[locale]}
                   </a>
                 </Link>
@@ -150,7 +157,7 @@ export default function Navigation({ locale, locales }) {
                 <div className="px-5 py-6 space-y-6">
                   <div>
                     <Link href="/contact" locale={locale}>
-                      <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700">
+                      <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-800 hover:bg-brand-700">
                         {trans.contact[locale]}
                       </a>
                     </Link>
