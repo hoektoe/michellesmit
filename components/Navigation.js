@@ -56,23 +56,21 @@ export default function Navigation({ locale, locales }) {
                 <Link href="/" locale={locale}>
                   <a className="relative flex items-center">
                     <span className="sr-only">
-                      Adam Labuschagne - {trans.counselling[locale]}
+                      The Counsellors Couch - {trans.counselling[locale]}
                     </span>
-                    <div className="relative w-14 sm:w-20 h-14 sm:h-20">
+                    <div className="relative sm:w-28 sm:h-28">
                       <Image
-                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
+                        src="https://a.storyblok.com/f/302764/600x400/0f72e58a98/untitled-design-2.png"
                         alt="Go to homepage of Adam Labuschagne"
                         layout="fill"
                         priority
                       />
                     </div>
-                    <div className="ml-3 font-extrabold text-gray-800 uppercase">
-                      <div className="text-xl leading-5 sm:text-2xl">
-                        Adam Labuschagne
+                    <div className="ml-3 font-extrabold text-gray-800">
+                      <div className="text-lg leading-5 sm:text-xl">
+                        The Counsellor&rsquo;s Couch
                       </div>
-                      <div className="text-md sm:text-base">
-                        {trans.counselling[locale]}
-                      </div>
+                      <div className="text-md sm:text-sm">Adam Labuschagne</div>
                     </div>
                   </a>
                 </Link>

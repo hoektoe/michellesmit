@@ -28,14 +28,14 @@ const trans = {
 
 export default function Footer({ locale, locales }) {
   return (
-    <footer className="relative pt-4 pb-6 bg-brand-900">
-      <div className="pt-8 border-t-4 bg-brand-900 border-brand">
+    <footer className="relative pt-4 pb-6 bg-slate-900">
+      <div className="pt-8 border-t-4 bg-slate-900 border-brand">
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-wrap">
             <div className="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12">
               <Image
                 alt="Adam Labuschagne Logo Artum Lilly"
-                src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
+                src="https://a.storyblok.com/f/302764/600x400/0f72e58a98/untitled-design-2.png"
                 className="object cover"
                 width={150}
                 height={150}
