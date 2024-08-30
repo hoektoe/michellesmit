@@ -44,7 +44,7 @@ export default function Footer({ locale, locales }) {
           <div className="flex flex-wrap">
             <div className="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12">
               <Image
-                alt="Michelle Smit Logo Artum Lilly"
+                alt="Adam Labuschagne Logo Artum Lilly"
                 src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
                 className="object cover"
                 width={150}
@@ -53,7 +53,7 @@ export default function Footer({ locale, locales }) {
             </div>
             <div className="w-full px-4 text-center md:text-left lg:w-6/12">
               <div className="text-3xl font-semibold uppercase text-brand-500">
-                Michelle Smit
+                Adam Labuschagne
               </div>
               <div className="mt-0 text-lg text-white">
                 {trans.tagline[locale]}
@@ -127,7 +127,7 @@ export default function Footer({ locale, locales }) {
           <div className="flex flex-wrap items-center justify-center md:justify-between">
             <div className="w-full px-4 mx-auto text-center md:w-4/12">
               <div className="py-1 text-sm text-gray-300">
-                {trans.copyright[locale]} © 2021 Michelle Smit -{" "}
+                {trans.copyright[locale]} © 2021 Adam Labuschagne -{" "}
                 {trans.counselling[locale]}
               </div>
             </div>

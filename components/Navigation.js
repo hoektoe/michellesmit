@@ -49,19 +49,19 @@ export default function Navigation({ locale, locales }) {
                 <Link href="/" locale={locale}>
                   <a className="relative flex items-center">
                     <span className="sr-only">
-                      Michelle Smit - {trans.counselling[locale]}
+                      Adam Labuschagne - {trans.counselling[locale]}
                     </span>
                     <div className="relative w-14 sm:w-20 h-14 sm:h-20">
                       <Image
                         src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                        alt="Go to homepage of Michelle Smit"
+                        alt="Go to homepage of Adam Labuschagne"
                         layout="fill"
                         priority
                       />
                     </div>
                     <div className="ml-3 font-extrabold text-gray-800 uppercase">
                       <div className="text-xl leading-5 sm:text-2xl">
-                        Michelle Smit
+                        Adam Labuschagne
                       </div>
                       <div className="text-md sm:text-base">
                         {trans.counselling[locale]}
@@ -121,7 +121,7 @@ export default function Navigation({ locale, locales }) {
                       <Image
                         className="w-auto h-8"
                         src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                        alt="Michelle Smit"
+                        alt="Adam Labuschagne"
                         width={32}
                         height={32}
                       />
