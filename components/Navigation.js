@@ -50,7 +50,7 @@ export default function Navigation({ locale, locales }) {
     <Popover className="relative bg-white">
       {({ open }) => (
         <>
-          <div className="px-4 mx-auto max-w-7xl sm:px-6">
+          <div className="px-4 mx-auto sm:px-6">
             <div className="flex items-center justify-between py-3 border-b-2 border-gray-100 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/" locale={locale}>
@@ -58,19 +58,21 @@ export default function Navigation({ locale, locales }) {
                     <span className="sr-only">
                       The Counsellors Couch - {trans.counselling[locale]}
                     </span>
-                    <div className="relative sm:w-28 sm:h-28">
+                    <div className="relative w-24 h-16 sm:w-32 sm:h-20">
                       <Image
                         src="https://a.storyblok.com/f/302764/600x400/0f72e58a98/untitled-design-2.png"
                         alt="Go to homepage of Adam Labuschagne"
-                        layout="fill"
+                        width={600}
+                        height={400}
+                        fill="true"
                         priority
                       />
                     </div>
                     <div className="ml-3 font-extrabold text-gray-800">
-                      <div className="text-lg leading-5 sm:text-xl">
+                      <div className="leading-5 text-md sm:text-2xl">
                         The Counsellor&rsquo;s Couch
                       </div>
-                      <div className="text-md sm:text-sm">Adam Labuschagne</div>
+                      <div className="text-sm sm:text-md">Adam Labuschagne</div>
                     </div>
                   </a>
                 </Link>
@@ -122,13 +124,13 @@ export default function Navigation({ locale, locales }) {
               <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
                 <div className="px-5 pt-5 pb-6">
                   <div className="flex items-center justify-between">
-                    <div>
+                    <div className="w-12 h-8 responsive">
                       <Image
-                        className="w-auto h-8"
-                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
+                        src="https://a.storyblok.com/f/302764/600x400/0f72e58a98/untitled-design-2.png"
                         alt="Adam Labuschagne"
-                        width={32}
-                        height={32}
+                        width={600}
+                        height={400}
+                        fill="true"
                       />
                     </div>
                     <div className="-mr-2">
@@ -160,7 +162,7 @@ export default function Navigation({ locale, locales }) {
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">
-                      therapy@michellesmit.com
+                      adam@thecounsellorscouch.com
                     </p>
                   </div>
                 </div>

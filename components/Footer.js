@@ -28,21 +28,21 @@ const trans = {
 
 export default function Footer({ locale, locales }) {
   return (
-    <footer className="relative pt-4 pb-6 bg-slate-900">
-      <div className="pt-8 border-t-4 bg-slate-900 border-brand">
+    <footer className="relative pt-4 pb-6 bg-accent-900">
+      <div className="pt-8 border-t-4 bg-accent-900 border-brand">
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-wrap">
-            <div className="flex justify-center w-full px-4 pb-6 md:pb-0 md:justify-start lg:w-2/12">
+            <div className="flex justify-center w-full px-4 pb-6 responsive md:pb-0 md:justify-start lg:w-2/12">
               <Image
                 alt="Adam Labuschagne Logo Artum Lilly"
                 src="https://a.storyblok.com/f/302764/600x400/0f72e58a98/untitled-design-2.png"
                 className="object cover"
-                width={150}
-                height={150}
+                width={600}
+                height={400}
               />
             </div>
             <div className="w-full px-4 text-center md:text-left lg:w-6/12">
-              <div className="text-3xl font-semibold uppercase text-brand-500">
+              <div className="text-3xl font-semibold uppercase text-brand-200">
                 Adam Labuschagne
               </div>
               <div className="mt-0 text-lg text-white">
@@ -54,10 +54,10 @@ export default function Footer({ locale, locales }) {
                 <ul className="text-sm text-gray-700 list-unstyled">
                   <li>
                     <a
-                      href="mailto:therapy@michellesmit.com"
-                      className="text-brand-400"
+                      href="mailto:adam@thecounsellorscouch.com"
+                      className="text-brand-200"
                     >
-                      therapy@michellesmit.com
+                      adam@thecounsellorscouch.com
                     </a>
                   </li>
                 </ul>
@@ -72,14 +72,14 @@ export default function Footer({ locale, locales }) {
                   <ul className="list-unstyled">
                     <li>
                       <Link href="/about">
-                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                        <a className="block pb-2 text-sm text-gray-100 hover:text-brand-400">
                           {trans.about[locale]}
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/therapy-services">
-                        <a className="block pb-2 text-sm text-gray-300 hover:text-brand-400">
+                        <a className="block pb-2 text-sm text-gray-100 hover:text-brand-400">
                           {trans.therapy[locale]}
                         </a>
                       </Link>

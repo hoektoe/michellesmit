@@ -4,15 +4,17 @@ import { AtSymbolIcon, XIcon } from "@heroicons/react/outline";
 export default function HeaderBanner({ locale }) {
   return (
     <div className="text-xs bg-brand-900">
-      <div className="px-3 py-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center justify-between">
+      <div className="px-3 py-2 mx-auto sm:px-6 lg:px-8">
+        <div className="flex flex-wrap items-center justify-between overflow-hidden">
           <div className="flex items-center flex-1 w-100">
             <span className="flex p-1 rounded-lg bg-brand-700">
               <AtSymbolIcon className="w-3 h-3 text-white" aria-hidden="true" />
             </span>
             <p className="ml-3 font-medium text-white truncate">
-              <span className="md:hidden">therapy@michellesmit.com</span>
-              <span className="hidden md:inline">therapy@michellesmit.com</span>
+              <span className="md:hidden">adam@thecounsellorscouch.com</span>
+              <span className="hidden md:inline">
+                adam@thecounsellorscouch.com
+              </span>
             </p>
           </div>
           <div className="flex-shrink-0 order-3 w-full ml-8 sm:order-2 sm:mt-0 sm:w-auto">

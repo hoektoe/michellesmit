@@ -4,7 +4,7 @@ import SbEditable from "storyblok-react";
 export default function Headline({ blok }) {
   return (
     <SbEditable content={blok} key={blok._uid}>
-      <div className="max-w-4xl px-4 py-12 mx-auto sm:py-12 sm:px-6 lg:px-8">
+      <div className="max-w-4xl px-4 pt-12 pb-0 mx-auto sm:py-12 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="text-base font-bold tracking-wide uppercase text-brand-800">
             {blok.subtitle}
