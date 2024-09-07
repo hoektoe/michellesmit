@@ -17,7 +17,7 @@ const Testimonial = ({ blok }) => {
             <StarIcon aria-hidden="true" className="flex-none w-5 h-5" />
             <StarIcon aria-hidden="true" className="flex-none w-5 h-5" />
           </div>
-          <blockquote className="mt-10 text-xl font-semibold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
+          <blockquote className="mt-10 text-xl font-semibold leading-8 tracking-tight prose-lg text-gray-900 sm:text-2xl sm:leading-9">
             <p>“{render(blok.description)}”</p>
           </blockquote>
           <figcaption className="flex items-center mt-10 gap-x-6">
