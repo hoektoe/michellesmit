@@ -42,7 +42,7 @@ const menu = [
       en: "Why Counselling",
       af: "Terapiedienste",
     },
-    href: "/therapy-services",
+    href: "/why-counselling",
   },
 ];
 export default function Navigation({ locale, locales }) {
@@ -69,7 +69,7 @@ export default function Navigation({ locale, locales }) {
                       />
                     </div>
                     <div className="ml-3 font-extrabold text-gray-800">
-                      <div className="leading-5 text-md sm:text-2xl">
+                      <div className="leading-5 text-md lg:text-xl">
                         The Counsellor&rsquo;s Couch
                       </div>
                       <div className="text-sm sm:text-md">Adam Labuschagne</div>
