@@ -66,6 +66,11 @@ const features = [
       "Workplace support groups, SUD sponsors, health care practitioner & clinic managers, school counselors, etc.",
     icon: StarIcon,
   },
+  {
+    name: "Supervised Visitations",
+    description: "Coming soon",
+    icon: StarIcon,
+  },
 ];
 export default function Services({ blok }) {
   return (

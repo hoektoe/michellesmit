@@ -16,12 +16,12 @@ export default function ImageWithTextOnLeft({ blok }) {
               }`}
             >
               {blok.subtitle && (
-                <p className="text-xl font-extrabold text-brand-500 sm:text-2xl">
+                <p className="text-xl font-extrabold text-brand-800 sm:text-2xl">
                   {blok.subtitle}
                 </p>
               )}
               {blok.title && (
-                <h2 className="text-3xl font-extrabold text-accent-500 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold text-accent-800 sm:text-4xl">
                   {blok.title}
                 </h2>
               )}

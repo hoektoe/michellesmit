@@ -22,7 +22,7 @@ export default function Page({ blok }) {
             property="og:title"
             content={`The Counsellors Couch - Adam Labuschagne`}
           />
-          <meta
+          <metaser
             name="og:description"
             property="og:description"
             content={`The Counsellor's Couch offers compassionate and professional mental health counseling services, providing a safe space for individuals to explore personal challenges, improve well-being, and achieve personal growth.`}
