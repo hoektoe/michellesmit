@@ -11,8 +11,11 @@ export default function Page({ blok }) {
     <SbEditable content={blok} key={blok._uid}>
       <main className="min-h-screen">
         <Head>
-          <title>{blok.seo.title}</title>
-          <meta name="description" content={blok.seo.description} />
+          <title>{`The Counsellors Couch - Adam Labuschagne`}</title>
+          <meta
+            name="description"
+            content={`The Counsellor's Couch offers compassionate and professional mental health counseling services, providing a safe space for individuals to explore personal challenges, improve well-being, and achieve personal growth.`}
+          />
           {router.asPath.includes("thank") && (
             <meta name="robots" content="noindex" />
           )}

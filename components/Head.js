@@ -5,8 +5,14 @@ import { HOME_META_IMAGE_URL } from "lib/constant";
 const Head = ({ title, description }) => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{title || ""}</title>
-    <meta name="description" content={description || ""} />
+    <title>{`The Counsellors Couch - Adam Labuschagne` || ""}</title>
+    <meta
+      name="description"
+      content={
+        `The Counsellor's Couch offers compassionate and professional mental health counseling services, providing a safe space for individuals to explore personal challenges, improve well-being, and achieve personal growth.` ||
+        ""
+      }
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="keywords"
