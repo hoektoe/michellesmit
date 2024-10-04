@@ -23,27 +23,27 @@ const menu = [
     },
     href: "/",
   },
-  {
-    name: {
-      en: "About",
-      af: "Meer oor my",
-    },
-    href: "/about",
-  },
-  {
-    name: {
-      en: "Services",
-      af: "Terapiedienste",
-    },
-    href: "/therapy-services",
-  },
-  {
-    name: {
-      en: "Why Counselling",
-      af: "Terapiedienste",
-    },
-    href: "/why-counselling",
-  },
+  // {
+  //   name: {
+  //     en: "About",
+  //     af: "Meer oor my",
+  //   },
+  //   href: "/about",
+  // },
+  // {
+  //   name: {
+  //     en: "Services",
+  //     af: "Terapiedienste",
+  //   },
+  //   href: "/therapy-services",
+  // },
+  // {
+  //   name: {
+  //     en: "Why Counselling",
+  //     af: "Terapiedienste",
+  //   },
+  //   href: "/why-counselling",
+  // },
 ];
 export default function Navigation({ locale, locales }) {
   return (
