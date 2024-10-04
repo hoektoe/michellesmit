@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const trans = {
   counselling: {
-    en: "Counselling Psychologist",
+    en: "Addiction Practitioner",
     af: "Voorligting Sielkundige",
   },
   contact: {
@@ -18,54 +18,61 @@ const trans = {
 const menu = [
   {
     name: {
-      en: "Welcome",
+      en: "Home",
       af: "Welkom",
     },
     href: "/",
   },
-  {
-    name: {
-      en: "About",
-      af: "Meer oor my",
-    },
-    href: "/about",
-  },
-  {
-    name: {
-      en: "Therapy Services",
-      af: "Terapiedienste",
-    },
-    href: "/therapy-services",
-  },
+  // {
+  //   name: {
+  //     en: "About",
+  //     af: "Meer oor my",
+  //   },
+  //   href: "/about",
+  // },
+  // {
+  //   name: {
+  //     en: "Services",
+  //     af: "Terapiedienste",
+  //   },
+  //   href: "/therapy-services",
+  // },
+  // {
+  //   name: {
+  //     en: "Why Counselling",
+  //     af: "Terapiedienste",
+  //   },
+  //   href: "/why-counselling",
+  // },
 ];
 export default function Navigation({ locale, locales }) {
   return (
     <Popover className="relative bg-white">
       {({ open }) => (
         <>
-          <div className="px-4 mx-auto max-w-7xl sm:px-6">
+          <div className="px-4 mx-auto sm:px-6">
             <div className="flex items-center justify-between py-3 border-b-2 border-gray-100 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/" locale={locale}>
                   <a className="relative flex items-center">
                     <span className="sr-only">
-                      Michelle Smit - {trans.counselling[locale]}
+                      The Counsellors Couch - {trans.counselling[locale]}
                     </span>
-                    <div className="relative w-14 sm:w-20 h-14 sm:h-20">
+                    <div className="relative w-24 h-16 sm:w-32 sm:h-20">
                       <Image
-                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                        alt="Go to homepage of Michelle Smit"
-                        layout="fill"
+                        src="https://a.storyblok.com/f/302764/600x400/0f72e58a98/untitled-design-2.png"
+                        alt="Go to homepage of Adam Labuschagne"
+                        width={600}
+                        height={400}
+                        fill="true"
                         priority
                       />
                     </div>
-                    <div className="ml-3 font-extrabold text-gray-800 uppercase">
-                      <div className="text-xl leading-5 sm:text-2xl">
-                        Michelle Smit
+                    <div className="ml-3 font-extrabold text-gray-800">
+                      <div className="leading-5 text-md lg:text-xl">
+                        The Counsellor&rsquo;s Couch
                       </div>
-                      <div className="text-md sm:text-base">
-                        {trans.counselling[locale]}
-                      </div>
+                      <div className="text-sm sm:text-md">Adam Labuschagne</div>
                     </div>
                   </a>
                 </Link>
@@ -91,7 +98,7 @@ export default function Navigation({ locale, locales }) {
               </Popover.Group>
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 whitespace-nowrap hover:bg-brand-700">
+                  <a className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-800 whitespace-nowrap hover:bg-brand-700">
                     {trans.contact[locale]}
                   </a>
                 </Link>
@@ -117,13 +124,13 @@ export default function Navigation({ locale, locales }) {
               <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
                 <div className="px-5 pt-5 pb-6">
                   <div className="flex items-center justify-between">
-                    <div>
+                    <div className="w-12 h-8 responsive">
                       <Image
-                        className="w-auto h-8"
-                        src="https://a.storyblok.com/f/101001/x/00dafa5eda/logo-block.svg"
-                        alt="Michelle Smit"
-                        width={32}
-                        height={32}
+                        src="https://a.storyblok.com/f/302764/600x400/0f72e58a98/untitled-design-2.png"
+                        alt="Adam Labuschagne"
+                        width={600}
+                        height={400}
+                        fill="true"
                       />
                     </div>
                     <div className="-mr-2">
@@ -150,12 +157,12 @@ export default function Navigation({ locale, locales }) {
                 <div className="px-5 py-6 space-y-6">
                   <div>
                     <Link href="/contact" locale={locale}>
-                      <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700">
+                      <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-800 hover:bg-brand-700">
                         {trans.contact[locale]}
                       </a>
                     </Link>
                     <p className="mt-6 text-base font-medium text-center text-gray-500">
-                      therapy@michellesmit.com
+                      adam@thecounsellorscouch.com
                     </p>
                   </div>
                 </div>
