@@ -219,7 +219,7 @@
                 to="/contact"
                 class="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700"
               >
-                Free 15 minute consultation
+                Contact me
               </nuxt-link>
             </div>
           </div>
