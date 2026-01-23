@@ -11,6 +11,7 @@ export function HeroWithDemoOnBackground({
   cta,
   demo,
   footer,
+  color = 'blue',
   className,
   ...props
 }: {
@@ -20,10 +21,11 @@ export function HeroWithDemoOnBackground({
   cta?: ReactNode
   demo?: ReactNode
   footer?: ReactNode
+  color?: 'green' | 'blue' | 'purple' | 'brown' | 'sunset' | 'protea'
 } & ComponentProps<'section'>) {
   return (
     <section className={clsx('flex flex-col gap-16 px-2 pb-16', className)} {...props}>
-      <Wallpaper className="rounded-lg" color="blue">
+      <Wallpaper className="rounded-lg" color={color}>
         <div className="-mx-2 sm:px-6 md:px-12 lg:px-0">
           <Container className="flex flex-col gap-16">
             <div className="flex gap-x-10 gap-y-16 max-lg:flex-col sm:gap-y-24">

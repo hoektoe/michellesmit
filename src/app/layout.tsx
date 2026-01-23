@@ -97,7 +97,6 @@ export default function RootLayout({
             links={
               <>
                 <FooterCategory title="Services">
-                  <FooterLink href="/services">Therapy Services</FooterLink>
                   <FooterLink href="/anxiety">Anxiety</FooterLink>
                   <FooterLink href="/depression">Depression</FooterLink>
                   <FooterLink href="/relationships">Relationships</FooterLink>
@@ -112,12 +111,9 @@ export default function RootLayout({
                   <FooterLink href="/contact#paarl">Paarl</FooterLink>
                   <FooterLink href="/contact#online">Online Sessions</FooterLink>
                 </FooterCategory>
-                <FooterCategory title="Legal">
-                  <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
-                </FooterCategory>
               </>
             }
-            fineprint="© 2025 Michelle Smit - Counselling Psychologist"
+            fineprint={`© ${new Date().getFullYear()} Michelle Smit - Counselling Psychologist`}
           />
         </>
       </body>
