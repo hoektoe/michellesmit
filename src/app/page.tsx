@@ -89,7 +89,7 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="sunset" placement="bottom-left">
+                <Screenshot wallpaper="blue" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
                       src="/img/services/depression.avif"
@@ -115,7 +115,7 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="sunset" placement="bottom-right">
+                <Screenshot wallpaper="protea" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
                       src="/img/services/anxiety.png"

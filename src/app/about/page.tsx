@@ -1,204 +1,124 @@
 import Image from 'next/image'
 
 import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
-import { ChevronIcon } from '@/components/icons/chevron-icon'
+import { Container } from '@/components/elements/container'
+import { Link } from '@/components/elements/link'
+import { Subheading } from '@/components/elements/subheading'
+import { Text } from '@/components/elements/text'
+import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon'
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
-import { HeroLeftAlignedWithPhoto } from '@/components/sections/hero-left-aligned-with-photo'
-import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
-import { TeamFourColumnGrid, TeamMember } from '@/components/sections/team-four-column-grid'
-import { TestimonialTwoColumnWithLargePhoto } from '@/components/sections/testimonial-two-column-with-large-photo'
+import { DocumentLeftAligned } from '@/components/sections/document-left-aligned'
+import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
 
 export default function Page() {
   return (
     <>
       {/* Hero */}
-      <HeroLeftAlignedWithPhoto
+      <HeroWithDemoOnBackground
         id="hero"
-        headline="Your customer success is our mission."
+        color="sunset"
+        headline="Michelle Smit"
         subheadline={
           <p>
-            We're on a mission to take the human element completely out of customer support — so your team can focus on
-            what matters most, profitability.
+            M. Psych, Hons Psych — HPCSA registered counselling psychologist based in Paarl, South Africa. Offering
+            therapy in English and Afrikaans.
           </p>
         }
-        photo={
-          <Image
-            src="/img/photos/1.webp"
-            alt=""
-            width={1800}
-            height={945}
-            className="not-dark:bg-white/75 dark:bg-black/75"
-          />
+        demo={
+          <>
+            <Image
+              src="/img/michelle-portrait.png"
+              alt="Michelle Smit - Counselling Psychologist"
+              width={400}
+              height={400}
+              className="object-cover not-dark:bg-white/75 dark:bg-black/75"
+            />
+          </>
         }
       />
-      {/* Stats */}
-      <StatsWithGraph
-        id="stats"
-        eyebrow="Built for scale"
-        headline="The inbox powering customer conversations everywhere."
-        subheadline={
-          <p>
-            Oatmeal helps teams deliver personal, organized, and fast customer support across the world. From small
-            startups to enterprise teams, we process millions of messages each month — using a massive network of low
-            wage workers stationed around the globe.
-          </p>
-        }
-      >
-        <Stat stat="2M+" text="Emails manually processed every week across thousands of teams." />
-        <Stat stat="99.98%" text="Uptime — because your customers never stop complaining." />
-      </StatsWithGraph>
-      {/* Testimonial */}
-      <TestimonialTwoColumnWithLargePhoto
-        id="testimonial"
-        quote={
-          <p>
-            Ever since we started using Oatmeal, our customer satisfaction scores have skyrocketed. The personal touch
-            that their human-AI hybrid support provides is unparalleled.
-          </p>
-        }
-        img={
-          <Image
-            src="/img/avatars/16-h-1000-w-1400.webp"
-            alt=""
-            className="not-dark:bg-white/75 dark:bg-black/75"
-            width={1400}
-            height={1000}
-          />
-        }
-        name="Lynn Marshall"
-        byline="Founder at Pine Labs"
-      />
-      {/* Team */}
-      <TeamFourColumnGrid
-        id="team"
-        headline="Our leadership team"
-        subheadline={
-          <p>
-            Oatmeals's leadership team combines decades of experience in private equity, where they honed their skills
-            in cost-cutting and maximizing shareholder value.
-          </p>
-        }
-      >
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/1-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Leslie Alexander"
-          byline="Co-Founder / CEO"
-        />
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/2-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Michael Foster"
-          byline="Co-Founder / CTO"
-        />
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/7-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Dries Vincent"
-          byline="Business Relations"
-        />
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/4-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Lindsay Walton"
-          byline="Front-end Developer"
-        />
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/5-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Noor Hasan"
-          byline="Designer"
-        />
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/6-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Tom Cook"
-          byline="Director of Product"
-        />
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/8-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Whitney Francis"
-          byline="Copywriter"
-        />
-        <TeamMember
-          img={
-            <Image
-              src="/img/avatars/3-h-1000-w-800.webp"
-              alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
-              width={800}
-              height={1000}
-            />
-          }
-          name="Leonard Wu"
-          byline="Senior Designer"
-        />
-      </TeamFourColumnGrid>
+
+      {/* Bio */}
+      <DocumentLeftAligned id="about" headline="About Me">
+        <p>
+          I am a registered counselling psychologist with a Master's degree from Pearson Institute, currently completing
+          my Doctorate in Psychology. I am registered with the Health Professions Council of South Africa (HPCSA) and
+          the Board of Healthcare Funders (BHF).
+        </p>
+
+        <p>
+          My special interest lies in addiction care. I have worked within multidisciplinary teams at in-patient
+          facilities caring for patients with substance abuse issues. This experience has given me deep insight into the
+          complexities of addiction and recovery.
+        </p>
+
+        <h2>Specialisation</h2>
+
+        <p>
+          I treat patients with dual diagnoses, addressing comorbid conditions like depression, anxiety, PTSD, and
+          personality disorders alongside substance abuse issues. This integrated approach ensures that all aspects of a
+          person's mental health are considered in their treatment plan.
+        </p>
+
+        <h2>My Approach</h2>
+
+        <p>
+          I believe in creating a safe, non-judgmental space where clients feel heard and understood. My therapeutic
+          approach is evidence-based, drawing on techniques from Cognitive Behavioural Therapy (CBT), Motivational
+          Interviewing, and other proven modalities tailored to each client's unique needs.
+        </p>
+
+        <p>
+          Whether you're struggling with anxiety, depression, relationship difficulties, or substance abuse, I'm here to
+          support you on your journey toward healing and growth.
+        </p>
+      </DocumentLeftAligned>
+
+      {/* Publication */}
+      <section className="py-16">
+        <Container>
+          <div className="max-w-2xl">
+            <div className="flex flex-col gap-6">
+              <Subheading>Publication</Subheading>
+              <div className="rounded-2xl bg-mist-50 py-8 pr-8 dark:bg-mist-900/50">
+                <div className="flex flex-col gap-4">
+                  <Text size="lg">
+                    <p className="font-medium text-mist-950 dark:text-white">
+                      South African Psychiatry Magazine — May 2020
+                    </p>
+                  </Text>
+                  <Text>
+                    <p>
+                      An article exploring substance abuse during the COVID-19 pandemic, examining the unique challenges
+                      faced by individuals struggling with addiction during lockdown and isolation.
+                    </p>
+                  </Text>
+                  <Link href="/publications/south-african-psychiatry-may-2020.pdf" target="_blank">
+                    Download Article (PDF) <ArrowNarrowRightIcon />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
-        headline="Have anymore questions?"
+        headline="Let's work together."
         subheadline={
-          <p>Chat to someone on our sales team, who will make promises about our roadmap that we won't keep.</p>
+          <p>
+            Schedule a free 15-minute consultation to discuss your needs and see if we're a good fit for working
+            together.
+          </p>
         }
         cta={
           <div className="flex items-center gap-4">
-            <ButtonLink href="#" size="lg">
-              Chat with us
+            <ButtonLink href="/contact" size="lg">
+              Book a Consultation
             </ButtonLink>
-
-            <PlainButtonLink href="#" size="lg">
-              Book a demo <ChevronIcon />
+            <PlainButtonLink href="/services" size="lg">
+              View Services <ArrowNarrowRightIcon />
             </PlainButtonLink>
           </div>
         }
