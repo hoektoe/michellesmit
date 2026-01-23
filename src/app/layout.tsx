@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ButtonLink } from '@/components/elements/button'
 import { Main } from '@/components/elements/main'
 import { ThemeToggle } from '@/components/elements/theme-toggle'
+import { PostHogProvider } from './providers'
 import {
   FooterCategory,
   FooterLink,
@@ -51,7 +52,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <>
+        <PostHogProvider>
           <NavbarWithLinksActionsAndCenteredLogo
             id="navbar"
             links={
@@ -115,7 +116,7 @@ export default function RootLayout({
             }
             fineprint={`© ${new Date().getFullYear()} Michelle Smit - Counselling Psychologist`}
           />
-        </>
+        </PostHogProvider>
       </body>
     </html>
   )
