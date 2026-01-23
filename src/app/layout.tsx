@@ -106,7 +106,7 @@ export default function RootLayout({
                 <FooterCategory title="Practice">
                   <FooterLink href="/about">About</FooterLink>
                   <FooterLink href="/contact">Contact</FooterLink>
-                  <FooterLink href="/contact#rates">Rates & Insurance</FooterLink>
+                  <FooterLink href="/rates-and-insurance">Rates & Insurance</FooterLink>
                 </FooterCategory>
                 <FooterCategory title="Locations">
                   <FooterLink href="/contact#paarl">Paarl</FooterLink>
