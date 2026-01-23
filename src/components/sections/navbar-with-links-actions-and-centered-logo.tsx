@@ -45,7 +45,7 @@ export function NavbarWithLinksActionsAndCenteredLogo({
   actions: ReactNode
 } & ComponentProps<'header'>) {
   return (
-    <header className={clsx('sticky top-0 z-10 bg-mist-100 dark:bg-mist-950', className)} {...props}>
+    <header className={clsx('sticky top-0 z-10 bg-mist-50 dark:bg-mist-950', className)} {...props}>
       <style>{`:root { --scroll-padding-top: 5.25rem }`}</style>
       <nav>
         <div className="mx-auto flex h-(--scroll-padding-top) max-w-7xl items-center gap-4 px-6 lg:px-10">
@@ -73,7 +73,7 @@ export function NavbarWithLinksActionsAndCenteredLogo({
 
         <ElDialog className="lg:hidden">
           <dialog id="mobile-menu" className="backdrop:bg-transparent">
-            <ElDialogPanel className="fixed inset-0 bg-mist-100 px-6 py-6 lg:px-10 dark:bg-mist-950">
+            <ElDialogPanel className="fixed inset-0 bg-mist-50 px-6 py-6 lg:px-10 dark:bg-mist-950">
               <div className="flex justify-end">
                 <button
                   command="close"

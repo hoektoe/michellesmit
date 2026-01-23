@@ -63,7 +63,7 @@ export default function Page() {
           <>
             <Feature
               demo={
-                <Screenshot wallpaper="purple" placement="bottom-right">
+                <Screenshot wallpaper="green" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
                       src="/img/services/substance-abuse.avif"
@@ -89,7 +89,7 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="blue" placement="bottom-left">
+                <Screenshot wallpaper="sunset" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
                       src="/img/services/depression.avif"
@@ -115,63 +115,15 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="purple" placement="bottom-right">
-                  <Image
-                    src="/img/screenshots/1-left-1000-top-800.webp"
-                    alt=""
-                    className="bg-white/75 sm:hidden dark:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-left-1000-top-800.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden sm:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-left-1800-top-660.webp"
-                    alt=""
-                    className="bg-white/75 max-sm:hidden lg:hidden dark:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-left-1800-top-660.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden max-sm:hidden lg:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-left-1300-top-1300.webp"
-                    alt=""
-                    className="bg-white/75 max-lg:hidden xl:hidden dark:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-left-1300-top-1300.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden max-lg:hidden xl:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-left-1800-top-1250.webp"
-                    alt=""
-                    className="bg-white/75 max-xl:hidden dark:hidden"
-                    width={1800}
-                    height={1250}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-left-1800-top-1250.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden max-xl:hidden"
-                    width={1800}
-                    height={1250}
-                  />
+                <Screenshot wallpaper="sunset" placement="bottom-right">
+                  <div className="relative aspect-[1800/1250]">
+                    <Image
+                      src="/img/services/anxiety.png"
+                      alt="Anxiety therapy"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </Screenshot>
               }
               headline="Anxiety"
@@ -189,63 +141,15 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="blue" placement="bottom-left">
-                  <Image
-                    src="/img/screenshots/1-right-1000-top-800.webp"
-                    alt=""
-                    className="bg-white/75 sm:hidden dark:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-right-1000-top-800.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden sm:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-right-1800-top-660.webp"
-                    alt=""
-                    className="bg-white/75 max-sm:hidden lg:hidden dark:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-right-1800-top-660.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden max-sm:hidden lg:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-right-1300-top-1300.webp"
-                    alt=""
-                    className="bg-white/75 max-lg:hidden xl:hidden dark:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-right-1300-top-1300.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden max-lg:hidden xl:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-right-1800-top-1250.webp"
-                    alt=""
-                    className="bg-white/75 max-xl:hidden dark:hidden"
-                    width={1800}
-                    height={1250}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-mist-right-1800-top-1250.webp"
-                    alt=""
-                    className="bg-black/75 not-dark:hidden max-xl:hidden"
-                    width={1800}
-                    height={1250}
-                  />
+                <Screenshot wallpaper="sunset" placement="bottom-left">
+                  <div className="relative aspect-[1800/1250]">
+                    <Image
+                      src="/img/services/relationships.png"
+                      alt="Relationships therapy"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </Screenshot>
               }
               headline="Relationships"
