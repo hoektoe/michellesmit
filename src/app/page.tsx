@@ -18,7 +18,11 @@ export default function Page() {
       {/* Hero */}
       <HeroLeftAlignedWithDemo
         id="hero"
-        eyebrow={<span className="text-sm font-medium text-mist-600 dark:text-mist-400">Counselling Psychologist</span>}
+        eyebrow={
+          <span className="text-sm font-medium text-mist-600 dark:text-mist-400">
+            Michelle Smit - Counselling Psychologist
+          </span>
+        }
         headline="Feel seen, heard and valued."
         subheadline={
           <p className="italic">
@@ -91,12 +95,7 @@ export default function Page() {
               demo={
                 <Screenshot wallpaper="blue" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
-                    <Image
-                      src="/img/services/depression.avif"
-                      alt="Depression therapy"
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src="/img/services/depression.avif" alt="Depression therapy" fill className="object-cover" />
                   </div>
                 </Screenshot>
               }
@@ -117,12 +116,7 @@ export default function Page() {
               demo={
                 <Screenshot wallpaper="protea" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
-                    <Image
-                      src="/img/services/anxiety.png"
-                      alt="Anxiety therapy"
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src="/img/services/anxiety.png" alt="Anxiety therapy" fill className="object-cover" />
                   </div>
                 </Screenshot>
               }
@@ -155,8 +149,8 @@ export default function Page() {
               headline="Relationships"
               subheadline={
                 <p>
-                  Navigate relationship challenges, improve communication, and build healthier connections with partners,
-                  family members, and others in your life.
+                  Navigate relationship challenges, improve communication, and build healthier connections with
+                  partners, family members, and others in your life.
                 </p>
               }
               cta={
@@ -181,7 +175,10 @@ export default function Page() {
           </p>
         }
       >
-        <Stat stat="HPCSA" text="Registered counselling psychologist with the Health Professions Council of South Africa." />
+        <Stat
+          stat="HPCSA"
+          text="Registered counselling psychologist with the Health Professions Council of South Africa."
+        />
         <Stat stat="Bilingual" text="Therapy available in both English and Afrikaans to best suit your needs." />
       </StatsWithGraph>
       {/* Testimonials */}
@@ -299,12 +296,7 @@ export default function Page() {
               price="Secure"
               period=" Video"
               subheadline={<p>Therapy from the comfort of your own space</p>}
-              features={[
-                'Secure video platform',
-                'Flexible scheduling',
-                'No travel required',
-                'Same quality care',
-              ]}
+              features={['Secure video platform', 'Flexible scheduling', 'No travel required', 'Same quality care']}
               cta={
                 <SoftButtonLink href="/contact#online" size="lg">
                   Book Online Session

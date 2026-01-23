@@ -109,8 +109,8 @@ export default function RootLayout({
                   <FooterLink href="/rates-and-insurance">Rates & Insurance</FooterLink>
                 </FooterCategory>
                 <FooterCategory title="Locations">
-                  <FooterLink href="/contact#paarl">Paarl</FooterLink>
-                  <FooterLink href="/contact#online">Online Sessions</FooterLink>
+                  <FooterLink href="https://www.google.com/maps/place/Bloemendal+Clinic/@-33.8250139,18.9347237,1204m/data=!3m1!1e3!4m10!1m2!2m1!1sBloemendal+Farm+R45,+Klapmuts+-+Simondium+Rd,++Paarl,+South+Africa+7670!3m6!1s0x1dcdaf1f1111e263:0xe015dc4c465c45bc!8m2!3d-33.8258573!4d18.9362283!15sCkdCbG9lbWVuZGFsIEZhcm0gUjQ1LCBLbGFwbXV0cyAtIFNpbW9uZGl1bSBSZCwgIFBhYXJsLCBTb3V0aCBBZnJpY2EgNzY3MJIBFG1lbnRhbF9oZWFsdGhfY2xpbmlj4AEA!16s%2Fg%2F1pp2tzdmm?entry=ttu" target="_blank">Paarl</FooterLink>
+                  <FooterLink href="/contact">Online Sessions</FooterLink>
                 </FooterCategory>
               </>
             }
