@@ -224,6 +224,11 @@ export default function Page() {
           stat="HPCSA"
           text="Registered counselling psychologist with the Health Professions Council of South Africa."
         />
+        <Stat
+          stat="Psychology Degree"
+          text="Studied at Stellenbosch University and Pearson Institute of Higher Education"
+        />
+
         <Stat stat="Bilingual" text="Therapy available in both English and Afrikaans to best suit your needs." />
       </StatsWithGraph>
       {/* Testimonials */}
