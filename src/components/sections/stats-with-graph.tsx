@@ -30,7 +30,7 @@ export function StatsWithGraph({ children, ...props }: ComponentProps<typeof Sec
       <div className="pointer-events-none relative mt-48 h-48 sm:h-64 lg:h-48">
         <div className="absolute bottom-0 left-1/2 w-[150vw] max-w-[calc(var(--container-7xl)-(--spacing(10)*2))] -translate-x-1/2">
           <Image
-            src="/img/dutch.png"
+            src="/img/dutch_house.png"
             alt="Winelands landscape"
             width={1200}
             height={400}
