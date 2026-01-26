@@ -13,7 +13,7 @@ export function Link({
   return (
     <NextLink
       href={href}
-      className={clsx('inline-flex items-center gap-2 text-sm/7 font-medium text-mist-950 dark:text-white', className)}
+      className={clsx('inline-flex items-center gap-2 text-sm/7 font-medium text-mist-950', className)}
       {...props}
     />
   )

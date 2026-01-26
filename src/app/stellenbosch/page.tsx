@@ -49,7 +49,7 @@ export default function Page() {
               alt="Therapy services for Stellenbosch"
               width={1200}
               height={800}
-              className="object-cover not-dark:bg-white/75 dark:bg-black/75"
+              className="object-cover bg-white/75"
             />
           </>
         }
@@ -115,6 +115,7 @@ export default function Page() {
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
+        image={{ src: '/img/michelle_avatar.jpg', alt: 'Michelle Smit' }}
         headline="Book your free consultation"
         subheadline={
           <p>

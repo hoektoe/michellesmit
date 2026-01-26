@@ -3,7 +3,7 @@ import { Instrument_Serif, Inter } from 'next/font/google'
 
 import { ButtonLink } from '@/components/elements/button'
 import { Main } from '@/components/elements/main'
-import { ThemeToggle } from '@/components/elements/theme-toggle'
+import { Wallpaper } from '@/components/elements/wallpaper'
 import { PostHogProvider } from './providers'
 import {
   FooterCategory,
@@ -80,18 +80,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${instrumentSerif.variable} ${inter.variable}`}>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const theme = localStorage.getItem('theme');
-                if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark');
-                }
-              })();
-            `,
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -181,15 +169,15 @@ export default function RootLayout({
       <body>
         <PostHogProvider>
           {/* Top Banner */}
-          <div className="bg-mist-800 dark:bg-mist-900 text-sm text-white">
+          <Wallpaper color="slate" className="text-sm text-white">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-              <a href="mailto:therapy@michellesmit.com" className="flex items-center gap-2 hover:text-mist-200 transition-colors">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-mist-600 text-xs">@</span>
+              <a href="mailto:therapy@michellesmit.com" className="flex items-center gap-2 transition-colors hover:text-mist-200">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-xs">@</span>
                 <span>therapy@michellesmit.com</span>
               </a>
-              <span className="hidden sm:block text-mist-300">Counselling Psychologist based in Paarl</span>
+              <span className="hidden text-mist-400 sm:block">Counselling Psychologist based in Paarl</span>
             </div>
-          </div>
+          </Wallpaper>
 
           <NavbarWithLinksActionsAndCenteredLogo
             id="navbar"
@@ -208,13 +196,12 @@ export default function RootLayout({
                   alt="Michelle Smit"
                   width={180}
                   height={60}
-                  className="h-14 w-auto dark:invert"
+                  className="h-14 w-auto"
                 />
               </NavbarLogo>
             }
             actions={
               <>
-                <ThemeToggle />
                 <ButtonLink href="/contact">Book a Consultation</ButtonLink>
               </>
             }
@@ -227,7 +214,7 @@ export default function RootLayout({
             cta={
               <div className="flex max-w-sm flex-col gap-2">
                 <p>Get in Touch</p>
-                <div className="flex flex-col gap-2 text-mist-700 dark:text-mist-400">
+                <div className="flex flex-col gap-2 text-mist-700">
                   <p>therapy@michellesmit.com</p>
                   <p className="text-sm">M. Psych, Hons Psych, HPCSA Registered</p>
                 </div>

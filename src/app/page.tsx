@@ -64,7 +64,7 @@ export default function Page() {
       <HeroLeftAlignedWithDemo
         id="hero"
         eyebrow={
-          <span className="text-sm font-medium text-mist-600 dark:text-mist-400">
+          <span className="text-sm font-medium text-mist-600">
             Michelle Smit - Counselling Psychologist
           </span>
         }
@@ -248,7 +248,7 @@ export default function Page() {
             <Image
               src="/img/avatars/10-size-160.webp"
               alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
+              className="bg-white/75"
               width={160}
               height={160}
             />
@@ -267,7 +267,7 @@ export default function Page() {
             <Image
               src="/img/avatars/15-size-160.webp"
               alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
+              className="bg-white/75"
               width={160}
               height={160}
             />
@@ -286,7 +286,7 @@ export default function Page() {
             <Image
               src="/img/avatars/13-size-160.webp"
               alt=""
-              className="not-dark:bg-white/75 dark:bg-black/75"
+              className="bg-white/75"
               width={160}
               height={160}
             />
@@ -359,6 +359,7 @@ export default function Page() {
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
+        image={{ src: '/img/michelle_avatar.jpg', alt: 'Michelle Smit' }}
         headline="Schedule your free 15-minute consultation."
         subheadline={
           <p>
