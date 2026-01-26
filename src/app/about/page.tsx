@@ -14,11 +14,21 @@ import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-o
 export const metadata: Metadata = {
   title: 'About Michelle Smit',
   description:
-    'HPCSA registered counselling psychologist in Paarl with a Master\'s degree and specialisation in addiction care. Bilingual therapy in English and Afrikaans.',
-  keywords: ['Michelle Smit psychologist', 'counselling psychologist Paarl', 'HPCSA registered psychologist', 'bilingual therapist South Africa'],
+    "HPCSA registered counselling psychologist in Paarl with a Master's degree and specialisation in addiction care. Bilingual therapy in English and Afrikaans.",
+  keywords: [
+    'Michelle Smit psychologist',
+    'counselling psychologist Paarl',
+    'HPCSA registered psychologist',
+    'bilingual therapist South Africa',
+  ],
+  alternates: {
+    canonical: 'https://michellesmit.com/about',
+  },
   openGraph: {
     title: 'About Michelle Smit | Counselling Psychologist in Paarl',
-    description: 'HPCSA registered counselling psychologist specialising in addiction, anxiety, depression & relationships. Bilingual therapy available.',
+    description:
+      'HPCSA registered counselling psychologist specialising in addiction, anxiety, depression & relationships. Bilingual therapy available.',
+    images: ['/img/logo.png'],
   },
 }
 
@@ -28,7 +38,7 @@ export default function Page() {
       {/* Hero */}
       <HeroWithDemoOnBackground
         id="hero"
-        color="sunset"
+        color="green"
         headline="Michelle Smit"
         subheadline={
           <p>
@@ -43,7 +53,7 @@ export default function Page() {
               alt="Michelle Smit - Counselling Psychologist"
               width={400}
               height={400}
-              className="object-cover bg-white/75"
+              className="bg-white/75 object-cover"
             />
           </>
         }
@@ -94,9 +104,7 @@ export default function Page() {
               <div className="rounded-2xl bg-mist-50 py-8 pr-8">
                 <div className="flex flex-col gap-4">
                   <Text size="lg">
-                    <p className="font-medium text-mist-950">
-                      South African Psychiatry Magazine — May 2020
-                    </p>
+                    <p className="font-medium text-mist-950">South African Psychiatry Magazine — May 2020</p>
                   </Text>
                   <Text>
                     <p>
@@ -104,7 +112,11 @@ export default function Page() {
                       faced by individuals struggling with addiction during lockdown and isolation.
                     </p>
                   </Text>
-                  <Link href="/publications/south-african-psychiatry-may-2020.pdf" target="_blank">
+                  <Link
+                    href="/publications/south-african-psychiatry-may-2020.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Download Article (PDF) <ArrowNarrowRightIcon />
                   </Link>
                 </div>

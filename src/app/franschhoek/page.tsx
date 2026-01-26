@@ -8,26 +8,27 @@ import { DocumentLeftAligned } from '@/components/sections/document-left-aligned
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
 
 export const metadata: Metadata = {
-  title: 'Psychologist Near Stellenbosch',
+  title: 'Psychologist Near Franschhoek',
   description:
-    'Counselling psychologist serving Stellenbosch, Franschhoek & surrounds. Anxiety, depression, couples therapy & addiction counselling. Online and in-person sessions in nearby Paarl.',
+    'Counselling psychologist serving Franschhoek & the Cape Winelands. Anxiety, depression, couples therapy & addiction counselling. Online and in-person sessions in nearby Paarl.',
   keywords: [
-    'psychologist Stellenbosch',
-    'therapist Stellenbosch',
-    'couples therapy Stellenbosch',
-    'anxiety psychologist Stellenbosch',
-    'depression therapy Stellenbosch',
-    'counselling Stellenbosch',
-    'sielkundige Stellenbosch',
-    'marriage counselling Stellenbosch',
+    'psychologist Franschhoek',
+    'therapist Franschhoek',
+    'couples therapy Franschhoek',
+    'anxiety psychologist Franschhoek',
+    'depression therapy Franschhoek',
+    'counselling Franschhoek',
+    'sielkundige Franschhoek',
+    'marriage counselling Franschhoek',
+    'psychologist Cape Winelands',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/stellenbosch',
+    canonical: 'https://michellesmit.com/franschhoek',
   },
   openGraph: {
-    title: 'Psychologist Near Stellenbosch | Michelle Smit',
+    title: 'Psychologist Near Franschhoek | Michelle Smit',
     description:
-      'HPCSA registered psychologist serving Stellenbosch area. Anxiety, depression, relationships & addiction therapy. Online sessions available.',
+      'HPCSA registered psychologist serving Franschhoek and the Cape Winelands. Anxiety, depression, relationships & addiction therapy. Online sessions available.',
     images: ['/img/logo.png'],
   },
 }
@@ -39,18 +40,18 @@ export default function Page() {
       <HeroWithDemoOnBackground
         id="hero"
         color="sunset"
-        headline="Therapy for Stellenbosch & Surrounds"
+        headline="Therapy for Franschhoek & the Winelands"
         subheadline={
           <p>
-            Looking for a psychologist near Stellenbosch? I offer therapy services from my practice in nearby Paarl,
-            just 15 minutes away, as well as secure online sessions from the comfort of your home.
+            Looking for a psychologist near Franschhoek? I offer therapy services from my practice in nearby Paarl,
+            just 20 minutes away along the scenic R45, as well as secure online sessions from the comfort of your home.
           </p>
         }
         demo={
           <>
             <Image
               src="/img/services/hero.jpeg"
-              alt="Therapy services for Stellenbosch"
+              alt="Therapy services for Franschhoek"
               width={1200}
               height={800}
               className="object-cover bg-white/75"
@@ -60,16 +61,17 @@ export default function Page() {
       />
 
       {/* Content */}
-      <DocumentLeftAligned id="content" headline="Serving the Stellenbosch Area">
+      <DocumentLeftAligned id="content" headline="Serving the Franschhoek Valley">
         <p>
-          While my practice is based at Bloemendal Clinic in Paarl, I regularly work with clients from Stellenbosch,
-          Franschhoek, Somerset West, and the broader Cape Winelands region. The drive from Stellenbosch to Paarl takes
-          approximately 15-20 minutes via the R44.
+          While my practice is based at Bloemendal Clinic in Paarl, I regularly work with clients from Franschhoek,
+          the Franschhoek Valley, and the broader Cape Winelands region. The drive from Franschhoek to my practice
+          takes approximately 20 minutes via the R45, passing through beautiful wine country.
         </p>
 
         <p>
           For those who prefer not to travel, I offer secure online therapy sessions that are just as effective as
-          in-person consultations. Many of my Stellenbosch clients choose this convenient option.
+          in-person consultations. Many of my clients from the Franschhoek area choose this convenient option,
+          particularly during busy tourist seasons.
         </p>
 
         <h2>Services Available</h2>
@@ -106,13 +108,14 @@ export default function Page() {
         <h2>Convenient Access</h2>
 
         <p>
-          <strong>In-Person:</strong> Bloemendal Clinic is located on the R45 between Paarl and Franschhoek, with ample
-          free parking and a peaceful, private setting.
+          <strong>In-Person:</strong> Bloemendal Clinic is located on the R45 between Paarl and Franschhoek, making
+          it an easy drive from the Franschhoek Valley. The clinic offers ample free parking and a peaceful, private
+          setting.
         </p>
 
         <p>
           <strong>Online:</strong> Secure video sessions allow you to access therapy from anywhere in the Western Cape
-          or South Africa.
+          or South Africa, perfect for those with busy schedules or who prefer the privacy of their own space.
         </p>
       </DocumentLeftAligned>
 
