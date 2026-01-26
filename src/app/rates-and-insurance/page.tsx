@@ -14,9 +14,13 @@ export const metadata: Metadata = {
   description:
     'Psychology session rates and medical aid information. Michelle Smit Therapy is registered with most medical aids and can claim on your behalf.',
   keywords: ['psychologist rates South Africa', 'therapy fees Paarl', 'medical aid psychologist', 'psychology session cost'],
+  alternates: {
+    canonical: 'https://michellesmit.com/rates-and-insurance',
+  },
   openGraph: {
     title: 'Rates & Medical Aid | Michelle Smit Psychologist',
     description: 'Session rates and medical aid information. We can claim directly from most medical aids.',
+    images: ['/img/logo.png'],
   },
 }
 

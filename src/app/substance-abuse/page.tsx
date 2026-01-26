@@ -12,9 +12,13 @@ export const metadata: Metadata = {
   description:
     'Specialist addiction counselling in Paarl by former clinical leader of a psychiatric substance abuse unit. Alcohol, drug & process addiction therapy. Dual diagnosis treatment.',
   keywords: ['addiction counselling Paarl', 'substance abuse therapy', 'drug rehabilitation psychologist', 'alcohol addiction treatment South Africa'],
+  alternates: {
+    canonical: 'https://michellesmit.com/substance-abuse',
+  },
   openGraph: {
     title: 'Addiction & Substance Abuse Therapy | Michelle Smit Psychologist',
     description: 'Specialist addiction therapy from a psychologist with extensive inpatient treatment experience. Paarl & online.',
+    images: ['/img/logo.png'],
   },
 }
 

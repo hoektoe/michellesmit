@@ -12,9 +12,13 @@ export const metadata: Metadata = {
   description:
     'Book a free 15-minute consultation with Michelle Smit, counselling psychologist in Paarl. In-person at Bloemendal Clinic or secure online video sessions.',
   keywords: ['book psychologist appointment', 'psychologist Paarl contact', 'online therapy booking', 'Bloemendal Clinic Paarl'],
+  alternates: {
+    canonical: 'https://michellesmit.com/contact',
+  },
   openGraph: {
     title: 'Contact Michelle Smit | Book Your Consultation',
     description: 'Schedule a free 15-minute consultation. In-person sessions at Bloemendal Clinic, Paarl or online.',
+    images: ['/img/logo.png'],
   },
 }
 

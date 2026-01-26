@@ -12,9 +12,13 @@ export const metadata: Metadata = {
   description:
     'Compassionate depression treatment in Paarl, Western Cape. HPCSA registered psychologist offering CBT and evidence-based therapy. Online sessions available.',
   keywords: ['depression therapy Paarl', 'depression psychologist', 'depression counselling', 'CBT depression South Africa'],
+  alternates: {
+    canonical: 'https://michellesmit.com/depression',
+  },
   openGraph: {
     title: 'Depression Therapy in Paarl | Michelle Smit Psychologist',
     description: 'Evidence-based depression treatment with a compassionate approach. HPCSA registered counselling psychologist.',
+    images: ['/img/logo.png'],
   },
 }
 

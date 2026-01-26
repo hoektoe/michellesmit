@@ -12,9 +12,13 @@ export const metadata: Metadata = {
   description:
     'Marriage counselling and relationship therapy in Paarl, Western Cape. Improve communication, rebuild trust & strengthen your connection. Individual and couples sessions.',
   keywords: ['couples therapy Paarl', 'marriage counselling Paarl', 'relationship therapist', 'couples counselling Western Cape'],
+  alternates: {
+    canonical: 'https://michellesmit.com/relationships',
+  },
   openGraph: {
     title: 'Relationship & Couples Therapy | Michelle Smit Psychologist',
     description: 'Professional relationship therapy to improve communication and rebuild connection. Paarl & online sessions.',
+    images: ['/img/logo.png'],
   },
 }
 

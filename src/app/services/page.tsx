@@ -12,9 +12,13 @@ export const metadata: Metadata = {
   description:
     'Evidence-based therapy services in Paarl: anxiety, depression, substance abuse & relationship counselling. HPCSA registered psychologist. Online sessions available.',
   keywords: ['therapy services Paarl', 'psychologist services', 'mental health therapy', 'counselling services Western Cape'],
+  alternates: {
+    canonical: 'https://michellesmit.com/services',
+  },
   openGraph: {
     title: 'Therapy Services | Michelle Smit Psychologist',
     description: 'Comprehensive therapy services for anxiety, depression, addiction & relationships. In-person and online sessions.',
+    images: ['/img/logo.png'],
   },
 }
 
