@@ -38,7 +38,7 @@ export default function Page() {
 
               <div className="flex flex-col gap-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600 dark:bg-mist-800 dark:text-mist-300">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
                     <svg
                       className="h-5 w-5"
                       fill="none"
@@ -54,8 +54,8 @@ export default function Page() {
                     </svg>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <p className="font-medium text-mist-950 dark:text-white">Medical Aid</p>
-                    <p className="text-mist-600 dark:text-mist-400">
+                    <p className="font-medium text-mist-950">Medical Aid</p>
+                    <p className="text-mist-600">
                       Michelle Smit Therapy is registered with most medical aids and the practice can claim on your
                       behalf.
                     </p>
@@ -63,26 +63,26 @@ export default function Page() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600 dark:bg-mist-800 dark:text-mist-300">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
                     <BanknotesIcon className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <p className="font-medium text-mist-950 dark:text-white">Cash Rates</p>
-                    <p className="text-mist-600 dark:text-mist-400">
+                    <p className="font-medium text-mist-950">Cash Rates</p>
+                    <p className="text-mist-600">
                       Alternatively, enquire about cash rates for self-pay options.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600 dark:bg-mist-800 dark:text-mist-300">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
                     <MailIcon className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <p className="font-medium text-mist-950 dark:text-white">For More Information</p>
+                    <p className="font-medium text-mist-950">For More Information</p>
                     <a
                       href="mailto:practicemanager@michellesmit.com"
-                      className="text-mist-600 hover:text-mist-950 dark:text-mist-400 dark:hover:text-white"
+                      className="text-mist-600 hover:text-mist-950"
                     >
                       practicemanager@michellesmit.com
                     </a>
@@ -96,6 +96,7 @@ export default function Page() {
 
       <CallToActionSimple
         id="call-to-action"
+        image={{ src: '/img/michelle_avatar.jpg', alt: 'Michelle Smit' }}
         headline="Schedule your free 15-minute consultation."
         subheadline={
           <p>

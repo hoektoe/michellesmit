@@ -43,7 +43,7 @@ export default function Page() {
               alt="Michelle Smit - Counselling Psychologist"
               width={400}
               height={400}
-              className="object-cover not-dark:bg-white/75 dark:bg-black/75"
+              className="object-cover bg-white/75"
             />
           </>
         }
@@ -91,10 +91,10 @@ export default function Page() {
           <div className="max-w-2xl">
             <div className="flex flex-col gap-6">
               <Subheading>Publication</Subheading>
-              <div className="rounded-2xl bg-mist-50 py-8 pr-8 dark:bg-mist-900/50">
+              <div className="rounded-2xl bg-mist-50 py-8 pr-8">
                 <div className="flex flex-col gap-4">
                   <Text size="lg">
-                    <p className="font-medium text-mist-950 dark:text-white">
+                    <p className="font-medium text-mist-950">
                       South African Psychiatry Magazine — May 2020
                     </p>
                   </Text>
@@ -117,6 +117,7 @@ export default function Page() {
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
+        image={{ src: '/img/michelle_avatar.jpg', alt: 'Michelle Smit' }}
         headline="Let's work together."
         subheadline={
           <p>

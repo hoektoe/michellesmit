@@ -17,7 +17,7 @@ export function FooterCategory({ title, children, ...props }: { title: ReactNode
 
 export function FooterLink({ href, className, ...props }: { href: string } & Omit<ComponentProps<'a'>, 'href'>) {
   return (
-    <li className={clsx('text-mist-700 dark:text-mist-400', className)}>
+    <li className={clsx('text-mist-700', className)}>
       <Link href={href} {...props} />
     </li>
   )
@@ -34,12 +34,12 @@ export function FooterWithLinkCategories({
 } & ComponentProps<'footer'>) {
   return (
     <footer className={clsx('pt-16', className)} {...props}>
-      <div className="bg-mist-950/2.5 py-16 text-mist-950 dark:bg-white/5 dark:text-white">
+      <div className="bg-mist-950/2.5 py-16 text-mist-950">
         <Container className="flex flex-col gap-16">
           <nav className="grid grid-cols-2 gap-6 text-sm/7 sm:has-[>:last-child:nth-child(3)]:grid-cols-3 sm:has-[>:nth-child(5)]:grid-cols-3 md:has-[>:last-child:nth-child(4)]:grid-cols-4 lg:has-[>:nth-child(5)]:grid-cols-5">
             {links}
           </nav>
-          <div className="text-sm/7 text-mist-600 dark:text-mist-500">{fineprint}</div>
+          <div className="text-sm/7 text-mist-600">{fineprint}</div>
         </Container>
       </div>
     </footer>

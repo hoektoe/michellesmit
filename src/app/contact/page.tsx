@@ -38,14 +38,14 @@ export default function Page() {
 
               <div className="flex flex-col gap-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600 dark:bg-mist-800 dark:text-mist-300">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
                     <MailIcon className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <p className="font-medium text-mist-950 dark:text-white">Email</p>
+                    <p className="font-medium text-mist-950">Email</p>
                     <a
                       href="mailto:therapy@michellesmit.com"
-                      className="text-mist-600 hover:text-mist-950 dark:text-mist-400 dark:hover:text-white"
+                      className="text-mist-600 hover:text-mist-950"
                     >
                       therapy@michellesmit.com
                     </a>
@@ -53,12 +53,12 @@ export default function Page() {
                 </div>
 
                 <div id="paarl" className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600 dark:bg-mist-800 dark:text-mist-300">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
                     <MapPinIcon className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <p className="font-medium text-mist-950 dark:text-white">Paarl Office</p>
-                    <p className="text-mist-600 dark:text-mist-400">
+                    <p className="font-medium text-mist-950">Paarl Office</p>
+                    <p className="text-mist-600">
                       Bloemendal Clinic
                       <br />
                       Paarl, Western Cape
@@ -75,7 +75,7 @@ export default function Page() {
                 </div>
 
                 <div id="online" className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600 dark:bg-mist-800 dark:text-mist-300">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
                     <svg
                       className="h-5 w-5"
                       fill="none"
@@ -91,8 +91,8 @@ export default function Page() {
                     </svg>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <p className="font-medium text-mist-950 dark:text-white">Online Sessions</p>
-                    <p className="text-mist-600 dark:text-mist-400">
+                    <p className="font-medium text-mist-950">Online Sessions</p>
+                    <p className="text-mist-600">
                       Secure video therapy available
                       <br />
                       Flexible scheduling

@@ -23,7 +23,7 @@ export function Faq({
         id={`${id}-question`}
         command="--toggle"
         commandfor={`${id}-answer`}
-        className="flex w-full items-start justify-between gap-6 py-4 text-left text-base/7 text-mist-950 dark:text-white"
+        className="flex w-full items-start justify-between gap-6 py-4 text-left text-base/7 text-mist-950"
       >
         {question}
         <PlusIcon className="h-lh in-aria-expanded:hidden" />
@@ -32,7 +32,7 @@ export function Faq({
       <ElDisclosure
         id={`${id}-answer`}
         hidden
-        className="-mt-2 flex flex-col gap-2 pr-12 pb-4 text-sm/7 text-mist-700 dark:text-mist-400"
+        className="-mt-2 flex flex-col gap-2 pr-12 pb-4 text-sm/7 text-mist-700"
       >
         {answer}
       </ElDisclosure>
@@ -57,7 +57,7 @@ export function FAQsTwoColumnAccordion({
           <Subheading>{headline}</Subheading>
           {subheadline && <Text className="flex flex-col gap-4 text-pretty">{subheadline}</Text>}
         </div>
-        <div className="divide-y divide-mist-950/10 border-y border-mist-950/10 dark:divide-white/10 dark:border-white/10">
+        <div className="divide-y divide-mist-950/10 border-y border-mist-950/10">
           {children}
         </div>
       </Container>
