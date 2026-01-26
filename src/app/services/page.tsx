@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 
 import { Link } from '@/components/elements/link'
@@ -5,6 +6,17 @@ import { Screenshot } from '@/components/elements/screenshot'
 import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon'
 import { Feature, FeaturesTwoColumnWithDemos } from '@/components/sections/features-two-column-with-demos'
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
+
+export const metadata: Metadata = {
+  title: 'Therapy Services',
+  description:
+    'Evidence-based therapy services in Paarl: anxiety, depression, substance abuse & relationship counselling. HPCSA registered psychologist. Online sessions available.',
+  keywords: ['therapy services Paarl', 'psychologist services', 'mental health therapy', 'counselling services Western Cape'],
+  openGraph: {
+    title: 'Therapy Services | Michelle Smit Psychologist',
+    description: 'Comprehensive therapy services for anxiety, depression, addiction & relationships. In-person and online sessions.',
+  },
+}
 
 export default function Page() {
   return (
@@ -50,7 +62,7 @@ export default function Page() {
                 <Screenshot wallpaper="green" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/substance-abuse.avif"
+                      src="/img/services/substance-abuse.png"
                       alt="Substance abuse therapy"
                       fill
                       className="object-cover"

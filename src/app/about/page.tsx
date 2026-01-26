@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 
 import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
@@ -9,6 +10,17 @@ import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
 import { DocumentLeftAligned } from '@/components/sections/document-left-aligned'
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
+
+export const metadata: Metadata = {
+  title: 'About Michelle Smit',
+  description:
+    'HPCSA registered counselling psychologist in Paarl with a Master\'s degree and specialisation in addiction care. Bilingual therapy in English and Afrikaans.',
+  keywords: ['Michelle Smit psychologist', 'counselling psychologist Paarl', 'HPCSA registered psychologist', 'bilingual therapist South Africa'],
+  openGraph: {
+    title: 'About Michelle Smit | Counselling Psychologist in Paarl',
+    description: 'HPCSA registered counselling psychologist specialising in addiction, anxiety, depression & relationships. Bilingual therapy available.',
+  },
+}
 
 export default function Page() {
   return (

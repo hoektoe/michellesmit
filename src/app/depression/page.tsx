@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 
 import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
@@ -5,6 +6,17 @@ import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
 import { DocumentLeftAligned } from '@/components/sections/document-left-aligned'
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
+
+export const metadata: Metadata = {
+  title: 'Depression Therapy in Paarl',
+  description:
+    'Compassionate depression treatment in Paarl, Western Cape. HPCSA registered psychologist offering CBT and evidence-based therapy. Online sessions available.',
+  keywords: ['depression therapy Paarl', 'depression psychologist', 'depression counselling', 'CBT depression South Africa'],
+  openGraph: {
+    title: 'Depression Therapy in Paarl | Michelle Smit Psychologist',
+    description: 'Evidence-based depression treatment with a compassionate approach. HPCSA registered counselling psychologist.',
+  },
+}
 
 export default function Page() {
   return (
