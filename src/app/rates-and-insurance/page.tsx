@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
 import { Container } from '@/components/elements/container'
 import { Heading } from '@/components/elements/heading'
@@ -6,6 +8,17 @@ import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon
 import { BanknotesIcon } from '@/components/icons/banknotes-icon'
 import { MailIcon } from '@/components/icons/mail-icon'
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
+
+export const metadata: Metadata = {
+  title: 'Rates & Medical Aid',
+  description:
+    'Psychology session rates and medical aid information. Michelle Smit Therapy is registered with most medical aids and can claim on your behalf.',
+  keywords: ['psychologist rates South Africa', 'therapy fees Paarl', 'medical aid psychologist', 'psychology session cost'],
+  openGraph: {
+    title: 'Rates & Medical Aid | Michelle Smit Psychologist',
+    description: 'Session rates and medical aid information. We can claim directly from most medical aids.',
+  },
+}
 
 export default function Page() {
   return (

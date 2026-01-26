@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Script from 'next/script'
 
 import { ButtonLink, PlainButtonLink, SoftButtonLink } from '@/components/elements/button'
 import { Link } from '@/components/elements/link'
@@ -12,9 +13,53 @@ import { Plan, PricingMultiTier } from '@/components/sections/pricing-multi-tier
 import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
 import { Testimonial, TestimonialThreeColumnGrid } from '@/components/sections/testimonials-three-column-grid'
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What can I expect in a first session?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "The first session is an opportunity for us to get to know each other. We'll discuss what brings you to therapy, your goals, and any questions you may have. It's a collaborative process where we establish a foundation for our work together.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long is a typical session?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Individual therapy sessions are typically 50 minutes. The frequency of sessions depends on your needs and goals, with most clients starting with weekly sessions.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer online therapy sessions?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person. Online therapy has been shown to be just as effective as face-to-face sessions.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What are your rates and do you work with medical aid?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Please contact me for current rates. I provide detailed invoices that can be submitted to your medical aid for reimbursement. Many medical aids cover psychology sessions, though coverage varies by plan.',
+      },
+    },
+  ],
+}
+
 export default function Page() {
   return (
     <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <HeroLeftAlignedWithDemo
         id="hero"
@@ -70,7 +115,7 @@ export default function Page() {
                 <Screenshot wallpaper="green" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/substance-abuse.avif"
+                      src="/img/services/substance-abuse.png"
                       alt="Substance abuse therapy"
                       fill
                       className="object-cover"

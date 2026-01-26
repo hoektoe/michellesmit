@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 
 import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
@@ -5,6 +6,17 @@ import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
 import { DocumentLeftAligned } from '@/components/sections/document-left-aligned'
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
+
+export const metadata: Metadata = {
+  title: 'Anxiety Therapy in Paarl',
+  description:
+    'Expert anxiety treatment in Paarl, Western Cape. HPCSA registered psychologist offering CBT for generalised anxiety, panic attacks & PTSD. Book your free consultation.',
+  keywords: ['anxiety therapy Paarl', 'anxiety psychologist', 'panic attack treatment', 'PTSD therapy South Africa', 'CBT anxiety'],
+  openGraph: {
+    title: 'Anxiety Therapy in Paarl | Michelle Smit Psychologist',
+    description: 'Expert anxiety treatment with CBT and mindfulness-based interventions. HPCSA registered counselling psychologist in Paarl.',
+  },
+}
 
 export default function Page() {
   return (

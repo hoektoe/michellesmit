@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 
 import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
@@ -5,6 +6,17 @@ import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
 import { DocumentLeftAligned } from '@/components/sections/document-left-aligned'
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
+
+export const metadata: Metadata = {
+  title: 'Addiction & Substance Abuse Therapy in Paarl',
+  description:
+    'Specialist addiction counselling in Paarl by former clinical leader of a psychiatric substance abuse unit. Alcohol, drug & process addiction therapy. Dual diagnosis treatment.',
+  keywords: ['addiction counselling Paarl', 'substance abuse therapy', 'drug rehabilitation psychologist', 'alcohol addiction treatment South Africa'],
+  openGraph: {
+    title: 'Addiction & Substance Abuse Therapy | Michelle Smit Psychologist',
+    description: 'Specialist addiction therapy from a psychologist with extensive inpatient treatment experience. Paarl & online.',
+  },
+}
 
 export default function Page() {
   return (
@@ -23,7 +35,7 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/substance-abuse.avif"
+              src="/img/services/substance-abuse.png"
               alt="Substance abuse therapy"
               width={1200}
               height={800}

@@ -1,5 +1,6 @@
 import { clsx } from 'clsx/lite'
-import { useId, type ComponentProps, type ReactNode } from 'react'
+import Image from 'next/image'
+import { type ComponentProps, type ReactNode } from 'react'
 import { Section } from '../elements/section'
 
 export function Stat({
@@ -17,7 +18,7 @@ export function Stat({
 }
 
 export function StatsWithGraph({ children, ...props }: ComponentProps<typeof Section>) {
-  let pathId = useId()
+  // let pathId = useId()
 
   return (
     <Section {...props}>
@@ -26,9 +27,16 @@ export function StatsWithGraph({ children, ...props }: ComponentProps<typeof Sec
           {children}
         </div>
       </div>
-      <div className="pointer-events-none relative h-48 sm:h-64 lg:h-36">
+      <div className="pointer-events-none relative mt-48 h-48 sm:h-64 lg:h-48">
         <div className="absolute bottom-0 left-1/2 w-[150vw] max-w-[calc(var(--container-7xl)-(--spacing(10)*2))] -translate-x-1/2">
-          <svg
+          <Image
+            src="/img/dutch.png"
+            alt="Winelands landscape"
+            width={1200}
+            height={400}
+            className="h-full w-full object-cover object-bottom"
+          />
+          {/*<svg
             className="h-100 w-full fill-mist-950/2.5 stroke-mist-950/40 dark:fill-white/2.5 dark:stroke-white/40"
             viewBox="0 0 1200 400"
             preserveAspectRatio="none"
@@ -64,7 +72,7 @@ export function StatsWithGraph({ children, ...props }: ComponentProps<typeof Sec
               strokeWidth="1"
               vectorEffect="non-scaling-stroke"
             />
-          </svg>
+          </svg>*/}
         </div>
       </div>
     </Section>

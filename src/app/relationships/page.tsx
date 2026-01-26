@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 
 import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
@@ -5,6 +6,17 @@ import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
 import { DocumentLeftAligned } from '@/components/sections/document-left-aligned'
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
+
+export const metadata: Metadata = {
+  title: 'Relationship & Couples Therapy in Paarl',
+  description:
+    'Marriage counselling and relationship therapy in Paarl, Western Cape. Improve communication, rebuild trust & strengthen your connection. Individual and couples sessions.',
+  keywords: ['couples therapy Paarl', 'marriage counselling Paarl', 'relationship therapist', 'couples counselling Western Cape'],
+  openGraph: {
+    title: 'Relationship & Couples Therapy | Michelle Smit Psychologist',
+    description: 'Professional relationship therapy to improve communication and rebuild connection. Paarl & online sessions.',
+  },
+}
 
 export default function Page() {
   return (
