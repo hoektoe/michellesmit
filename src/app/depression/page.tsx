@@ -11,13 +11,19 @@ export const metadata: Metadata = {
   title: 'Depression Therapy in Paarl',
   description:
     'Compassionate depression treatment in Paarl, Western Cape. HPCSA registered psychologist offering CBT and evidence-based therapy. Online sessions available.',
-  keywords: ['depression therapy Paarl', 'depression psychologist', 'depression counselling', 'CBT depression South Africa'],
+  keywords: [
+    'depression therapy Paarl',
+    'depression psychologist',
+    'depression counselling',
+    'CBT depression South Africa',
+  ],
   alternates: {
     canonical: 'https://michellesmit.com/depression',
   },
   openGraph: {
     title: 'Depression Therapy in Paarl | Michelle Smit Psychologist',
-    description: 'Evidence-based depression treatment with a compassionate approach. HPCSA registered counselling psychologist.',
+    description:
+      'Evidence-based depression treatment with a compassionate approach. HPCSA registered counselling psychologist.',
     images: ['/img/logo.png'],
   },
 }
@@ -39,11 +45,11 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/depression.avif"
+              src="/img/services/depression_well.png"
               alt="Depression therapy"
               width={1200}
               height={800}
-              className="object-cover bg-white/75"
+              className="bg-white/75 object-cover"
             />
           </>
         }
@@ -97,9 +103,9 @@ export default function Page() {
         <h2>How Therapy Can Help</h2>
 
         <p>
-          Through therapy, we can work together to understand the root causes of your depression, develop healthy
-          coping strategies, and gradually rebuild a sense of hope and purpose. Evidence-based approaches like
-          Cognitive Behavioural Therapy (CBT) have proven highly effective in treating depression.
+          Through therapy, we can work together to understand the root causes of your depression, develop healthy coping
+          strategies, and gradually rebuild a sense of hope and purpose. Evidence-based approaches like Cognitive
+          Behavioural Therapy (CBT) have proven highly effective in treating depression.
         </p>
       </DocumentLeftAligned>
 

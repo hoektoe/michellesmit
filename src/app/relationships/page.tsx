@@ -11,13 +11,19 @@ export const metadata: Metadata = {
   title: 'Relationship & Couples Therapy in Paarl',
   description:
     'Marriage counselling and relationship therapy in Paarl, Western Cape. Improve communication, rebuild trust & strengthen your connection. Individual and couples sessions.',
-  keywords: ['couples therapy Paarl', 'marriage counselling Paarl', 'relationship therapist', 'couples counselling Western Cape'],
+  keywords: [
+    'couples therapy Paarl',
+    'marriage counselling Paarl',
+    'relationship therapist',
+    'couples counselling Western Cape',
+  ],
   alternates: {
     canonical: 'https://michellesmit.com/relationships',
   },
   openGraph: {
     title: 'Relationship & Couples Therapy | Michelle Smit Psychologist',
-    description: 'Professional relationship therapy to improve communication and rebuild connection. Paarl & online sessions.',
+    description:
+      'Professional relationship therapy to improve communication and rebuild connection. Paarl & online sessions.',
     images: ['/img/logo.png'],
   },
 }
@@ -39,11 +45,11 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/relationships.png"
+              src="/img/services/relationship.png"
               alt="Relationship therapy"
               width={1200}
               height={800}
-              className="object-cover bg-white/75"
+              className="bg-white/75 object-cover"
             />
           </>
         }
@@ -52,9 +58,9 @@ export default function Page() {
       {/* Content */}
       <DocumentLeftAligned id="content" headline="Navigating Relationships">
         <p>
-          Navigating relationships can be tricky. Relationships are complicated because they involve two people who
-          each come with their own views, expectations, and ways of communicating — all trying to align and build
-          something together.
+          Navigating relationships can be tricky. Relationships are complicated because they involve two people who each
+          come with their own views, expectations, and ways of communicating — all trying to align and build something
+          together.
         </p>
 
         <p>

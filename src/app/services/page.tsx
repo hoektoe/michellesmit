@@ -11,13 +11,19 @@ export const metadata: Metadata = {
   title: 'Therapy Services',
   description:
     'Evidence-based therapy services in Paarl: anxiety, depression, substance abuse & relationship counselling. HPCSA registered psychologist. Online sessions available.',
-  keywords: ['therapy services Paarl', 'psychologist services', 'mental health therapy', 'counselling services Western Cape'],
+  keywords: [
+    'therapy services Paarl',
+    'psychologist services',
+    'mental health therapy',
+    'counselling services Western Cape',
+  ],
   alternates: {
     canonical: 'https://michellesmit.com/services',
   },
   openGraph: {
     title: 'Therapy Services | Michelle Smit Psychologist',
-    description: 'Comprehensive therapy services for anxiety, depression, addiction & relationships. In-person and online sessions.',
+    description:
+      'Comprehensive therapy services for anxiety, depression, addiction & relationships. In-person and online sessions.',
     images: ['/img/logo.png'],
   },
 }
@@ -43,7 +49,7 @@ export default function Page() {
               alt="Therapy services"
               width={1200}
               height={800}
-              className="object-cover bg-white/75"
+              className="bg-white/75 object-cover"
             />
           </>
         }
@@ -63,7 +69,7 @@ export default function Page() {
           <>
             <Feature
               demo={
-                <Screenshot wallpaper="green" placement="bottom-right">
+                <Screenshot wallpaper="olive" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
                       src="/img/services/substance-abuse.png"
@@ -89,10 +95,10 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="blue" placement="bottom-left">
+                <Screenshot wallpaper="steel" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/depression.avif"
+                      src="/img/services/depression_well.png"
                       alt="Depression therapy"
                       fill
                       className="object-cover"
@@ -115,14 +121,9 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="protea" placement="bottom-right">
+                <Screenshot wallpaper="sage" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
-                    <Image
-                      src="/img/services/anxiety.png"
-                      alt="Anxiety therapy"
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src="/img/services/anxiety.png" alt="Anxiety therapy" fill className="object-cover" />
                   </div>
                 </Screenshot>
               }
@@ -141,10 +142,10 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="sunset" placement="bottom-left">
+                <Screenshot wallpaper="amber" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/relationships.png"
+                      src="/img/services/relationship.png"
                       alt="Relationships therapy"
                       fill
                       className="object-cover"
@@ -155,8 +156,8 @@ export default function Page() {
               headline="Relationships"
               subheadline={
                 <p>
-                  Navigate relationship challenges, improve communication, and build healthier connections with partners,
-                  family members, and others in your life.
+                  Navigate relationship challenges, improve communication, and build healthier connections with
+                  partners, family members, and others in your life.
                 </p>
               }
               cta={
