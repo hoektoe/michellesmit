@@ -63,11 +63,7 @@ export default function Page() {
       {/* Hero */}
       <HeroLeftAlignedWithDemo
         id="hero"
-        eyebrow={
-          <span className="text-sm font-medium text-mist-600">
-            Michelle Smit - Counselling Psychologist
-          </span>
-        }
+        eyebrow={<span className="text-sm font-medium text-mist-600">Michelle Smit - Counselling Psychologist</span>}
         headline="Feel seen, heard and valued."
         subheadline={
           <p className="italic">
@@ -86,7 +82,7 @@ export default function Page() {
           </div>
         }
         demo={
-          <Screenshot className="rounded-lg" wallpaper="sunset" placement="bottom">
+          <Screenshot className="rounded-lg" wallpaper="amber" placement="bottom">
             <Image
               src="/img/hero.png"
               alt="Counselling psychologist Michelle Smit"
@@ -112,7 +108,7 @@ export default function Page() {
           <>
             <Feature
               demo={
-                <Screenshot wallpaper="green" placement="bottom-right">
+                <Screenshot wallpaper="olive" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
                       src="/img/services/substance-abuse.png"
@@ -136,11 +132,17 @@ export default function Page() {
                 </Link>
               }
             />
+
             <Feature
               demo={
-                <Screenshot wallpaper="blue" placement="bottom-left">
+                <Screenshot wallpaper="steel" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
-                    <Image src="/img/services/depression.avif" alt="Depression therapy" fill className="object-cover" />
+                    <Image
+                      src="/img/services/depression.png"
+                      alt="Depression therapy"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </Screenshot>
               }
@@ -159,7 +161,7 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="protea" placement="bottom-right">
+                <Screenshot wallpaper="sage" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image src="/img/services/anxiety.png" alt="Anxiety therapy" fill className="object-cover" />
                   </div>
@@ -180,10 +182,10 @@ export default function Page() {
             />
             <Feature
               demo={
-                <Screenshot wallpaper="sunset" placement="bottom-left">
+                <Screenshot wallpaper="amber" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/relationships.png"
+                      src="/img/services/relationship.png"
                       alt="Relationships therapy"
                       fill
                       className="object-cover"
@@ -244,15 +246,7 @@ export default function Page() {
               approach helped me understand myself better.
             </p>
           }
-          img={
-            <Image
-              src="/img/avatars/10-size-160.webp"
-              alt=""
-              className="bg-white/75"
-              width={160}
-              height={160}
-            />
-          }
+          img={<Image src="/img/avatars/10-size-160.webp" alt="" className="bg-white/75" width={160} height={160} />}
           name="Anonymous"
           byline="Anxiety client"
         />
@@ -263,15 +257,7 @@ export default function Page() {
               personal and connected.
             </p>
           }
-          img={
-            <Image
-              src="/img/avatars/15-size-160.webp"
-              alt=""
-              className="bg-white/75"
-              width={160}
-              height={160}
-            />
-          }
+          img={<Image src="/img/avatars/15-size-160.webp" alt="" className="bg-white/75" width={160} height={160} />}
           name="Anonymous"
           byline="Online therapy client"
         />
@@ -282,15 +268,7 @@ export default function Page() {
               so much easier.
             </p>
           }
-          img={
-            <Image
-              src="/img/avatars/13-size-160.webp"
-              alt=""
-              className="bg-white/75"
-              width={160}
-              height={160}
-            />
-          }
+          img={<Image src="/img/avatars/13-size-160.webp" alt="" className="bg-white/75" width={160} height={160} />}
           name="Anonymous"
           byline="Stellenbosch client"
         />
