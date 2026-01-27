@@ -66,11 +66,11 @@ export default function Footer({ locale, locales }) {
                 </a>
                 <br />
                 <br />
-                Mon - Fri: 08h00 - 17h00
+                Mon - Sat: 07h30 - 18h00
                 <br />
-                Sat: 08h00 - 13h00
+                Sun: 09h00 - 16h00
                 <br />
-                Closed Sundays and public holidays
+                Public holidays: 09h00 - 16h00
               </p>
             </div>
             <div className="hidden w-full px-4 lg:w-4/12 lg:flex">
