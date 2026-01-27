@@ -3,9 +3,6 @@ import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
-import { useFormspark } from "@formspark/use-formspark";
-
-const FORMSPARK_FORM_ID = "kDFzsA7G";
 
 function transactionID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -17,56 +14,17 @@ function transactionID() {
 
 export default function ContactForm({ blok }) {
   const router = useRouter();
-  const { locale } = router;
   const initialValues = {
     firstname: "",
     lastname: "",
     email: "",
     phone: "",
     message: "",
-    language: locale,
   };
-
-  const trans = {
-    contact: {
-      en: "Contact Information",
-      af: "Kontakbesonderhede",
-    },
-    submit: {
-      en: "Submit",
-      af: "Stuur",
-    },
-    name: {
-      en: "First name",
-      af: "Naame",
-    },
-    surname: {
-      en: "Last name",
-      af: "Van",
-    },
-    email: {
-      en: "Email",
-      af: "E-pos",
-    },
-    cellphone: {
-      en: "Cellphone",
-      af: "Selfoon",
-    },
-    message: {
-      en: "Message",
-      af: "Boodskap",
-    },
-    max: {
-      en: "Max. 500 characters",
-      af: "Maximum 500 letters",
-    },
-  };
-
-  const [submit, submitting] = useFormspark({
-    formId: FORMSPARK_FORM_ID,
-  });
 
   const [values, setValues] = useState(initialValues);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -78,9 +36,26 @@ export default function ContactForm({ blok }) {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    values.language = locale;
-    await submit({ ...values });
-    router.push(`/${locale}/thank-you?transaction_id=${transactionID()}`);
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      router.push(`/en/thank-you?transaction_id=${transactionID()}`);
+    } catch (err) {
+      setError(err.message);
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -193,7 +168,7 @@ export default function ContactForm({ blok }) {
                   </svg>
                 </div>
                 <h3 className="mb-6 text-lg font-medium text-white">
-                  {trans.contact[locale]}
+                  Contact Information
                 </h3>
                 <div className="max-w-3xl mb-6 text-base prose text-brand-50">
                   {render(blok.description)}
@@ -234,26 +209,23 @@ export default function ContactForm({ blok }) {
                 <h3 className="text-lg font-medium text-gray-900">
                   {blok.title}
                 </h3>
+                {error && (
+                  <div className="p-4 mb-4 text-red-700 bg-red-100 border border-red-400 rounded">
+                    {error}
+                  </div>
+                )}
                 <form
                   name="contact"
                   onSubmit={onSubmit}
                   method="POST"
                   className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
-                  <input
-                    type="hidden"
-                    name="language"
-                    id="language"
-                    className="block w-full px-4 py-3 text-gray-900 border-gray-300 rounded-md shadow-sm focus:ring-brand-500 focus:border-brand-500"
-                    value={locale}
-                    onChange={handleInputChange}
-                  />
                   <div>
                     <label
                       htmlFor="firstname"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      {trans.name[locale]}
+                      First name
                     </label>
                     <div className="mt-1">
                       <input
@@ -273,7 +245,7 @@ export default function ContactForm({ blok }) {
                       htmlFor="lastname"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      {trans.surname[locale]}
+                      Last name
                     </label>
                     <div className="mt-1">
                       <input
@@ -293,7 +265,7 @@ export default function ContactForm({ blok }) {
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      {trans.email[locale]}
+                      Email
                     </label>
                     <div className="mt-1">
                       <input
@@ -314,7 +286,7 @@ export default function ContactForm({ blok }) {
                         htmlFor="phone"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        {trans.cellphone[locale]}
+                        Cellphone
                       </label>
                     </div>
                     <div className="mt-1">
@@ -337,10 +309,10 @@ export default function ContactForm({ blok }) {
                         htmlFor="message"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        {trans.message[locale]}
+                        Message
                       </label>
                       <span id="message-max" className="text-sm text-gray-500">
-                        {trans.max[locale]}
+                        Max. 500 characters
                       </span>
                     </div>
                     <div className="mt-1">
@@ -362,8 +334,7 @@ export default function ContactForm({ blok }) {
                       disabled={submitting}
                       className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 sm:w-auto"
                     >
-                      {submitting && "..."}
-                      {!submitting && trans.submit[locale]}
+                      {submitting ? "..." : "Submit"}
                     </button>
                   </div>
                 </form>
