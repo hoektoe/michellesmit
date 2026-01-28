@@ -14,10 +14,6 @@ const Head = ({ title, description }) => (
       }
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="keywords"
-      content="Battery Pro Maitland, Battery Pro, Maxim Batteries, Monbat Batteries, Maitland,Maitland ,Pinelands,Milnerton,Paarden Eiland,South rivier,Observatory,Century city"
-    />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/png" href="/meta/favicon.ico" />
     <meta name="og:image" content={HOME_META_IMAGE_URL} />

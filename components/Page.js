@@ -58,7 +58,7 @@ export default function Page({ blok }) {
               blok.seo.og_image ? blok.seo.og_image : HOME_META_IMAGE_URL
             }
           />
-          <link rel="canonical" href={router.asPath} />
+          <link rel="canonical" href={`https://www.batterypromaitland.co.za${router.asPath}`} />
         </Head>
 
         {/* {JSON.stringify(blok, null, "\t")} */}
