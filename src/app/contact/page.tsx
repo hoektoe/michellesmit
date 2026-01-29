@@ -4,6 +4,7 @@ import { Link } from '@/components/elements/link'
 import { Container } from '@/components/elements/container'
 import { Heading } from '@/components/elements/heading'
 import { Text } from '@/components/elements/text'
+import { ContactForm } from '@/components/elements/contact-form'
 import { MailIcon } from '@/components/icons/mail-icon'
 import { MapPinIcon } from '@/components/icons/map-pin-icon'
 
@@ -103,6 +104,11 @@ export default function Page() {
                     </p>
                   </div>
                 </div>
+              </div>
+
+              <div className="mt-8 border-t border-mist-200 pt-8">
+                <h2 className="mb-4 text-lg font-medium text-mist-950">Send a Message</h2>
+                <ContactForm />
               </div>
             </div>
           </div>
