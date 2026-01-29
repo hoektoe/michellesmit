@@ -27,6 +27,7 @@
     "posthog-js": "^1.334.1",
     "react": "^19",
     "react-dom": "^19",
+    "resend": "^6.9.1",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
