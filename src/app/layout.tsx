@@ -216,7 +216,7 @@ export default function RootLayout({
             cta={
               <div className="flex max-w-sm flex-col gap-2">
                 <p>Get in Touch</p>
-                <div className="flex flex-col gap-2 text-mist-700">
+                <div className="flex flex-col gap-2 text-white/80">
                   <p>therapy@michellesmit.com</p>
                   <p className="text-sm">M. Psych, Hons Psych, HPCSA Registered</p>
                 </div>

@@ -49,10 +49,10 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/michelle-portrait.png"
+              src="/img/michelle_avatar.jpg"
               alt="Michelle Smit - Counselling Psychologist"
-              width={400}
-              height={400}
+              width={1024}
+              height={1024}
               className="bg-white/75 object-cover"
             />
           </>
