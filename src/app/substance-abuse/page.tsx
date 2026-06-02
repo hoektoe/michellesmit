@@ -8,16 +8,22 @@ import { DocumentLeftAligned } from '@/components/sections/document-left-aligned
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
 
 export const metadata: Metadata = {
-  title: 'Addiction & Substance Abuse Therapy in Paarl',
+  title: 'Addiction Therapy in Paarl',
   description:
-    'Specialist addiction counselling in Paarl by former clinical leader of a psychiatric substance abuse unit. Alcohol, drug & process addiction therapy. Dual diagnosis treatment.',
-  keywords: ['addiction counselling Paarl', 'substance abuse therapy', 'drug rehabilitation psychologist', 'alcohol addiction treatment South Africa'],
+    'Addiction counselling in Paarl for alcohol, drugs, process addictions and dual diagnosis with an HPCSA psychologist.',
+  keywords: [
+    'addiction counselling Paarl',
+    'substance abuse therapy',
+    'drug rehabilitation psychologist',
+    'alcohol addiction treatment South Africa',
+  ],
   alternates: {
     canonical: 'https://michellesmit.com/substance-abuse',
   },
   openGraph: {
-    title: 'Addiction & Substance Abuse Therapy | Michelle Smit Psychologist',
-    description: 'Specialist addiction therapy from a psychologist with extensive inpatient treatment experience. Paarl & online.',
+    title: 'Addiction Therapy in Paarl | Michelle Smit Psychologist',
+    description:
+      'Specialist addiction therapy from a psychologist with extensive inpatient treatment experience. Paarl & online.',
     images: ['/img/logo.png'],
   },
 }
@@ -39,11 +45,12 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/substance-abuse.png"
+              src="/img/services/substance-abuse.webp"
               alt="Substance abuse therapy"
-              width={1200}
-              height={800}
-              className="object-cover bg-white/75"
+              width={1024}
+              height={1024}
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="bg-white/75 object-cover"
             />
           </>
         }

@@ -27,7 +27,13 @@ export function CallToActionSimple({
         <div className="flex flex-col items-stretch gap-8 sm:flex-row">
           {image && (
             <div className="relative h-80 w-full shrink-0 overflow-hidden rounded-2xl sm:h-auto sm:w-40">
-              <Image src={image.src} alt={image.alt} fill className="object-cover" />
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(min-width: 640px) 10rem, 100vw"
+                className="object-cover"
+              />
             </div>
           )}
           <div className="flex flex-col gap-10">

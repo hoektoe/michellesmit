@@ -1,10 +1,9 @@
-import Image from 'next/image'
 import { Instrument_Serif, Inter } from 'next/font/google'
+import Image from 'next/image'
 
 import { ButtonLink } from '@/components/elements/button'
 import { Main } from '@/components/elements/main'
 import { Wallpaper } from '@/components/elements/wallpaper'
-import { PostHogProvider } from './providers'
 import {
   FooterCategory,
   FooterLink,
@@ -17,6 +16,7 @@ import {
 } from '@/components/sections/navbar-with-links-actions-and-centered-logo'
 import type { Metadata } from 'next'
 import './globals.css'
+import { PostHogProvider } from './providers'
 
 const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     template: '%s | Michelle Smit Psychologist',
   },
   description:
-    'HPCSA registered counselling psychologist in Paarl, Western Cape. Specialising in anxiety, depression, relationships, and substance abuse therapy. Online sessions available.',
+    'HPCSA registered counselling psychologist in Paarl for anxiety, depression, relationships, substance abuse and online therapy.',
   keywords: [
     'psychologist Paarl',
     'counselling psychologist Western Cape',
@@ -135,7 +135,7 @@ export default function RootLayout({
                   name: 'Michelle Smit',
                   jobTitle: 'Counselling Psychologist',
                   description:
-                    'HPCSA registered counselling psychologist with a Master\'s degree, specialising in addiction care and dual diagnosis treatment.',
+                    "HPCSA registered counselling psychologist with a Master's degree, specialising in addiction care and dual diagnosis treatment.",
                   url: 'https://michellesmit.com/about',
                   worksFor: { '@id': 'https://michellesmit.com/#business' },
                   hasCredential: [
@@ -173,7 +173,10 @@ export default function RootLayout({
           {/* Top Banner */}
           <Wallpaper color="slate" className="text-sm text-white">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-              <a href="mailto:therapy@michellesmit.com" className="flex items-center gap-2 transition-colors hover:text-mist-200">
+              <a
+                href="mailto:therapy@michellesmit.com"
+                className="flex items-center gap-2 transition-colors hover:text-mist-200"
+              >
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-xs">@</span>
                 <span>therapy@michellesmit.com</span>
               </a>
@@ -193,13 +196,7 @@ export default function RootLayout({
             }
             logo={
               <NavbarLogo href="/">
-                <Image
-                  src="/img/logo.png"
-                  alt="Michelle Smit"
-                  width={180}
-                  height={60}
-                  className="h-14 w-auto"
-                />
+                <Image src="/img/logo.png" alt="Michelle Smit" width={180} height={60} className="h-14 w-auto" />
               </NavbarLogo>
             }
             actions={
@@ -236,7 +233,13 @@ export default function RootLayout({
                   <FooterLink href="/rates-and-insurance">Rates & Insurance</FooterLink>
                 </FooterCategory>
                 <FooterCategory title="Locations">
-                  <FooterLink href="https://www.google.com/maps/place/Bloemendal+Clinic/@-33.8250139,18.9347237,1204m/data=!3m1!1e3!4m10!1m2!2m1!1sBloemendal+Farm+R45,+Klapmuts+-+Simondium+Rd,++Paarl,+South+Africa+7670!3m6!1s0x1dcdaf1f1111e263:0xe015dc4c465c45bc!8m2!3d-33.8258573!4d18.9362283!15sCkdCbG9lbWVuZGFsIEZhcm0gUjQ1LCBLbGFwbXV0cyAtIFNpbW9uZGl1bSBSZCwgIFBhYXJsLCBTb3V0aCBBZnJpY2EgNzY3MJIBFG1lbnRhbF9oZWFsdGhfY2xpbmlj4AEA!16s%2Fg%2F1pp2tzdmm?entry=ttu" target="_blank" rel="noopener noreferrer">Paarl</FooterLink>
+                  <FooterLink
+                    href="https://www.google.com/maps/place/Bloemendal+Clinic/@-33.8250139,18.9347237,1204m/data=!3m1!1e3!4m10!1m2!2m1!1sBloemendal+Farm+R45,+Klapmuts+-+Simondium+Rd,++Paarl,+South+Africa+7670!3m6!1s0x1dcdaf1f1111e263:0xe015dc4c465c45bc!8m2!3d-33.8258573!4d18.9362283!15sCkdCbG9lbWVuZGFsIEZhcm0gUjQ1LCBLbGFwbXV0cyAtIFNpbW9uZGl1bSBSZCwgIFBhYXJsLCBTb3V0aCBBZnJpY2EgNzY3MJIBFG1lbnRhbF9oZWFsdGhfY2xpbmlj4AEA!16s%2Fg%2F1pp2tzdmm?entry=ttu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Paarl
+                  </FooterLink>
                   <FooterLink href="/stellenbosch">Stellenbosch Area</FooterLink>
                   <FooterLink href="/franschhoek">Franschhoek Area</FooterLink>
                   <FooterLink href="/contact">Online Sessions</FooterLink>

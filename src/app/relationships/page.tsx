@@ -8,9 +8,9 @@ import { DocumentLeftAligned } from '@/components/sections/document-left-aligned
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
 
 export const metadata: Metadata = {
-  title: 'Relationship & Couples Therapy in Paarl',
+  title: 'Couples Therapy in Paarl',
   description:
-    'Marriage counselling and relationship therapy in Paarl, Western Cape. Improve communication, rebuild trust & strengthen your connection. Individual and couples sessions.',
+    'Couples and relationship therapy in Paarl to improve communication, rebuild trust and strengthen connection.',
   keywords: [
     'couples therapy Paarl',
     'marriage counselling Paarl',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: 'https://michellesmit.com/relationships',
   },
   openGraph: {
-    title: 'Relationship & Couples Therapy | Michelle Smit Psychologist',
+    title: 'Couples Therapy in Paarl | Michelle Smit Psychologist',
     description:
       'Professional relationship therapy to improve communication and rebuild connection. Paarl & online sessions.',
     images: ['/img/logo.png'],
@@ -45,10 +45,11 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/relationship.png"
+              src="/img/services/relationship.webp"
               alt="Relationship therapy"
-              width={1200}
-              height={800}
+              width={1254}
+              height={1254}
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="bg-white/75 object-cover"
             />
           </>

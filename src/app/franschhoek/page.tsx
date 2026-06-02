@@ -10,7 +10,7 @@ import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-o
 export const metadata: Metadata = {
   title: 'Psychologist Near Franschhoek',
   description:
-    'Counselling psychologist serving Franschhoek & the Cape Winelands. Anxiety, depression, couples therapy & addiction counselling. Online and in-person sessions in nearby Paarl.',
+    'Counselling psychologist serving Franschhoek and the Cape Winelands with anxiety, depression, couples and addiction therapy.',
   keywords: [
     'psychologist Franschhoek',
     'therapist Franschhoek',
@@ -43,18 +43,19 @@ export default function Page() {
         headline="Therapy for Franschhoek & the Winelands"
         subheadline={
           <p>
-            Looking for a psychologist near Franschhoek? I offer therapy services from my practice in nearby Paarl,
-            just 20 minutes away along the scenic R45, as well as secure online sessions from the comfort of your home.
+            Looking for a psychologist near Franschhoek? I offer therapy services from my practice in nearby Paarl, just
+            20 minutes away along the scenic R45, as well as secure online sessions from the comfort of your home.
           </p>
         }
         demo={
           <>
             <Image
-              src="/img/services/hero.jpeg"
+              src="/img/services/hero.webp"
               alt="Therapy services for Franschhoek"
-              width={1200}
-              height={800}
-              className="object-cover bg-white/75"
+              width={1408}
+              height={736}
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="bg-white/75 object-cover"
             />
           </>
         }
@@ -63,9 +64,9 @@ export default function Page() {
       {/* Content */}
       <DocumentLeftAligned id="content" headline="Serving the Franschhoek Valley">
         <p>
-          While my practice is based at Bloemendal Clinic in Paarl, I regularly work with clients from Franschhoek,
-          the Franschhoek Valley, and the broader Cape Winelands region. The drive from Franschhoek to my practice
-          takes approximately 20 minutes via the R45, passing through beautiful wine country.
+          While my practice is based at Bloemendal Clinic in Paarl, I regularly work with clients from Franschhoek, the
+          Franschhoek Valley, and the broader Cape Winelands region. The drive from Franschhoek to my practice takes
+          approximately 20 minutes via the R45, passing through beautiful wine country.
         </p>
 
         <p>
@@ -108,8 +109,8 @@ export default function Page() {
         <h2>Convenient Access</h2>
 
         <p>
-          <strong>In-Person:</strong> Bloemendal Clinic is located on the R45 between Paarl and Franschhoek, making
-          it an easy drive from the Franschhoek Valley. The clinic offers ample free parking and a peaceful, private
+          <strong>In-Person:</strong> Bloemendal Clinic is located on the R45 between Paarl and Franschhoek, making it
+          an easy drive from the Franschhoek Valley. The clinic offers ample free parking and a peaceful, private
           setting.
         </p>
 

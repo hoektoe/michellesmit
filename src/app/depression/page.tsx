@@ -45,10 +45,11 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/depression_well.png"
+              src="/img/services/depression_well.webp"
               alt="Depression therapy"
-              width={1200}
-              height={800}
+              width={1472}
+              height={704}
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="bg-white/75 object-cover"
             />
           </>

@@ -10,7 +10,7 @@ import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-o
 export const metadata: Metadata = {
   title: 'Therapy Services',
   description:
-    'Evidence-based therapy services in Paarl: anxiety, depression, substance abuse & relationship counselling. HPCSA registered psychologist. Online sessions available.',
+    'Therapy services in Paarl for anxiety, depression, substance abuse and relationships with online sessions available.',
   keywords: [
     'therapy services Paarl',
     'psychologist services',
@@ -45,10 +45,11 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/hero.jpeg"
+              src="/img/services/hero.webp"
               alt="Therapy services"
-              width={1200}
-              height={800}
+              width={1408}
+              height={736}
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="bg-white/75 object-cover"
             />
           </>
@@ -72,9 +73,10 @@ export default function Page() {
                 <Screenshot wallpaper="olive" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/substance-abuse.png"
+                      src="/img/services/substance-abuse.webp"
                       alt="Substance abuse therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
@@ -98,9 +100,10 @@ export default function Page() {
                 <Screenshot wallpaper="steel" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/depression_well.png"
+                      src="/img/services/depression_well.webp"
                       alt="Depression therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
@@ -123,7 +126,13 @@ export default function Page() {
               demo={
                 <Screenshot wallpaper="sage" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
-                    <Image src="/img/services/anxiety.png" alt="Anxiety therapy" fill className="object-cover" />
+                    <Image
+                      src="/img/services/anxiety.webp"
+                      alt="Anxiety therapy"
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-cover"
+                    />
                   </div>
                 </Screenshot>
               }
@@ -145,9 +154,10 @@ export default function Page() {
                 <Screenshot wallpaper="amber" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/relationship.png"
+                      src="/img/services/relationship.webp"
                       alt="Relationships therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>

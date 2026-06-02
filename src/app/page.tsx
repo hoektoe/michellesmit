@@ -64,10 +64,11 @@ export default function Page() {
       <HeroLeftAlignedWithDemo
         id="hero"
         eyebrow={<span className="text-sm font-medium text-mist-600">Michelle Smit - Counselling Psychologist</span>}
-        headline="Feel seen, heard and valued."
+        headline="Counselling psychologist in Paarl"
         subheadline={
           <p className="italic">
-            "Connection is why we're here; it is what gives purpose and meaning to our lives." — Brené Brown
+            Feel seen, heard and valued. &quot;Connection is why we&apos;re here; it is what gives purpose and meaning
+            to our lives.&quot; — Brené Brown
           </p>
         }
         cta={
@@ -84,11 +85,13 @@ export default function Page() {
         demo={
           <Screenshot className="rounded-lg" wallpaper="amber" placement="bottom">
             <Image
-              src="/img/hero.png"
+              src="/img/hero.webp"
               alt="Counselling psychologist Michelle Smit"
-              width={1024}
-              height={1024}
-              className="object-cover"
+              width={1408}
+              height={736}
+              priority
+              sizes="(min-width: 1280px) 1024px, calc(100vw - 2rem)"
+              className="h-auto w-full object-cover"
             />
           </Screenshot>
         }
@@ -111,9 +114,10 @@ export default function Page() {
                 <Screenshot wallpaper="olive" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/substance-abuse.png"
+                      src="/img/services/substance-abuse.webp"
                       alt="Substance abuse therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
@@ -138,9 +142,10 @@ export default function Page() {
                 <Screenshot wallpaper="steel" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/depression.png"
+                      src="/img/services/depression.webp"
                       alt="Depression therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
@@ -163,7 +168,13 @@ export default function Page() {
               demo={
                 <Screenshot wallpaper="sage" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
-                    <Image src="/img/services/anxiety.png" alt="Anxiety therapy" fill className="object-cover" />
+                    <Image
+                      src="/img/services/anxiety.webp"
+                      alt="Anxiety therapy"
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-cover"
+                    />
                   </div>
                 </Screenshot>
               }
@@ -185,9 +196,10 @@ export default function Page() {
                 <Screenshot wallpaper="amber" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/relationship.png"
+                      src="/img/services/relationship.webp"
                       alt="Relationships therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
