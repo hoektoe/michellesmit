@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { clsx } from 'clsx/lite'
 import type { ComponentProps, ReactNode } from 'react'
@@ -18,7 +19,7 @@ export function FooterCategory({ title, children, ...props }: { title: ReactNode
 
 export function FooterLink({ href, className, ...props }: { href: string } & Omit<ComponentProps<'a'>, 'href'>) {
   return (
-    <li className={clsx('text-mist-700', className)}>
+    <li className={clsx('text-white/80 transition-colors hover:text-white', className)}>
       <Link href={href} {...props} />
     </li>
   )
@@ -39,7 +40,7 @@ export function SocialLink({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={name}
-      className={clsx('text-mist-950 *:size-6', className)}
+      className={clsx('text-white *:size-6', className)}
       {...props}
     />
   )
@@ -92,7 +93,16 @@ export function FooterWithNewsletterFormCategoriesAndSocialIcons({
 } & ComponentProps<'footer'>) {
   return (
     <footer className={clsx('pt-16', className)} {...props}>
-      <div className="bg-mist-950/2.5 py-16 text-mist-950">
+      <div className="relative h-56 overflow-hidden sm:h-72 lg:h-80">
+        <Image
+          src="/img/footer-vineyard.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="bg-[#202a1f] py-16 text-white">
         <Container className="flex flex-col gap-16">
           <div className="grid grid-cols-1 gap-x-6 gap-y-16 text-sm/7 lg:grid-cols-2">
             {cta}
@@ -101,7 +111,7 @@ export function FooterWithNewsletterFormCategoriesAndSocialIcons({
             </nav>
           </div>
           <div className="flex items-center justify-between gap-10 text-sm/7">
-            <div className="text-mist-600">{fineprint}</div>
+            <div className="text-white/70">{fineprint}</div>
             {socialLinks && <div className="flex items-center gap-4 sm:gap-10">{socialLinks}</div>}
           </div>
         </Container>

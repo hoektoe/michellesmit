@@ -21,25 +21,25 @@
     ]
   },
   "dependencies": {
-    "@tailwindplus/elements": "0.0.0-insiders.98ea4bc",
-    "clsx": "^2.1.1",
-    "next": "^16",
-    "posthog-js": "^1.334.1",
-    "react": "^19",
-    "react-dom": "^19",
-    "resend": "^6.9.1",
-    "tailwindcss": "^4.1.18"
+    "@tailwindplus/elements": "1.0.22",
+    "clsx": "2.1.1",
+    "next": "16.2.7",
+    "posthog-js": "1.378.1",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "resend": "6.12.4",
+    "tailwindcss": "4.3.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "^16",
-    "prettier": "^3.6.2",
-    "prettier-plugin-organize-imports": "^4.3.0",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "typescript": "^5"
+    "@tailwindcss/postcss": "4.3.0",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.16",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.7",
+    "prettier": "3.8.3",
+    "prettier-plugin-organize-imports": "4.3.0",
+    "prettier-plugin-tailwindcss": "0.8.0",
+    "typescript": "5.9.3"
   }
 }
