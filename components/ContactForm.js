@@ -5,7 +5,7 @@ import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import { useFormspark } from "@formspark/use-formspark";
 
-const FORMSPARK_FORM_ID = "d9x4tlQD";
+const FORMSPARK_FORM_ID = "b5OJMmFQv";
 
 function transactionID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -221,7 +221,7 @@ export default function ContactForm({ blok }) {
                       className="flex-shrink-0 w-6 h-6 text-brand-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">therapy@michellesmit.com</span>
+                    <span className="ml-3">adam@thecounsellorscouch.com</span>
                   </dd>
                 </dl>
                 <div className="max-w-3xl mt-6 text-base text-brand-50">
@@ -360,7 +360,7 @@ export default function ContactForm({ blok }) {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 sm:w-auto"
+                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-800 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 sm:w-auto"
                     >
                       {submitting && "..."}
                       {!submitting && trans.submit[locale]}
