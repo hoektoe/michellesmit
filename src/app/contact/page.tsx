@@ -7,6 +7,7 @@ import { Text } from '@/components/elements/text'
 import { ContactForm } from '@/components/elements/contact-form'
 import { MailIcon } from '@/components/icons/mail-icon'
 import { MapPinIcon } from '@/components/icons/map-pin-icon'
+import { PhoneIcon } from '@/components/icons/phone-icon'
 
 export const metadata: Metadata = {
   title: 'Contact & Book Appointment',
@@ -53,6 +54,20 @@ export default function Page() {
                       className="text-mist-600 hover:text-mist-950"
                     >
                       therapy@michellesmit.com
+                    </a>
+                    <a href="mailto:praticemanager@michellesmit.com" className="text-mist-600 hover:text-mist-950">
+                      praticemanager@michellesmit.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
+                    <PhoneIcon className="h-5 w-5" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <p className="font-medium text-mist-950">Phone</p>
+                    <a href="tel:+27690616485" className="text-mist-600 hover:text-mist-950">
+                      +27 69 061 6485
                     </a>
                   </div>
                 </div>
