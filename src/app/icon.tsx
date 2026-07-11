@@ -11,20 +11,22 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 20,
-          background: '#1a1a1a',
+          background: 'linear-gradient(145deg, #c4996b 0%, #a8845c 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: '#fff',
-          fontFamily: 'serif',
+          borderRadius: '7px',
+          color: '#f8f7f5',
+          fontFamily: 'Georgia, serif',
+          fontSize: 27,
           fontWeight: 400,
-          letterSpacing: '-0.02em',
+          letterSpacing: '-0.12em',
+          paddingRight: '3px',
         }}
       >
-        MS
+        M
       </div>
     ),
     {
