@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "run_dir": "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie",
+  "spritesheet": "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/final/spritesheet.webp",
+  "validation": "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/final/validation.json",
+  "contact_sheet": "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/qa/contact-sheet.png",
+  "review": "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/qa/review.json",
+  "package": "/Users/martinsmith/.codex/pets/bokkie"
+}

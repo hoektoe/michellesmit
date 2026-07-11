@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 
-import { Link } from '@/components/elements/link'
+import { ContactForm } from '@/components/elements/contact-form'
 import { Container } from '@/components/elements/container'
 import { Heading } from '@/components/elements/heading'
+import { Link } from '@/components/elements/link'
 import { Text } from '@/components/elements/text'
-import { ContactForm } from '@/components/elements/contact-form'
 import { MailIcon } from '@/components/icons/mail-icon'
 import { MapPinIcon } from '@/components/icons/map-pin-icon'
 import { PhoneIcon } from '@/components/icons/phone-icon'
@@ -13,7 +13,12 @@ export const metadata: Metadata = {
   title: 'Contact & Book Appointment',
   description:
     'Book a free 15-minute consultation with Michelle Smit, counselling psychologist in Paarl. In-person at Bloemendal Clinic or secure online video sessions.',
-  keywords: ['book psychologist appointment', 'psychologist Paarl contact', 'online therapy booking', 'Bloemendal Clinic Paarl'],
+  keywords: [
+    'book psychologist appointment',
+    'psychologist Paarl contact',
+    'online therapy booking',
+    'Bloemendal Clinic Paarl',
+  ],
   alternates: {
     canonical: 'https://michellesmit.com/contact',
   },
@@ -49,10 +54,7 @@ export default function Page() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <p className="font-medium text-mist-950">Email</p>
-                    <a
-                      href="mailto:therapy@michellesmit.com"
-                      className="text-mist-600 hover:text-mist-950"
-                    >
+                    <a href="mailto:therapy@michellesmit.com" className="text-mist-600 hover:text-mist-950">
                       therapy@michellesmit.com
                     </a>
                     <a href="mailto:praticemanager@michellesmit.com" className="text-mist-600 hover:text-mist-950">
@@ -71,7 +73,6 @@ export default function Page() {
                     </a>
                   </div>
                 </div>
-
                 <div id="paarl" className="flex items-start gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
                     <MapPinIcon className="h-5 w-5" />
@@ -96,13 +97,7 @@ export default function Page() {
 
                 <div id="online" className="flex items-start gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
-                    <svg
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                    >
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"

@@ -23,8 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Anxiety Therapy in Paarl | Michelle Smit Psychologist',
-    description:
-      'Expert anxiety treatment with CBT and mindfulness-based interventions. HPCSA registered counselling psychologist in Paarl.',
+    description: 'Expert anxiety treatment with CBT. HPCSA registered counselling psychologist in Paarl.',
     images: ['/img/logo.png'],
   },
 }

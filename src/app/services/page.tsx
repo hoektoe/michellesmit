@@ -113,7 +113,7 @@ export default function Page() {
               subheadline={
                 <p>
                   Work through persistent low mood, loss of interest, and feelings of hopelessness with evidence-based
-                  approaches including CBT and behavioural activation.
+                  approaches including CBT.
                 </p>
               }
               cta={
@@ -139,8 +139,8 @@ export default function Page() {
               headline="Anxiety"
               subheadline={
                 <p>
-                  Manage feelings of worry, panic, and overwhelm with evidence-based approaches including CBT and
-                  mindfulness-based interventions tailored to your needs.
+                  Manage feelings of worry, panic, and overwhelm with evidence-based approaches including CBT tailored
+                  to your needs.
                 </p>
               }
               cta={

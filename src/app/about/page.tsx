@@ -62,9 +62,8 @@ export default function Page() {
       {/* Bio */}
       <DocumentLeftAligned id="about" headline="About Me">
         <p>
-          I am a registered counselling psychologist with a Master's degree from Pearson Institute, currently completing
-          my Doctorate in Psychology. I am registered with the Health Professions Council of South Africa (HPCSA) and
-          the Board of Healthcare Funders (BHF).
+          I am a registered counselling psychologist with a Master's degree from Pearson Institute. I am registered with
+          the Health Professions Council of South Africa (HPCSA) and the Board of Healthcare Funders (BHF).
         </p>
 
         <p>

@@ -11,7 +11,6 @@ import { Feature, FeaturesTwoColumnWithDemos } from '@/components/sections/featu
 import { HeroLeftAlignedWithDemo } from '@/components/sections/hero-left-aligned-with-demo'
 import { Plan, PricingMultiTier } from '@/components/sections/pricing-multi-tier'
 import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
-import { Testimonial, TestimonialThreeColumnGrid } from '@/components/sections/testimonials-three-column-grid'
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -38,7 +37,7 @@ const faqSchema = {
       name: 'Do you offer online therapy sessions?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person. Online therapy has been shown to be just as effective as face-to-face sessions.',
+        text: 'Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person.',
       },
     },
     {
@@ -46,7 +45,7 @@ const faqSchema = {
       name: 'What are your rates and do you work with medical aid?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Please contact me for current rates. I provide detailed invoices that can be submitted to your medical aid for reimbursement. Many medical aids cover psychology sessions, though coverage varies by plan.',
+        text: 'I am registered with most Medical Aids. Can claim from Medical Aid at standard Medical Aid rates.',
       },
     },
   ],
@@ -155,7 +154,7 @@ export default function Page() {
               subheadline={
                 <p>
                   Work through persistent low mood, loss of interest, and feelings of hopelessness with evidence-based
-                  approaches including CBT and behavioural activation.
+                  approaches including CBT.
                 </p>
               }
               cta={
@@ -181,8 +180,8 @@ export default function Page() {
               headline="Anxiety"
               subheadline={
                 <p>
-                  Manage feelings of worry, panic, and overwhelm with evidence-based approaches including CBT and
-                  mindfulness-based interventions tailored to your needs.
+                  Manage feelings of worry, panic, and overwhelm with evidence-based approaches including CBT tailored
+                  to your needs.
                 </p>
               }
               cta={
@@ -228,9 +227,8 @@ export default function Page() {
         headline="Qualified, registered, and committed to your wellbeing."
         subheadline={
           <p>
-            With extensive training and ongoing professional development, I bring both expertise and genuine care to
-            every therapeutic relationship. I am committed to providing ethical, evidence-based care in both English and
-            Afrikaans.
+            With extensive training and ongoing professional development, I bring genuine care to every therapeutic
+            relationship. I am committed to providing ethical, evidence-based care in both English and Afrikaans.
           </p>
         }
       >
@@ -239,14 +237,14 @@ export default function Page() {
           text="Registered counselling psychologist with the Health Professions Council of South Africa."
         />
         <Stat
-          stat="Psychology Degree"
-          text="Studied at Stellenbosch University and Pearson Institute of Higher Education"
+          stat="Psychology Degrees"
+          text="Studied at Stellenbosch University and Pearson Institute of Higher Education. Batchelors, Hons & Masters in Psychology."
         />
 
         <Stat stat="Bilingual" text="Therapy available in both English and Afrikaans to best suit your needs." />
       </StatsWithGraph>
       {/* Testimonials */}
-      <TestimonialThreeColumnGrid
+      {/*<TestimonialThreeColumnGrid
         id="testimonials"
         headline="Client experiences"
         subheadline={<p>Hear from those who have taken the brave step of seeking support.</p>}
@@ -284,7 +282,7 @@ export default function Page() {
           name="Anonymous"
           byline="Stellenbosch client"
         />
-      </TestimonialThreeColumnGrid>
+      </TestimonialThreeColumnGrid>*/}
       {/* FAQs */}
       <FAQsTwoColumnAccordion id="faqs" headline="Frequently Asked Questions">
         <Faq
@@ -300,12 +298,12 @@ export default function Page() {
         <Faq
           id="faq-3"
           question="Do you offer online therapy sessions?"
-          answer="Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person. Online therapy has been shown to be just as effective as face-to-face sessions."
+          answer="Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person."
         />
         <Faq
           id="faq-4"
           question="What are your rates and do you work with medical aid?"
-          answer="Please contact me for current rates. I provide detailed invoices that can be submitted to your medical aid for reimbursement. Many medical aids cover psychology sessions, though coverage varies by plan."
+          answer="I am registered with most Medical Aids. Can claim from Medical Aid at standard Medical Aid rates. "
         />
       </FAQsTwoColumnAccordion>
       {/* Locations */}

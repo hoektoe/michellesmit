@@ -5,7 +5,6 @@ import { Container } from '@/components/elements/container'
 import { Heading } from '@/components/elements/heading'
 import { Text } from '@/components/elements/text'
 import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon'
-import { BanknotesIcon } from '@/components/icons/banknotes-icon'
 import { MailIcon } from '@/components/icons/mail-icon'
 import { CallToActionSimple } from '@/components/sections/call-to-action-simple'
 
@@ -13,7 +12,12 @@ export const metadata: Metadata = {
   title: 'Rates & Medical Aid',
   description:
     'Psychology session rates and medical aid information. Michelle Smit Therapy is registered with most medical aids and can claim on your behalf.',
-  keywords: ['psychologist rates South Africa', 'therapy fees Paarl', 'medical aid psychologist', 'psychology session cost'],
+  keywords: [
+    'psychologist rates South Africa',
+    'therapy fees Paarl',
+    'medical aid psychologist',
+    'psychology session cost',
+  ],
   alternates: {
     canonical: 'https://michellesmit.com/rates-and-insurance',
   },
@@ -34,22 +38,14 @@ export default function Page() {
               <div className="flex flex-col gap-4">
                 <Heading>Session Rates</Heading>
                 <Text size="lg">
-                  <p>
-                    Sessions are 50–60 minutes in length, either online or face to face at my Paarl practice.
-                  </p>
+                  <p>Sessions are 50–60 minutes in length, either online or face to face at my Paarl practice.</p>
                 </Text>
               </div>
 
               <div className="flex flex-col gap-6">
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
-                    <svg
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                    >
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -61,19 +57,7 @@ export default function Page() {
                     <p className="font-medium text-mist-950">Medical Aid</p>
                     <p className="text-mist-600">
                       Michelle Smit Therapy is registered with most medical aids and the practice can claim on your
-                      behalf.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mist-100 text-mist-600">
-                    <BanknotesIcon className="h-5 w-5" />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <p className="font-medium text-mist-950">Cash Rates</p>
-                    <p className="text-mist-600">
-                      Alternatively, enquire about cash rates for self-pay options.
+                      behalf. Standard Medical Aids rates apply.
                     </p>
                   </div>
                 </div>
@@ -84,10 +68,7 @@ export default function Page() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <p className="font-medium text-mist-950">For More Information</p>
-                    <a
-                      href="mailto:practicemanager@michellesmit.com"
-                      className="text-mist-600 hover:text-mist-950"
-                    >
+                    <a href="mailto:practicemanager@michellesmit.com" className="text-mist-600 hover:text-mist-950">
                       practicemanager@michellesmit.com
                     </a>
                   </div>

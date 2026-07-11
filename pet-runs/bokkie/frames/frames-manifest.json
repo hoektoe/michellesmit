@@ -1,0 +1,115 @@
+{
+  "states": [
+    {
+      "state": "idle",
+      "frames": 6,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/idle/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/idle/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/idle/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/idle/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/idle/04.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/idle/05.png"
+      ]
+    },
+    {
+      "state": "running-right",
+      "frames": 8,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/04.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/05.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/06.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-right/07.png"
+      ]
+    },
+    {
+      "state": "running-left",
+      "frames": 8,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/04.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/05.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/06.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running-left/07.png"
+      ]
+    },
+    {
+      "state": "waving",
+      "frames": 4,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waving/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waving/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waving/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waving/03.png"
+      ]
+    },
+    {
+      "state": "jumping",
+      "frames": 5,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/jumping/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/jumping/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/jumping/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/jumping/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/jumping/04.png"
+      ]
+    },
+    {
+      "state": "failed",
+      "frames": 8,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/04.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/05.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/06.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/failed/07.png"
+      ]
+    },
+    {
+      "state": "waiting",
+      "frames": 6,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waiting/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waiting/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waiting/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waiting/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waiting/04.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/waiting/05.png"
+      ]
+    },
+    {
+      "state": "running",
+      "frames": 6,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running/04.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/running/05.png"
+      ]
+    },
+    {
+      "state": "review",
+      "frames": 6,
+      "files": [
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/review/00.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/review/01.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/review/02.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/review/03.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/review/04.png",
+        "/Users/martinsmith/Documents/GitHub/michellesmit/pet-runs/bokkie/frames/review/05.png"
+      ]
+    }
+  ]
+}
