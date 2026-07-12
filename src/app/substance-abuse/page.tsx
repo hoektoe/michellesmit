@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'alcohol addiction treatment South Africa',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/substance-abuse',
+    canonical: '/substance-abuse',
   },
   openGraph: {
     title: 'Addiction Therapy in Paarl | Michelle Smit Psychologist',

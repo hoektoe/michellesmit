@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Bloemendal Clinic Paarl',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/contact',
+    canonical: '/contact',
   },
   openGraph: {
     title: 'Contact Michelle Smit | Book Your Consultation',
@@ -40,8 +40,8 @@ export default function Page() {
                 <Heading>Get in Touch</Heading>
                 <Text size="lg">
                   <p>
-                    Taking the first step towards therapy can feel daunting, but you don't have to do it alone. Reach
-                    out to schedule a free 15-minute consultation, and let's discuss how I can support you on your
+                    Taking the first step towards therapy can feel daunting, but you don&apos;t have to do it alone.
+                    Reach out to schedule a free 15-minute consultation, and let&apos;s discuss how I can support you on your
                     journey.
                   </p>
                 </Text>
@@ -57,8 +57,8 @@ export default function Page() {
                     <a href="mailto:therapy@michellesmit.com" className="text-mist-600 hover:text-mist-950">
                       therapy@michellesmit.com
                     </a>
-                    <a href="mailto:praticemanager@michellesmit.com" className="text-mist-600 hover:text-mist-950">
-                      praticemanager@michellesmit.com
+                    <a href="mailto:practicemanager@michellesmit.com" className="text-mist-600 hover:text-mist-950">
+                      practicemanager@michellesmit.com
                     </a>
                   </div>
                 </div>
@@ -82,7 +82,9 @@ export default function Page() {
                     <p className="text-mist-600">
                       Bloemendal Clinic
                       <br />
-                      Paarl, Western Cape
+                      R45 Klapmuts-Simondium Road
+                      <br />
+                      Paarl, Western Cape, 7670
                     </p>
                     <Link
                       href="https://www.google.com/maps/place/Bloemendal+Clinic/@-33.8250139,18.9347237,1204m/data=!3m1!1e3!4m10!1m2!2m1!1sBloemendal+Farm+R45,+Klapmuts+-+Simondium+Rd,++Paarl,+South+Africa+7670!3m6!1s0x1dcdaf1f1111e263:0xe015dc4c465c45bc!8m2!3d-33.8258573!4d18.9362283!15sCkdCbG9lbWVuZGFsIEZhcm0gUjQ1LCBLbGFwbXV0cyAtIFNpbW9uZGl1bSBSZCwgIFBhYXJsLCBTb3V0aCBBZnJpY2EgNzY3MJIBFG1lbnRhbF9oZWFsdGhfY2xpbmlj4AEA!16s%2Fg%2F1pp2tzdmm?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D"
@@ -114,6 +116,21 @@ export default function Page() {
                     </p>
                   </div>
                 </div>
+              </div>
+
+              <div className="border-t border-mist-200 pt-8">
+                <h2 className="mb-3 text-lg font-medium text-mist-950">What happens after you get in touch?</h2>
+                <Text>
+                  <p>
+                    Your message will be used to arrange the free 15-minute consultation and clarify whether you are
+                    looking for an in-person or online appointment. You do not need to include sensitive clinical
+                    information in this form; a brief description of what you would like support with is enough.
+                  </p>
+                  <p>
+                    This form is not monitored as an emergency service. If you or someone else is in immediate danger,
+                    contact local emergency services or go to the nearest hospital emergency department.
+                  </p>
+                </Text>
               </div>
 
               <div className="mt-8 border-t border-mist-200 pt-8">
