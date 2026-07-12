@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'psychology session cost',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/rates-and-insurance',
+    canonical: '/rates-and-insurance',
   },
   openGraph: {
     title: 'Rates & Medical Aid | Michelle Smit Psychologist',
@@ -74,6 +74,22 @@ export default function Page() {
                   </div>
                 </div>
               </div>
+
+              <div className="border-t border-mist-200 pt-8">
+                <h2 className="mb-3 text-lg font-medium text-mist-950">Confirming fees and benefits</h2>
+                <Text>
+                  <p>
+                    Session fees and medical aid benefits can vary. Contact the practice manager before your first
+                    appointment to confirm the current rate, the information needed for a claim and whether any payment
+                    may remain for your account.
+                  </p>
+                  <p>
+                    You can also ask about cash rates if you are not claiming from medical aid. The free 15-minute
+                    consultation is an opportunity to discuss the type of support you are looking for; it is separate
+                    from a full therapy session.
+                  </p>
+                </Text>
+              </div>
             </div>
           </div>
         </Container>
@@ -85,8 +101,8 @@ export default function Page() {
         headline="Schedule your free 15-minute consultation."
         subheadline={
           <p>
-            Simply reach out and I will contact you back to schedule your consultation. Let's discuss how I can support
-            you on your journey.
+            Simply reach out and I will contact you back to schedule your consultation. Let&apos;s discuss how I can
+            support you on your journey.
           </p>
         }
         cta={

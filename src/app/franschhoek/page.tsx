@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'psychologist Cape Winelands',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/franschhoek',
+    canonical: '/franschhoek',
   },
   openGraph: {
     title: 'Psychologist Near Franschhoek | Michelle Smit',
@@ -62,61 +62,42 @@ export default function Page() {
       />
 
       {/* Content */}
-      <DocumentLeftAligned id="content" headline="Serving the Franschhoek Valley">
+      <DocumentLeftAligned id="content" headline="A nearby practice for the Franschhoek Valley">
         <p>
-          While my practice is based at Bloemendal Clinic in Paarl, I regularly work with clients from Franschhoek, the
-          Franschhoek Valley, and the broader Cape Winelands region. The drive from Franschhoek to my practice takes
-          approximately 20 minutes via the R45, passing through beautiful wine country.
+          Bloemendal Clinic is situated on the R45 between Franschhoek and Paarl, around 20 minutes from Franschhoek.
+          The practice offers a quiet consulting environment, free parking and a convenient route for clients living or
+          working in the valley.
         </p>
 
         <p>
-          For those who prefer not to travel, I offer secure online therapy sessions that are just as effective as
-          in-person consultations. Many of my clients from the Franschhoek area choose this convenient option,
-          particularly during busy tourist seasons.
+          Online therapy offers another way to attend when seasonal traffic, changing work hours or family commitments
+          make an in-person appointment less practical. Sessions take place over secure video, allowing you to speak
+          from a private space without travelling to the clinic.
         </p>
 
-        <h2>Services Available</h2>
+        <h2>Support that works around real life</h2>
 
-        <p>I provide evidence-based therapy for a range of concerns commonly faced by individuals and couples:</p>
+        <p>
+          Therapy can provide a steady space to make sense of difficult patterns and decide what needs to change. We
+          agree on a focus together and adapt the work to your goals, whether you are attending as an individual or as a
+          couple. Appointments are available in English and Afrikaans.
+        </p>
+
+        <h2>Areas of focus</h2>
 
         <ul>
-          <li>
-            <strong>Anxiety & Stress</strong> — Including generalised anxiety, panic attacks, and work-related stress
-          </li>
-          <li>
-            <strong>Depression</strong> — Evidence-based treatment using CBT and other proven approaches
-          </li>
-          <li>
-            <strong>Couples & Relationship Therapy</strong> — Communication difficulties, trust issues, and life
-            transitions
-          </li>
-          <li>
-            <strong>Substance Abuse & Addiction</strong> — Specialist experience from working in inpatient treatment
-            facilities
-          </li>
+          <li>Feeling overwhelmed by anxiety, panic or ongoing stress</li>
+          <li>Depression, loss of interest and periods of significant change</li>
+          <li>Relationship strain, communication difficulties and rebuilding trust</li>
+          <li>Addiction, dual diagnosis, recovery and support for affected family members</li>
         </ul>
 
-        <h2>Why Choose Me?</h2>
-
-        <ul>
-          <li>HPCSA registered counselling psychologist</li>
-          <li>Bilingual therapy in English and Afrikaans</li>
-          <li>Specialist training in addiction and dual diagnosis</li>
-          <li>Flexible scheduling with online options</li>
-          <li>Medical aid claims assistance</li>
-        </ul>
-
-        <h2>Convenient Access</h2>
+        <h2>Planning your first appointment</h2>
 
         <p>
-          <strong>In-Person:</strong> Bloemendal Clinic is located on the R45 between Paarl and Franschhoek, making it
-          an easy drive from the Franschhoek Valley. The clinic offers ample free parking and a peaceful, private
-          setting.
-        </p>
-
-        <p>
-          <strong>Online:</strong> Secure video sessions allow you to access therapy from anywhere in the Western Cape
-          or South Africa, perfect for those with busy schedules or who prefer the privacy of their own space.
+          Begin with a free 15-minute consultation to ask questions, outline what you would like help with and decide
+          whether to meet online or at Bloemendal Clinic. The first full session then gives us time to understand your
+          situation in greater depth and agree on the next steps.
         </p>
       </DocumentLeftAligned>
 

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Link } from '@/components/elements/link'
 import { Screenshot } from '@/components/elements/screenshot'
 import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon'
+import { DocumentLeftAligned } from '@/components/sections/document-left-aligned'
 import { Feature, FeaturesTwoColumnWithDemos } from '@/components/sections/features-two-column-with-demos'
 import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-on-background'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     'counselling services Western Cape',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/services',
+    canonical: '/services',
   },
   openGraph: {
     title: 'Therapy Services | Michelle Smit Psychologist',
@@ -38,8 +39,8 @@ export default function Page() {
         headline="Therapy Services"
         subheadline={
           <p>
-            I offer evidence-based therapy tailored to your unique needs, helping you navigate life's challenges and
-            build resilience in a safe, supportive environment.
+            I offer evidence-based therapy tailored to your unique needs, helping you navigate life&apos;s challenges
+            and build resilience in a safe, supportive environment.
           </p>
         }
         demo={
@@ -56,14 +57,44 @@ export default function Page() {
         }
       />
 
+      <DocumentLeftAligned id="choosing-therapy" headline="Finding the right therapeutic support">
+        <p>
+          Therapy starts with understanding what is happening in your life and what you would like to change. You do not
+          need to arrive with a diagnosis or a perfectly formed goal. We can begin with the experiences that feel
+          difficult now, then agree on a practical focus for our work together.
+        </p>
+
+        <p>
+          I work with adults and couples facing anxiety, depression, relationship difficulties, substance use and the
+          effects these concerns can have on families. Sessions are collaborative, confidential and adapted to your
+          circumstances rather than following a one-size-fits-all process.
+        </p>
+
+        <h2>How therapy begins</h2>
+
+        <p>
+          A free 15-minute consultation gives you an opportunity to ask initial questions and decide whether I may be a
+          suitable psychologist for your needs. If we decide to continue, the first full session explores your concerns,
+          relevant history and goals in more detail.
+        </p>
+
+        <h2>In-person and online sessions</h2>
+
+        <p>
+          Face-to-face appointments are available at Bloemendal Clinic in Paarl. Secure online sessions are available to
+          clients elsewhere in the Western Cape and South Africa, offering continuity when travel or scheduling makes an
+          in-person appointment difficult.
+        </p>
+      </DocumentLeftAligned>
+
       {/* Services */}
       <FeaturesTwoColumnWithDemos
         id="services"
         headline="Compassionate support for life's challenges."
         subheadline={
           <p>
-            Whether you're dealing with anxiety, depression, relationship difficulties, or substance abuse, I provide a
-            safe space to explore your concerns and develop effective strategies for change.
+            Whether you&apos;re dealing with anxiety, depression, relationship difficulties, or substance abuse, I
+            provide a safe space to explore your concerns and develop effective strategies for change.
           </p>
         }
         features={

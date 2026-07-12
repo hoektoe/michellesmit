@@ -32,8 +32,10 @@ const inter = Inter({
   display: 'swap',
 })
 
+const siteUrl = 'https://www.michellesmit.com'
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://michellesmit.com'),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'Michelle Smit | Counselling Psychologist in Paarl',
     template: '%s | Michelle Smit Psychologist',
@@ -53,6 +55,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Michelle Smit' }],
   openGraph: {
     type: 'website',
+    url: siteUrl,
     locale: 'en_ZA',
     siteName: 'Michelle Smit - Counselling Psychologist',
     images: ['/img/logo.png'],
@@ -69,7 +72,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://michellesmit.com',
+    canonical: '/',
   },
 }
 
@@ -89,12 +92,13 @@ export default function RootLayout({
               '@graph': [
                 {
                   '@type': 'MedicalBusiness',
-                  '@id': 'https://michellesmit.com/#business',
+                  '@id': `${siteUrl}/#business`,
                   name: 'Michelle Smit - Counselling Psychologist',
                   description:
                     'HPCSA registered counselling psychologist specialising in anxiety, depression, relationships, and substance abuse therapy.',
-                  url: 'https://michellesmit.com',
+                  url: siteUrl,
                   email: 'therapy@michellesmit.com',
+                  telephone: '+27 69 061 6485',
                   address: {
                     '@type': 'PostalAddress',
                     streetAddress: 'Bloemendal Clinic, R45 Klapmuts-Simondium Road',
@@ -131,13 +135,13 @@ export default function RootLayout({
                 },
                 {
                   '@type': 'Person',
-                  '@id': 'https://michellesmit.com/#person',
+                  '@id': `${siteUrl}/#person`,
                   name: 'Michelle Smit',
                   jobTitle: 'Counselling Psychologist',
                   description:
                     "HPCSA registered counselling psychologist with a Master's degree, specialising in addiction care and dual diagnosis treatment.",
-                  url: 'https://michellesmit.com/about',
-                  worksFor: { '@id': 'https://michellesmit.com/#business' },
+                  url: `${siteUrl}/about`,
+                  worksFor: { '@id': `${siteUrl}/#business` },
                   hasCredential: [
                     {
                       '@type': 'EducationalOccupationalCredential',
@@ -158,10 +162,10 @@ export default function RootLayout({
                 },
                 {
                   '@type': 'WebSite',
-                  '@id': 'https://michellesmit.com/#website',
-                  url: 'https://michellesmit.com',
+                  '@id': `${siteUrl}/#website`,
+                  url: siteUrl,
                   name: 'Michelle Smit - Counselling Psychologist',
-                  publisher: { '@id': 'https://michellesmit.com/#person' },
+                  publisher: { '@id': `${siteUrl}/#person` },
                 },
               ],
             }),

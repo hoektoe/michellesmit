@@ -89,7 +89,9 @@ export default function Page() {
               width={1408}
               height={736}
               priority
-              sizes="(min-width: 1280px) 1024px, calc(100vw - 2rem)"
+              fetchPriority="high"
+              decoding="sync"
+              sizes="(min-width: 1280px) 1024px, (min-width: 768px) calc(100vw - 5rem), calc(100vw - 7.5rem)"
               className="h-auto w-full object-cover"
             />
           </Screenshot>
@@ -351,8 +353,8 @@ export default function Page() {
         headline="Schedule your free 15-minute consultation."
         subheadline={
           <p>
-            Taking the first step is often the hardest. Let's have a brief chat to see if we're a good fit for working
-            together. Contact me at therapy@michellesmit.com
+            Taking the first step is often the hardest. Let&apos;s have a brief chat to see if we&apos;re a good fit for
+            working together. Contact me at therapy@michellesmit.com
           </p>
         }
         cta={

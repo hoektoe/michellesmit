@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'marriage counselling Stellenbosch',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/stellenbosch',
+    canonical: '/stellenbosch',
   },
   openGraph: {
     title: 'Psychologist Near Stellenbosch | Michelle Smit',
@@ -61,59 +61,43 @@ export default function Page() {
       />
 
       {/* Content */}
-      <DocumentLeftAligned id="content" headline="Serving the Stellenbosch Area">
+      <DocumentLeftAligned id="content" headline="Therapy options for Stellenbosch clients">
         <p>
-          While my practice is based at Bloemendal Clinic in Paarl, I regularly work with clients from Stellenbosch,
-          Franschhoek, Somerset West, and the broader Cape Winelands region. The drive from Stellenbosch to Paarl takes
-          approximately 15-20 minutes via the R44.
+          My consulting room is at Bloemendal Clinic near Paarl, approximately 15–20 minutes from Stellenbosch via the
+          R44. This gives Stellenbosch clients a nearby option outside the town centre, with free parking and a private,
+          peaceful setting for face-to-face sessions.
         </p>
 
         <p>
-          For those who prefer not to travel, I offer secure online therapy sessions that are just as effective as
-          in-person consultations. Many of my Stellenbosch clients choose this convenient option.
+          Secure online appointments are also available when travelling is inconvenient. This can be useful when work,
+          study, family responsibilities or time between appointments make the trip to Paarl difficult.
         </p>
 
-        <h2>Services Available</h2>
+        <h2>Choosing in-person or online therapy</h2>
 
-        <p>I provide evidence-based therapy for a range of concerns commonly faced by individuals and couples:</p>
+        <p>
+          Some clients value leaving their everyday environment and meeting in a dedicated consulting room. Others
+          prefer the familiarity and convenience of a secure video session. We can discuss which format feels most
+          appropriate during the initial consultation, and revisit that choice if your circumstances change.
+        </p>
+
+        <h2>Concerns I can support you with</h2>
+
+        <p>Therapy is available in English or Afrikaans for adults and couples seeking support with:</p>
 
         <ul>
-          <li>
-            <strong>Anxiety & Stress</strong> — Including generalised anxiety, panic attacks, and work-related stress
-          </li>
-          <li>
-            <strong>Depression</strong> — Evidence-based treatment using CBT and other proven approaches
-          </li>
-          <li>
-            <strong>Couples & Relationship Therapy</strong> — Communication difficulties, trust issues, and life
-            transitions
-          </li>
-          <li>
-            <strong>Substance Abuse & Addiction</strong> — Specialist experience from working in inpatient treatment
-            facilities
-          </li>
+          <li>Anxiety, panic, persistent worry and stress</li>
+          <li>Depression, low mood and difficult life transitions</li>
+          <li>Communication, trust and recurring conflict in relationships</li>
+          <li>Substance use, process addictions, dual diagnosis and the effect of addiction on families</li>
         </ul>
 
-        <h2>Why Choose Me?</h2>
-
-        <ul>
-          <li>HPCSA registered counselling psychologist</li>
-          <li>Bilingual therapy in English and Afrikaans</li>
-          <li>Specialist training in addiction and dual diagnosis</li>
-          <li>Flexible scheduling with online options</li>
-          <li>Medical aid claims assistance</li>
-        </ul>
-
-        <h2>Convenient Access</h2>
+        <h2>Starting the conversation</h2>
 
         <p>
-          <strong>In-Person:</strong> Bloemendal Clinic is located on the R45 between Paarl and Franschhoek, with ample
-          free parking and a peaceful, private setting.
-        </p>
-
-        <p>
-          <strong>Online:</strong> Secure video sessions allow you to access therapy from anywhere in the Western Cape
-          or South Africa.
+          The free 15-minute consultation is a brief, no-obligation conversation about what brings you to therapy and
+          whether my experience fits the support you need. If we continue, sessions can take place at Bloemendal Clinic
+          or online from Stellenbosch.
         </p>
       </DocumentLeftAligned>
 
