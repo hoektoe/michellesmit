@@ -11,7 +11,6 @@ import { Feature, FeaturesTwoColumnWithDemos } from '@/components/sections/featu
 import { HeroLeftAlignedWithDemo } from '@/components/sections/hero-left-aligned-with-demo'
 import { Plan, PricingMultiTier } from '@/components/sections/pricing-multi-tier'
 import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
-import { Testimonial, TestimonialThreeColumnGrid } from '@/components/sections/testimonials-three-column-grid'
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -38,7 +37,7 @@ const faqSchema = {
       name: 'Do you offer online therapy sessions?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person. Online therapy has been shown to be just as effective as face-to-face sessions.',
+        text: 'Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person.',
       },
     },
     {
@@ -46,7 +45,7 @@ const faqSchema = {
       name: 'What are your rates and do you work with medical aid?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Please contact me for current rates. I provide detailed invoices that can be submitted to your medical aid for reimbursement. Many medical aids cover psychology sessions, though coverage varies by plan.',
+        text: 'I am registered with most Medical Aids. Can claim from Medical Aid at standard Medical Aid rates.',
       },
     },
   ],
@@ -64,10 +63,11 @@ export default function Page() {
       <HeroLeftAlignedWithDemo
         id="hero"
         eyebrow={<span className="text-sm font-medium text-mist-600">Michelle Smit - Counselling Psychologist</span>}
-        headline="Feel seen, heard and valued."
+        headline="Counselling psychologist in Paarl"
         subheadline={
           <p className="italic">
-            "Connection is why we're here; it is what gives purpose and meaning to our lives." — Brené Brown
+            Feel seen, heard and valued. &quot;Connection is why we&apos;re here; it is what gives purpose and meaning
+            to our lives.&quot; — Brené Brown
           </p>
         }
         cta={
@@ -84,11 +84,13 @@ export default function Page() {
         demo={
           <Screenshot className="rounded-lg" wallpaper="amber" placement="bottom">
             <Image
-              src="/img/hero.png"
+              src="/img/hero.webp"
               alt="Counselling psychologist Michelle Smit"
-              width={1024}
-              height={1024}
-              className="object-cover"
+              width={1408}
+              height={736}
+              priority
+              sizes="(min-width: 1280px) 1024px, calc(100vw - 2rem)"
+              className="h-auto w-full object-cover"
             />
           </Screenshot>
         }
@@ -111,9 +113,10 @@ export default function Page() {
                 <Screenshot wallpaper="olive" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/substance-abuse.png"
+                      src="/img/services/substance-abuse.webp"
                       alt="Substance abuse therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
@@ -138,9 +141,10 @@ export default function Page() {
                 <Screenshot wallpaper="steel" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/depression.png"
+                      src="/img/services/depression.webp"
                       alt="Depression therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
@@ -150,7 +154,7 @@ export default function Page() {
               subheadline={
                 <p>
                   Work through persistent low mood, loss of interest, and feelings of hopelessness with evidence-based
-                  approaches including CBT and behavioural activation.
+                  approaches including CBT.
                 </p>
               }
               cta={
@@ -163,15 +167,21 @@ export default function Page() {
               demo={
                 <Screenshot wallpaper="sage" placement="bottom-right">
                   <div className="relative aspect-[1800/1250]">
-                    <Image src="/img/services/anxiety.png" alt="Anxiety therapy" fill className="object-cover" />
+                    <Image
+                      src="/img/services/anxiety.webp"
+                      alt="Anxiety therapy"
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-cover"
+                    />
                   </div>
                 </Screenshot>
               }
               headline="Anxiety"
               subheadline={
                 <p>
-                  Manage feelings of worry, panic, and overwhelm with evidence-based approaches including CBT and
-                  mindfulness-based interventions tailored to your needs.
+                  Manage feelings of worry, panic, and overwhelm with evidence-based approaches including CBT tailored
+                  to your needs.
                 </p>
               }
               cta={
@@ -185,9 +195,10 @@ export default function Page() {
                 <Screenshot wallpaper="amber" placement="bottom-left">
                   <div className="relative aspect-[1800/1250]">
                     <Image
-                      src="/img/services/relationship.png"
+                      src="/img/services/relationship.webp"
                       alt="Relationships therapy"
                       fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       className="object-cover"
                     />
                   </div>
@@ -216,9 +227,8 @@ export default function Page() {
         headline="Qualified, registered, and committed to your wellbeing."
         subheadline={
           <p>
-            With extensive training and ongoing professional development, I bring both expertise and genuine care to
-            every therapeutic relationship. I am committed to providing ethical, evidence-based care in both English and
-            Afrikaans.
+            With extensive training and ongoing professional development, I bring genuine care to every therapeutic
+            relationship. I am committed to providing ethical, evidence-based care in both English and Afrikaans.
           </p>
         }
       >
@@ -227,14 +237,14 @@ export default function Page() {
           text="Registered counselling psychologist with the Health Professions Council of South Africa."
         />
         <Stat
-          stat="Psychology Degree"
-          text="Studied at Stellenbosch University and Pearson Institute of Higher Education"
+          stat="Psychology Degrees"
+          text="Studied at Stellenbosch University and Pearson Institute of Higher Education. Batchelors, Hons & Masters in Psychology."
         />
 
         <Stat stat="Bilingual" text="Therapy available in both English and Afrikaans to best suit your needs." />
       </StatsWithGraph>
       {/* Testimonials */}
-      <TestimonialThreeColumnGrid
+      {/*<TestimonialThreeColumnGrid
         id="testimonials"
         headline="Client experiences"
         subheadline={<p>Hear from those who have taken the brave step of seeking support.</p>}
@@ -272,7 +282,7 @@ export default function Page() {
           name="Anonymous"
           byline="Stellenbosch client"
         />
-      </TestimonialThreeColumnGrid>
+      </TestimonialThreeColumnGrid>*/}
       {/* FAQs */}
       <FAQsTwoColumnAccordion id="faqs" headline="Frequently Asked Questions">
         <Faq
@@ -288,12 +298,12 @@ export default function Page() {
         <Faq
           id="faq-3"
           question="Do you offer online therapy sessions?"
-          answer="Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person. Online therapy has been shown to be just as effective as face-to-face sessions."
+          answer="Yes, I offer secure online therapy sessions via video call for clients who prefer the convenience of remote sessions or are unable to attend in person."
         />
         <Faq
           id="faq-4"
           question="What are your rates and do you work with medical aid?"
-          answer="Please contact me for current rates. I provide detailed invoices that can be submitted to your medical aid for reimbursement. Many medical aids cover psychology sessions, though coverage varies by plan."
+          answer="I am registered with most Medical Aids. Can claim from Medical Aid at standard Medical Aid rates. "
         />
       </FAQsTwoColumnAccordion>
       {/* Locations */}

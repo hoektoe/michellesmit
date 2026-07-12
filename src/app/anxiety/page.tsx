@@ -10,14 +10,20 @@ import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-o
 export const metadata: Metadata = {
   title: 'Anxiety Therapy in Paarl',
   description:
-    'Expert anxiety treatment in Paarl, Western Cape. HPCSA registered psychologist offering CBT for generalised anxiety, panic attacks & PTSD. Book your free consultation.',
-  keywords: ['anxiety therapy Paarl', 'anxiety psychologist', 'panic attack treatment', 'PTSD therapy South Africa', 'CBT anxiety'],
+    'Anxiety therapy in Paarl with an HPCSA registered psychologist. CBT-informed support for worry, panic attacks and PTSD.',
+  keywords: [
+    'anxiety therapy Paarl',
+    'anxiety psychologist',
+    'panic attack treatment',
+    'PTSD therapy South Africa',
+    'CBT anxiety',
+  ],
   alternates: {
     canonical: 'https://michellesmit.com/anxiety',
   },
   openGraph: {
     title: 'Anxiety Therapy in Paarl | Michelle Smit Psychologist',
-    description: 'Expert anxiety treatment with CBT and mindfulness-based interventions. HPCSA registered counselling psychologist in Paarl.',
+    description: 'Expert anxiety treatment with CBT. HPCSA registered counselling psychologist in Paarl.',
     images: ['/img/logo.png'],
   },
 }
@@ -32,18 +38,19 @@ export default function Page() {
         headline="Time to see yourself in a different light?"
         subheadline={
           <p>
-            Anxiety is a monster that you cannot see. But with the right support, you can learn to understand it,
-            manage it, and reclaim your peace of mind.
+            Anxiety is a monster that you cannot see. But with the right support, you can learn to understand it, manage
+            it, and reclaim your peace of mind.
           </p>
         }
         demo={
           <>
             <Image
-              src="/img/services/anxiety.png"
+              src="/img/services/anxiety.webp"
               alt="Anxiety therapy"
-              width={1200}
-              height={800}
-              className="object-cover bg-white/75"
+              width={1264}
+              height={848}
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="bg-white/75 object-cover"
             />
           </>
         }
@@ -52,9 +59,9 @@ export default function Page() {
       {/* Content */}
       <DocumentLeftAligned id="content" headline="Understanding Anxiety">
         <p>
-          Anxiety is generally a healthy human response that aids us in challenging situations. It's the feeling you
-          get before a big exam that motivates you to study, or the instinct that tells you to run when facing danger.
-          This fight-or-flight response has helped humans survive for thousands of years.
+          Anxiety is generally a healthy human response that aids us in challenging situations. It's the feeling you get
+          before a big exam that motivates you to study, or the instinct that tells you to run when facing danger. This
+          fight-or-flight response has helped humans survive for thousands of years.
         </p>
 
         <p>
@@ -66,9 +73,9 @@ export default function Page() {
         <h2>When Anxiety Becomes a Problem</h2>
 
         <p>
-          Anxiety may stem from a feeling of lack of control over our environment. When we do not feel in control, we
-          do not feel safe. This can manifest in various ways, affecting your work, relationships, and overall quality
-          of life.
+          Anxiety may stem from a feeling of lack of control over our environment. When we do not feel in control, we do
+          not feel safe. This can manifest in various ways, affecting your work, relationships, and overall quality of
+          life.
         </p>
 
         <h2>Generalised Anxiety Disorder</h2>
@@ -82,9 +89,9 @@ export default function Page() {
         <h2>Panic Attacks</h2>
 
         <p>
-          Panic attacks can feel like a heart attack, occurring when anxiety becomes unmanageable. The physical
-          symptoms — racing heart, shortness of breath, dizziness — can be terrifying. Understanding what's happening
-          in your body is the first step toward managing these episodes.
+          Panic attacks can feel like a heart attack, occurring when anxiety becomes unmanageable. The physical symptoms
+          — racing heart, shortness of breath, dizziness — can be terrifying. Understanding what's happening in your
+          body is the first step toward managing these episodes.
         </p>
 
         <h2>PTSD</h2>
@@ -117,8 +124,8 @@ export default function Page() {
         headline="Ready to take the first step?"
         subheadline={
           <p>
-            Schedule a free 15-minute consultation to discuss how therapy can help you manage anxiety and regain
-            control of your life.
+            Schedule a free 15-minute consultation to discuss how therapy can help you manage anxiety and regain control
+            of your life.
           </p>
         }
         cta={

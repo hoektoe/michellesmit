@@ -10,7 +10,7 @@ import { HeroWithDemoOnBackground } from '@/components/sections/hero-with-demo-o
 export const metadata: Metadata = {
   title: 'Psychologist Near Stellenbosch',
   description:
-    'Counselling psychologist serving Stellenbosch, Franschhoek & surrounds. Anxiety, depression, couples therapy & addiction counselling. Online and in-person sessions in nearby Paarl.',
+    'Counselling psychologist serving Stellenbosch and surrounds with anxiety, depression, couples and addiction therapy online or in nearby Paarl.',
   keywords: [
     'psychologist Stellenbosch',
     'therapist Stellenbosch',
@@ -49,11 +49,12 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/services/hero.jpeg"
+              src="/img/services/hero.webp"
               alt="Therapy services for Stellenbosch"
-              width={1200}
-              height={800}
-              className="object-cover bg-white/75"
+              width={1408}
+              height={736}
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="bg-white/75 object-cover"
             />
           </>
         }

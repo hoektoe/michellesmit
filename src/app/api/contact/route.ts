@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Contact Form <therapy@michellesmit.com>',
+      from: 'Contact Form <onboarding@resend.dev>',
       to: 'therapy@michellesmit.com',
       replyTo: email,
       subject: `New Contact Form Submission from ${fullName}`,
@@ -49,7 +49,7 @@ ${description}
     if (error) {
       console.error('Resend error:', error)
       return NextResponse.json(
-        { error: 'Failed to send email' },
+        { error: error.message || 'Failed to send email' },
         { status: 500 }
       )
     }
