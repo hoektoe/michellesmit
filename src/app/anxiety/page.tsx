@@ -113,7 +113,7 @@ export default function Page() {
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
-        image={{ src: '/img/michelle_avatar.jpg', alt: 'Michelle Smit' }}
+        image={{ src: '/img/michelle-consultation.jpg', alt: 'Michelle Smit' }}
         headline="Ready to take the first step?"
         subheadline={
           <p>

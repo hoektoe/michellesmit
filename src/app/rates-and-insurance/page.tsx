@@ -100,7 +100,7 @@ export default function Page() {
 
       <CallToActionSimple
         id="call-to-action"
-        image={{ src: '/img/michelle_avatar.jpg', alt: 'Michelle Smit' }}
+        image={{ src: '/img/michelle-consultation.jpg', alt: 'Michelle Smit' }}
         headline="Schedule your free 15-minute consultation."
         subheadline={
           <p>
