@@ -24,7 +24,7 @@ export function HeroWithDemoOnBackground({
   color?: 'green' | 'blue' | 'purple' | 'brown' | 'sunset' | 'protea'
 } & ComponentProps<'section'>) {
   return (
-    <section className={clsx('flex flex-col gap-16 px-2 pb-16', className)} {...props}>
+    <section className={clsx('flex flex-col gap-16 px-2 sm:pb-16', className)} {...props}>
       <Wallpaper className="rounded-lg" color={color}>
         <div className="-mx-2 sm:px-6 md:px-12 lg:px-0">
           <Container className="flex flex-col gap-16">
@@ -48,7 +48,7 @@ export function HeroWithDemoOnBackground({
           </Container>
         </div>
       </Wallpaper>
-      <Container>{footer}</Container>
+      {footer && <Container>{footer}</Container>}
     </section>
   )
 }
