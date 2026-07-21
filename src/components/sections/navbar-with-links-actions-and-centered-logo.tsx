@@ -1,18 +1,37 @@
+'use client'
+
 import Link from 'next/link'
 
 import { ElDialog, ElDialogPanel } from '@tailwindplus/elements/react'
 import { clsx } from 'clsx/lite'
-import type { ComponentProps, ReactNode } from 'react'
+import type { ComponentProps, MouseEvent, ReactNode } from 'react'
 
 export function NavbarLink({
   children,
   href,
   className,
+  onClick,
   ...props
 }: { href: string } & Omit<ComponentProps<'a'>, 'href'>) {
+  function handleClick(event: MouseEvent<HTMLAnchorElement>) {
+    onClick?.(event)
+
+    if (event.defaultPrevented) {
+      return
+    }
+
+    const dialog = event.currentTarget.closest('dialog')
+
+    if (dialog instanceof HTMLDialogElement) {
+      dialog.close()
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    }
+  }
+
   return (
     <Link
       href={href}
+      onClick={handleClick}
       className={clsx(
         'group inline-flex items-center justify-between gap-2 text-3xl/10 font-medium text-mist-950 lg:text-sm/7',
         className,

@@ -39,6 +39,7 @@ export default function Page() {
       <HeroWithDemoOnBackground
         id="hero"
         color="green"
+        demoAlignment="right"
         headline="Michelle Smit"
         subheadline={
           <p>

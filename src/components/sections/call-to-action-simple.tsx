@@ -32,7 +32,7 @@ export function CallToActionSimple({
                 alt={image.alt}
                 fill
                 sizes="(min-width: 640px) 10rem, 100vw"
-                className="object-cover"
+                className="object-cover object-[center_20%] sm:object-center"
               />
             </div>
           )}
