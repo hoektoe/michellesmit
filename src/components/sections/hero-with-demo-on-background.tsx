@@ -43,7 +43,7 @@ export function HeroWithDemoOnBackground({
                 <div className="relative h-72 sm:h-92 md:h-125 lg:size-full">
                   <div
                     className={clsx(
-                      'absolute inset-y-0 flex w-screen overflow-hidden *:h-full *:w-auto *:max-w-none max-lg:rounded-t-lg',
+                      'absolute inset-y-0 flex w-screen overflow-hidden *:h-full *:w-auto *:max-w-none *:rounded-t-lg max-lg:rounded-t-lg',
                       demoAlignment === 'right' ? 'right-0 justify-end lg:rounded-tr-lg' : 'left-0 lg:rounded-tl-lg',
                     )}
                   >
