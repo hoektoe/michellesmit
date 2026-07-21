@@ -10,6 +10,7 @@ export function HeroWithDemoOnBackground({
   subheadline,
   cta,
   demo,
+  demoAlignment = 'left',
   footer,
   color = 'blue',
   className,
@@ -20,6 +21,7 @@ export function HeroWithDemoOnBackground({
   subheadline: ReactNode
   cta?: ReactNode
   demo?: ReactNode
+  demoAlignment?: 'left' | 'right'
   footer?: ReactNode
   color?: 'green' | 'blue' | 'purple' | 'brown' | 'sunset' | 'protea'
 } & ComponentProps<'section'>) {
@@ -37,9 +39,14 @@ export function HeroWithDemoOnBackground({
                 <div className="flex max-w-3xl flex-col gap-4 text-lg/8 text-white/70">{subheadline}</div>
                 {cta}
               </div>
-              <div className="lg:pt-24">
+              <div className="lg:min-w-0 lg:flex-1 lg:pt-24">
                 <div className="relative h-72 sm:h-92 md:h-125 lg:size-full">
-                  <div className="absolute inset-y-0 left-0 flex w-screen overflow-hidden *:h-full *:w-auto *:max-w-none max-lg:rounded-t-lg lg:rounded-tl-lg">
+                  <div
+                    className={clsx(
+                      'absolute inset-y-0 flex w-screen overflow-hidden *:h-full *:w-auto *:max-w-none max-lg:rounded-t-lg',
+                      demoAlignment === 'right' ? 'right-0 justify-end lg:rounded-tr-lg' : 'left-0 lg:rounded-tl-lg',
+                    )}
+                  >
                     {demo}
                   </div>
                 </div>
