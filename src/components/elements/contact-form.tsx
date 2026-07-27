@@ -9,6 +9,7 @@ export function ContactForm() {
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [description, setDescription] = useState('')
+  const [company, setCompany] = useState('')
   const [formState, setFormState] = useState<FormState>('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -21,7 +22,7 @@ export function ContactForm() {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fullName, email, description }),
+        body: JSON.stringify({ fullName, email, description, company }),
       })
 
       if (!response.ok) {
@@ -59,6 +60,18 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <div className="sr-only" aria-hidden="true">
+        <label htmlFor="company">Company</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          tabIndex={-1}
+          autoComplete="off"
+          value={company}
+          onChange={(e) => setCompany(e.target.value)}
+        />
+      </div>
       <div className="flex flex-col gap-1.5">
         <label htmlFor="fullName" className="text-sm font-medium text-mist-950">
           Full Name

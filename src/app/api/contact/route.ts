@@ -6,7 +6,11 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { fullName, email, description } = body
+    const { fullName, email, description, company } = body
+
+    if (company) {
+      return NextResponse.json({ success: true })
+    }
 
     // Validate required fields
     if (!fullName || !email || !description) {
