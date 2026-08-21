@@ -138,6 +138,11 @@ export default function RootLayout({
                     "HPCSA registered counselling psychologist with a Master's degree, specialising in addiction care and dual diagnosis treatment.",
                   url: 'https://michellesmit.com/about',
                   worksFor: { '@id': 'https://michellesmit.com/#business' },
+                  affiliation: {
+                    '@type': 'Organization',
+                    name: 'Smit Psychology Group',
+                    url: 'https://www.smitpsychology.com/',
+                  },
                   hasCredential: [
                     {
                       '@type': 'EducationalOccupationalCredential',
@@ -231,6 +236,9 @@ export default function RootLayout({
                   <FooterLink href="/about">About</FooterLink>
                   <FooterLink href="/contact">Contact</FooterLink>
                   <FooterLink href="/rates-and-insurance">Rates & Insurance</FooterLink>
+                  <FooterLink href="https://www.smitpsychology.com/" target="_blank" rel="noopener noreferrer">
+                    Smit Psychology Group
+                  </FooterLink>
                 </FooterCategory>
                 <FooterCategory title="Locations">
                   <FooterLink
