@@ -1,6 +1,6 @@
-# robots.txt for michellesmit.com
+# robots.txt for www.michellesmit.com
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://michellesmit.com/sitemap.xml
+Sitemap: https://www.michellesmit.com/sitemap.xml

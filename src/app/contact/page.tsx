@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Bloemendal Clinic Paarl',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/contact',
+    canonical: 'https://www.michellesmit.com/contact',
   },
   openGraph: {
     title: 'Contact Michelle Smit | Book Your Consultation',
