@@ -33,7 +33,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://michellesmit.com'),
+  metadataBase: new URL('https://www.michellesmit.com'),
   title: {
     default: 'Michelle Smit | Counselling Psychologist in Paarl',
     template: '%s | Michelle Smit Psychologist',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://michellesmit.com',
+    canonical: 'https://www.michellesmit.com',
   },
 }
 
@@ -89,11 +89,11 @@ export default function RootLayout({
               '@graph': [
                 {
                   '@type': 'MedicalBusiness',
-                  '@id': 'https://michellesmit.com/#business',
+                  '@id': 'https://www.michellesmit.com/#business',
                   name: 'Michelle Smit - Counselling Psychologist',
                   description:
                     'HPCSA registered counselling psychologist specialising in anxiety, depression, relationships, and substance abuse therapy.',
-                  url: 'https://michellesmit.com',
+                  url: 'https://www.michellesmit.com',
                   email: 'therapy@michellesmit.com',
                   address: {
                     '@type': 'PostalAddress',
@@ -131,13 +131,13 @@ export default function RootLayout({
                 },
                 {
                   '@type': 'Person',
-                  '@id': 'https://michellesmit.com/#person',
+                  '@id': 'https://www.michellesmit.com/#person',
                   name: 'Michelle Smit',
                   jobTitle: 'Counselling Psychologist',
                   description:
                     "HPCSA registered counselling psychologist with a Master's degree, specialising in addiction care and dual diagnosis treatment.",
-                  url: 'https://michellesmit.com/about',
-                  worksFor: { '@id': 'https://michellesmit.com/#business' },
+                  url: 'https://www.michellesmit.com/about',
+                  worksFor: { '@id': 'https://www.michellesmit.com/#business' },
                   affiliation: {
                     '@type': 'Organization',
                     name: 'Smit Psychology Group',
@@ -163,10 +163,10 @@ export default function RootLayout({
                 },
                 {
                   '@type': 'WebSite',
-                  '@id': 'https://michellesmit.com/#website',
-                  url: 'https://michellesmit.com',
+                  '@id': 'https://www.michellesmit.com/#website',
+                  url: 'https://www.michellesmit.com',
                   name: 'Michelle Smit - Counselling Psychologist',
-                  publisher: { '@id': 'https://michellesmit.com/#person' },
+                  publisher: { '@id': 'https://www.michellesmit.com/#person' },
                 },
               ],
             }),

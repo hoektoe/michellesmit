@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'couples counselling Western Cape',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/relationships',
+    canonical: 'https://www.michellesmit.com/relationships',
   },
   openGraph: {
     title: 'Couples Therapy in Paarl | Michelle Smit Psychologist',

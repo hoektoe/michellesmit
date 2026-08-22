@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'marriage counselling Stellenbosch',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/stellenbosch',
+    canonical: 'https://www.michellesmit.com/stellenbosch',
   },
   openGraph: {
     title: 'Psychologist Near Stellenbosch | Michelle Smit',

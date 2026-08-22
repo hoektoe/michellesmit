@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'psychology session cost',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/rates-and-insurance',
+    canonical: 'https://www.michellesmit.com/rates-and-insurance',
   },
   openGraph: {
     title: 'Rates & Medical Aid | Michelle Smit Psychologist',

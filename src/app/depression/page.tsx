@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'CBT depression South Africa',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/depression',
+    canonical: 'https://www.michellesmit.com/depression',
   },
   openGraph: {
     title: 'Depression Therapy in Paarl | Michelle Smit Psychologist',
