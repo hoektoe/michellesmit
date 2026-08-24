@@ -49,10 +49,10 @@ export default function Page() {
         demo={
           <>
             <Image
-              src="/img/michelle-consultation.jpg"
+              src="/img/michelle_avatar.jpg"
               alt="Michelle Smit - Counselling Psychologist"
-              width={2884}
-              height={4160}
+              width={1024}
+              height={1024}
               className="bg-white/75 object-cover"
             />
           </>
@@ -128,7 +128,7 @@ export default function Page() {
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
-        image={{ src: '/img/michelle-consultation.jpg', alt: 'Michelle Smit' }}
+        image={{ src: '/img/michelle_avatar.jpg', alt: 'Michelle Smit' }}
         headline="Let's work together."
         subheadline={
           <p>
