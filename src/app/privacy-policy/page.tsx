@@ -7,11 +7,15 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for Michelle Smit Therapy. Learn how we collect, use, and protect your personal information.',
   alternates: {
-    canonical: 'https://michellesmit.com/privacy-policy',
+    canonical: 'https://www.michellesmit.com/privacy-policy',
   },
   robots: {
     index: false,
     follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
   },
 }
 

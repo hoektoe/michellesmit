@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'CBT anxiety',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/anxiety',
+    canonical: 'https://www.michellesmit.com/anxiety',
   },
   openGraph: {
     title: 'Anxiety Therapy in Paarl | Michelle Smit Psychologist',

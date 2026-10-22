@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'counselling services Western Cape',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/services',
+    canonical: 'https://www.michellesmit.com/services',
   },
   openGraph: {
     title: 'Therapy Services | Michelle Smit Psychologist',

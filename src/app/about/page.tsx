@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'bilingual therapist South Africa',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/about',
+    canonical: 'https://www.michellesmit.com/about',
   },
   openGraph: {
     title: 'About Michelle Smit | Counselling Psychologist in Paarl',

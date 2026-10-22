@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
     root: __dirname,
   },
   async redirects() {
-    return [{ source: '/therapy-services', destination: '/services', permanent: true }]
+    return [
+      { source: '/therapy-services', destination: '/services', permanent: true },
+      { source: '/en', destination: '/', permanent: true },
+    ]
   },
 }
 

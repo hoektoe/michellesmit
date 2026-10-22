@@ -9,7 +9,8 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:indexing": "node --test scripts/indexing.test.mjs"
   },
   "prettier": {
     "semi": false,
