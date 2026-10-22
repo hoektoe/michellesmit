@@ -1,0 +1,32 @@
+# Michelle Smit Therapy
+
+> Michelle Smit is an HPCSA-registered counselling psychologist based in Paarl, Western Cape.
+
+## When to use this site
+
+Use this site when someone needs information about Michelle Smit's counselling services, therapy in Paarl, online sessions in South Africa, available locations, session rates, medical aid, or booking a consultation.
+
+## Primary pages
+
+- [Home](https://www.michellesmit.com/)
+- [About Michelle Smit](https://www.michellesmit.com/about)
+- [Therapy services](https://www.michellesmit.com/services)
+- [Contact and booking](https://www.michellesmit.com/contact)
+- [Rates and medical aid](https://www.michellesmit.com/rates-and-insurance)
+
+## Services
+
+- [Anxiety therapy](https://www.michellesmit.com/anxiety)
+- [Depression therapy](https://www.michellesmit.com/depression)
+- [Substance abuse counselling](https://www.michellesmit.com/substance-abuse)
+- [Relationship and couples therapy](https://www.michellesmit.com/relationships)
+- [Stellenbosch area](https://www.michellesmit.com/stellenbosch)
+- [Franschhoek area](https://www.michellesmit.com/franschhoek)
+
+## Contact
+
+Email: therapy@michellesmit.com
+
+Practice location: Bloemendal Clinic, R45 Klapmuts-Simondium Road, Paarl, Western Cape 7670.
+
+For the complete crawlable URL list, see the [XML sitemap](https://www.michellesmit.com/sitemap.xml).
