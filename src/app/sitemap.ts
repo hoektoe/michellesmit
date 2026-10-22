@@ -1,11 +1,11 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://michellesmit.com'
+  const baseUrl = 'https://www.michellesmit.com'
 
   return [
     {
-      url: baseUrl,
+      url: `${baseUrl}/`,
       changeFrequency: 'monthly',
       priority: 1,
     },
@@ -58,11 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/rates-and-insurance`,
       changeFrequency: 'monthly',
       priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/privacy-policy`,
-      changeFrequency: 'yearly',
-      priority: 0.3,
     },
   ]
 }

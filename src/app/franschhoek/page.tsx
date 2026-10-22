@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'psychologist Cape Winelands',
   ],
   alternates: {
-    canonical: 'https://michellesmit.com/franschhoek',
+    canonical: 'https://www.michellesmit.com/franschhoek',
   },
   openGraph: {
     title: 'Psychologist Near Franschhoek | Michelle Smit',
